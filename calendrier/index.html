@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" data-page="calendrier" data-root="../">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Le programme, les jeux et les rendez-vous de la chaîne. Tout pour se retrouver au même endroit.">
+<meta name="theme-color" content="#111113">
+<title>Calendrier — herxing_</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="../css/style.css">
+<script defer src="../public/contenu.js">
+</script>
+<script defer src="../config.js">
+</script>
+<script defer src="../js/validation.js">
+</script>
+<script defer src="../js/site.js">
+</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="header">
+<a class="brand" href="../index.html" aria-label="herxing_, accueil">
+<span class="brand-mark" aria-hidden="true">H
+</span>herxing_<span class="brand-tag">LE POINT DE RENDEZ-VOUS</span>
+</a>
+<nav aria-label="Navigation principale">
+<a href="../index.html">Accueil</a>
+<a href="../calendrier/index.html" aria-current="page">Calendrier</a>
+<a href="../jeux/index.html">Jeux</a>
+<a href="../evenements/index.html">Événements</a>
+<a href="../informations/index.html">Informations</a>
+<a href="../suggestions/index.html">Suggestions</a>
+</nav>
+<a class="twitch-link" href="https://www.twitch.tv/herxing_" target="_blank" rel="noopener noreferrer">Twitch <span aria-hidden="true">↗</span>
+</a>
+</header>
+<main id="contenu" tabindex="-1">
+<noscript>
+<p class="shell">Active JavaScript pour afficher les rendez-vous, les jeux et envoyer des suggestions.</p>
+</noscript>
+<div class="shell page">
+<header class="page-heading">
+<p class="eyebrow">LES RENDEZ-VOUS DE LA CHAÎNE</p>
+<h1>Le programme<span class="accent">.</span>
+</h1>
+<p class="lead">Choisis ton prochain rendez-vous. Les horaires sont indiqués en Europe/Paris.</p>
+</header>
+<div class="section-heading">
+<h2>À venir & en cours</h2>
+<span class="badge">STREAMS</span>
+</div>
+<section id="upcoming" aria-label="Streams à venir">
+</section>
+<div id="schedule-empty" class="empty-state">
+<span class="empty-symbol" aria-hidden="true">＋</span>
+<h2>Le programme arrive bientôt.</h2>
+<p>Les prochains streams apparaîtront ici dès leur annonce.</p>
+</div>
+<details class="past-section" id="past-wrap" hidden>
+<summary>Les streams passés</summary>
+<div id="past">
+</div>
+</details>
+</div>
+</main>
+<footer class="footer">
+<a class="footer-brand" href="../index.html">herxing_<span>À très vite, en live.</span>
+</a>
+<div>
+<span>Les horaires sont affichés en Europe/Paris.</span>
+<a href="../suggestions/index.html">Une idée pour la suite ? <span aria-hidden="true">↗</span>
+</a>
+</div>
+<span class="footer-note">Fait pour se retrouver.</span>
+</footer>
+</body>
+</html>
