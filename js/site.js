@@ -109,6 +109,20 @@
     const grid = $('.game-grid'); grid.replaceChildren();
     for (const game of visible) {
       const card = el('article', undefined, 'game-card'); card.dataset.game = ''; card.dataset.platform = game.platform;
+      const artwork = el('div', undefined, 'game-artwork');
+      artwork.setAttribute('aria-hidden', 'true');
+      artwork.append(el('span', game.title.slice(0, 2).toUpperCase(), 'game-monogram'));
+      let imageUrl = '';
+      if (game.platform === 'steam' && /^\d+$/.test(game.id)) imageUrl = 'https://cdn.akamai.steamstatic.com/steam/apps/' + game.id + '/header.jpg';
+      if (game.platform === 'epic' && typeof game.image === 'string') {
+        try { const url = new URL(game.image); if (url.protocol === 'https:' && ['cdn1.epicgames.com', 'cdn2.unrealengine.com'].includes(url.hostname) && !url.username && !url.password && !url.search && !url.hash) imageUrl = url.href; } catch {}
+      }
+      if (imageUrl) {
+        const image = document.createElement('img'); image.alt = ''; image.loading = 'lazy'; image.decoding = 'async'; image.referrerPolicy = 'no-referrer';
+        image.addEventListener('error', () => image.remove(), { once: true });
+        image.src = imageUrl; artwork.append(image);
+      }
+      card.append(artwork);
       card.append(el('span', game.platform === 'steam' ? 'Steam' : 'Epic Games', 'badge'), el('h2', game.title));
       if (game.platform === 'steam' && /^\d+$/.test(game.id)) { const a = el('a', 'Voir sur Steam ↗'); a.href = 'https://store.steampowered.com/app/' + game.id + '/'; a.target = '_blank'; a.rel = 'noopener noreferrer'; card.append(a); }
       grid.append(card);
