@@ -105,7 +105,9 @@
   function renderGames() {
     const search = $('#game-search');
     const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    const visible = games.filter(g => (selectedPlatform === 'all' || g.platform === selectedPlatform) && normalize(g.title).includes(normalize(search.value.trim())));
+    const matches = (values, selected) => !selected || (selected === 'unknown' ? !values?.length : values?.includes(selected));
+    const visible = games.filter(g => (selectedPlatform === 'all' || g.platform === selectedPlatform) && normalize(g.title).includes(normalize(search.value.trim())) && matches(g.genres, $('#game-genre').value) && matches(g.modes, $('#game-mode').value));
+    visible.sort((a, b) => a.title.localeCompare(b.title, 'fr') * ($('#game-sort').value === 'desc' ? -1 : 1));
     const grid = $('.game-grid'); grid.replaceChildren();
     for (const game of visible) {
       const card = el('article', undefined, 'game-card'); card.dataset.game = ''; card.dataset.platform = game.platform;
@@ -124,6 +126,7 @@
       }
       card.append(artwork);
       card.append(el('span', game.platform === 'steam' ? 'Steam' : 'Epic Games', 'badge'), el('h2', game.title));
+      card.append(el('p', game.genres?.length ? game.genres.join(' · ') : 'Genre non renseigné', 'game-genres'));
       if (game.platform === 'steam' && /^\d+$/.test(game.id)) { const a = el('a', 'Voir sur Steam ↗'); a.href = 'https://store.steampowered.com/app/' + game.id + '/'; a.target = '_blank'; a.rel = 'noopener noreferrer'; card.append(a); }
       grid.append(card);
     }
@@ -133,6 +136,11 @@
     $('#games-empty p').textContent = games.length ? 'Essaie un autre titre ou une autre plateforme.' : 'Les jeux apparaîtront après la première synchronisation.';
   }
   if (page === 'jeux') {
+    for (const id of ['game-genre', 'game-mode', 'game-sort']) $('#' + id).addEventListener('change', renderGames);
+    $('#reset-games').addEventListener('click', () => {
+      $('#game-search').value = ''; $('#game-genre').value = ''; $('#game-mode').value = ''; $('#game-sort').value = 'asc';
+      document.querySelector('button[data-platform="all"]').click();
+    });
     $('#game-search').addEventListener('input', renderGames);
     document.querySelectorAll('button[data-platform]').forEach(button => button.addEventListener('click', () => {
       selectedPlatform = button.dataset.platform;
@@ -151,9 +159,16 @@
       if (!response.ok) throw new Error();
       const libraries = await response.json(); SalonData.validateLibraries(libraries);
       games = ['steam', 'epic'].flatMap(platform => libraries[platform].games.map(game => ({ ...game, platform }))).sort((a, b) => a.title.localeCompare(b.title, 'fr'));
+      const unclassified = games.filter(g => !g.kind || g.kind === 'unknown').length;
+      games = games.filter(g => g.kind === 'game');
       if (page === 'accueil') $('.portal .portal-footer').textContent = games.length ? games.length + ' jeux à découvrir' : 'Steam & Epic Games';
       if (page === 'jeux') {
-        for (const button of document.querySelectorAll('button[data-platform]')) button.querySelector('span').textContent = button.dataset.platform === 'all' ? games.length : libraries[button.dataset.platform].games.length;
+        $('#catalog-note').textContent = 'Jeux uniquement : logiciels, plugins et extensions exclus.' + (unclassified ? ' ' + unclassified + ' titres en attente de classification sont masqués. Les informations se complètent lors des synchronisations.' : '') + ' Les genres et modes non fournis restent « Non renseigné ».';
+        for (const [id, field] of [['game-genre', 'genres'], ['game-mode', 'modes']]) {
+          const values = [...new Set(games.flatMap(g => g[field] || []))].sort((a, b) => a.localeCompare(b, 'fr'));
+          for (const value of values) { const option = el('option', value); option.value = value; $('#' + id).append(option); }
+        }
+        for (const button of document.querySelectorAll('button[data-platform]')) button.querySelector('span').textContent = button.dataset.platform === 'all' ? games.length : games.filter(g => g.platform === button.dataset.platform).length;
         const notes = $('.sync-note'); notes.replaceChildren();
         for (const platform of ['steam', 'epic']) notes.append(el('p', (platform === 'steam' ? 'Steam' : 'Epic Games') + ' · ' + (libraries[platform].updatedAt ? 'Dernière mise à jour : ' + date(libraries[platform].updatedAt, { hour: '2-digit', minute: '2-digit' }) : 'Pas encore synchronisé')));
         renderGames();

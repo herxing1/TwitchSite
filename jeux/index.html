@@ -61,6 +61,13 @@
 <input id="game-search" type="search" placeholder="Un jeu en tête ?" maxlength="100">
 </label>
 </div>
+<div class="library-facets">
+<label for="game-genre">Genre<select id="game-genre"><option value="">Tous les genres</option><option value="unknown">Non renseigné</option></select></label>
+<label for="game-mode">Mode de jeu<select id="game-mode"><option value="">Tous les modes</option><option value="unknown">Non renseigné</option></select></label>
+<label for="game-sort">Trier<select id="game-sort"><option value="asc">Nom : A → Z</option><option value="desc">Nom : Z → A</option></select></label>
+<button class="button secondary" id="reset-games" type="button">Réinitialiser</button>
+</div>
+<p class="results-line" id="catalog-note"></p>
 <p class="results-line" id="game-count" role="status">0 jeux</p>
 <div class="game-grid">
 </div>
