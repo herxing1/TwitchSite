@@ -90,6 +90,25 @@
   if (page === 'accueil') { renderHome(); setInterval(renderHome, 60000); }
   if (page === 'calendrier' || page === 'evenements') { renderSchedule(); setInterval(renderSchedule, 60000); }
   if (page === 'informations') {
+    const moodButton = $('#mood-button');
+    const moodPortrait = $('.mood-portrait');
+    const excuses = ['J’avais un plan. Puis j’ai lancé le jeu.', 'C’était pour montrer au chat ce qu’il ne faut pas faire.', 'Le talent charge encore…', 'On appelle ça une stratégie expérimentale.'];
+    let excuseIndex = 0;
+    moodButton.hidden = false;
+    moodButton.addEventListener('click', () => {
+      excuseIndex = (excuseIndex + 1) % excuses.length;
+      $('#mood-quote').textContent = excuses[excuseIndex];
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        moodPortrait.getAnimations().forEach(animation => animation.cancel());
+        moodPortrait.animate([{transform:'rotate(0)'},{transform:'rotate(-3deg)',offset:.3},{transform:'rotate(2deg)',offset:.65},{transform:'rotate(0)'}], {duration:450,easing:'ease-out'});
+      }
+    });
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) { moodPortrait.classList.add('mood-arrived'); observer.disconnect(); }
+      }, {threshold:.25});
+      observer.observe(moodPortrait);
+    }
     $('.page-heading .lead').textContent = 'Un peu de moi, beaucoup de jeux… et le matériel derrière les lives.';
     const panels = document.querySelectorAll('.info-grid .panel');
     panels[0].querySelector('h2').textContent = 'Moi et ma chaîne';
