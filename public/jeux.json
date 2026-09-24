@@ -1,2080 +1,3893 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-09-24T08:22:30Z",
+    "updatedAt": "2026-09-24T08:33:52Z",
     "games": [
       {
         "id": "933110",
-        "title": "Age of Empires III: Definitive Edition"
+        "title": "Age of Empires III: Definitive Edition",
+        "kind": "game",
+        "genres": [
+          "Stratégie"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1466860",
-        "title": "Age of Empires IV: Anniversary Edition"
+        "title": "Age of Empires IV: Anniversary Edition",
+        "kind": "game",
+        "genres": [
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "714010",
-        "title": "Aimlabs"
+        "title": "Aimlabs",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Casual",
+          "Free-to-play",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "206500",
-        "title": "AirMech"
+        "title": "AirMech",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Free-to-play",
+          "Indépendant",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "761890",
-        "title": "Albion Online"
+        "title": "Albion Online",
+        "kind": "game",
+        "genres": [
+          "Course",
+          "Free-to-play",
+          "RPG"
+        ],
+        "modes": [
+          "MMO",
+          "Multijoueur"
+        ]
       },
       {
         "id": "3274580",
-        "title": "Anno 117: Pax Romana"
+        "title": "Anno 117: Pax Romana",
+        "kind": "game",
+        "genres": [
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1172470",
-        "title": "Apex Legends"
+        "title": "Apex Legends",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Free-to-play"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur"
+        ]
       },
       {
         "id": "2427520",
-        "title": "ARC Raiders Playtest"
+        "title": "ARC Raiders Playtest",
+        "kind": "game",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2399830",
-        "title": "ARK: Survival Ascended"
+        "title": "ARK: Survival Ascended",
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Action",
+          "Aventure",
+          "Course",
+          "Indépendant",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "346110",
-        "title": "ARK: Survival Evolved"
+        "title": "ARK: Survival Evolved",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Course",
+          "Indépendant",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "407530",
-        "title": "ARK: Survival Of The Fittest"
+        "title": "ARK: Survival Of The Fittest",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Course",
+          "Indépendant",
+          "RPG",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur"
+        ]
       },
       {
         "id": "361420",
-        "title": "ASTRONEER"
+        "title": "ASTRONEER",
+        "kind": "game",
+        "genres": [
+          "Aventure",
+          "Indépendant"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1238840",
-        "title": "Battlefield™ 1"
+        "title": "Battlefield™ 1",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Course"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1517290",
-        "title": "Battlefield™ 2042"
+        "title": "Battlefield™ 2042",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Casual"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur"
+        ]
       },
       {
         "id": "1330460",
-        "title": "Becastled"
+        "title": "Becastled",
+        "kind": "game",
+        "genres": [
+          "Indépendant",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "582660",
-        "title": "Black Desert"
+        "title": "Black Desert",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Course",
+          "RPG",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur"
+        ]
       },
       {
         "id": "567630",
-        "title": "Blood of Steel"
+        "title": "Blood of Steel",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Course",
+          "Free-to-play",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur"
+        ]
       },
       {
         "id": "49520",
-        "title": "Borderlands 2"
+        "title": "Borderlands 2",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "397900",
-        "title": "Business Tour - Online Multiplayer Board Game"
+        "title": "Business Tour - Online Multiplayer Board Game",
+        "kind": "game",
+        "genres": [
+          "Aventure",
+          "Casual",
+          "Course",
+          "Free-to-play",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "292730",
-        "title": "Call of Duty: Infinite Warfare"
+        "title": "Call of Duty: Infinite Warfare",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "2000950",
-        "title": "Call of Duty®: Modern Warfare®"
+        "title": "Call of Duty®: Modern Warfare®",
+        "kind": "game",
+        "genres": [
+          "Action"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1985820",
-        "title": "Call of Duty®: Vanguard"
+        "title": "Call of Duty®: Vanguard",
+        "kind": "game",
+        "genres": [
+          "Action"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "672680",
-        "title": "Call of War"
+        "title": "Call of War",
+        "kind": "game",
+        "genres": [
+          "Course",
+          "Free-to-play",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur"
+        ]
       },
       {
         "id": "949230",
-        "title": "Cities: Skylines II"
+        "title": "Cities: Skylines II",
+        "kind": "game",
+        "genres": [
+          "Simulation"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1386780",
-        "title": "City of Gangsters"
+        "title": "City of Gangsters",
+        "kind": "game",
+        "genres": [
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1903340",
-        "title": "Clair Obscur: Expedition 33"
+        "title": "Clair Obscur: Expedition 33",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "RPG"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1736450",
-        "title": "Colonize Prologue"
+        "title": "Colonize Prologue",
+        "kind": "game",
+        "genres": [
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "835570",
-        "title": "Conqueror's Blade"
+        "title": "Conqueror's Blade",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Course",
+          "Free-to-play",
+          "RPG",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur"
+        ]
       },
       {
         "id": "730",
-        "title": "Counter-Strike 2"
+        "title": "Counter-Strike 2",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Free-to-play"
+        ],
+        "modes": [
+          "Multijoueur"
+        ]
       },
       {
         "id": "386180",
-        "title": "Crossout"
+        "title": "Crossout",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Course",
+          "Free-to-play",
+          "Sport"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur"
+        ]
       },
       {
         "id": "1158310",
-        "title": "Crusader Kings III"
+        "title": "Crusader Kings III",
+        "kind": "game",
+        "genres": [
+          "RPG",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1409740",
-        "title": "Cybernetic Fault"
+        "title": "Cybernetic Fault",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1091500",
-        "title": "Cyberpunk 2077"
+        "title": "Cyberpunk 2077",
+        "kind": "game",
+        "genres": [
+          "RPG"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "3064370",
-        "title": "Dark Hours: Prologue"
+        "title": "Dark Hours: Prologue",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Free-to-play"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "755980",
-        "title": "DEPLOYMENT"
+        "title": "DEPLOYMENT",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Course",
+          "Indépendant",
+          "Sport",
+          "Stratégie"
+        ],
+        "modes": [
+          "MMO",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "699920",
-        "title": "Despotism 3k"
+        "title": "Despotism 3k",
+        "kind": "game",
+        "genres": [
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "2344520",
-        "title": "Diablo® IV"
+        "title": "Diablo® IV",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Casual",
+          "Course",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1272320",
-        "title": "Diplomacy is Not an Option"
+        "title": "Diplomacy is Not an Option",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Casual",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "379720",
-        "title": "DOOM"
+        "title": "DOOM",
+        "kind": "game",
+        "genres": [
+          "Action"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1072420",
-        "title": "DRAGON QUEST BUILDERS™ 2"
+        "title": "DRAGON QUEST BUILDERS™ 2",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "2893570",
-        "title": "DRAGON QUEST I & II HD-2D Remake"
+        "title": "DRAGON QUEST I & II HD-2D Remake",
+        "kind": "game",
+        "genres": [
+          "RPG"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "2625420",
-        "title": "Drive Beyond Horizons"
+        "title": "Drive Beyond Horizons",
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Action",
+          "Aventure",
+          "Casual",
+          "Indépendant",
+          "Simulation",
+          "Sport"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "667530",
-        "title": "Drunken Wrestlers 2"
+        "title": "Drunken Wrestlers 2",
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Action",
+          "Casual",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Écran partagé"
+        ]
       },
       {
         "id": "1366540",
-        "title": "Dyson Sphere Program"
+        "title": "Dyson Sphere Program",
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1245620",
-        "title": "ELDEN RING"
+        "title": "ELDEN RING",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "8500",
-        "title": "EVE Online"
+        "title": "EVE Online",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Course",
+          "Free-to-play",
+          "RPG",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur"
+        ]
       },
       {
         "id": "377160",
-        "title": "Fallout 4"
+        "title": "Fallout 4",
+        "kind": "game",
+        "genres": [
+          "RPG"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "588430",
-        "title": "Fallout Shelter"
+        "title": "Fallout Shelter",
+        "kind": "game",
+        "genres": [
+          "Free-to-play",
+          "RPG",
+          "Simulation"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "552520",
-        "title": "Far Cry 5"
+        "title": "Far Cry 5",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "3819230",
-        "title": "Far Far West Playtest"
+        "title": "Far Far West Playtest",
+        "kind": "game",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "3099020",
-        "title": "Fast Food Simulator: Prologue"
+        "title": "Fast Food Simulator: Prologue",
+        "kind": "game",
+        "genres": [
+          "Free-to-play",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1293830",
-        "title": "Forza Horizon 4"
+        "title": "Forza Horizon 4",
+        "kind": "game",
+        "genres": [
+          "Sport"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "690830",
-        "title": "Foundation"
+        "title": "Foundation",
+        "kind": "game",
+        "genres": [
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "2943650",
-        "title": "FragPunk"
+        "title": "FragPunk",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Free-to-play"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur"
+        ]
       },
       {
         "id": "2756470",
-        "title": "Game Builder Tycoon"
+        "title": "Game Builder Tycoon",
+        "kind": "game",
+        "genres": [
+          "Casual",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "4000",
-        "title": "Garry's Mod"
+        "title": "Garry's Mod",
+        "kind": "game",
+        "genres": [
+          "Casual",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "240720",
-        "title": "Getting Over It with Bennett Foddy"
+        "title": "Getting Over It with Bennett Foddy",
+        "kind": "game",
+        "genres": [
+          "Action"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "2215430",
-        "title": "Ghost of Tsushima DIRECTOR'S CUT"
+        "title": "Ghost of Tsushima DIRECTOR'S CUT",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1029780",
-        "title": "Going Medieval"
+        "title": "Going Medieval",
+        "kind": "game",
+        "genres": [
+          "Indépendant",
+          "RPG",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "571740",
-        "title": "Golf It!"
+        "title": "Golf It!",
+        "kind": "game",
+        "genres": [
+          "Casual",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "3240220",
-        "title": "Grand Theft Auto V Enhanced"
+        "title": "Grand Theft Auto V Enhanced",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Sport"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "271590",
-        "title": "Grand Theft Auto V Legacy"
+        "title": "Grand Theft Auto V Legacy",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "394360",
-        "title": "Hearts of Iron IV"
+        "title": "Hearts of Iron IV",
+        "kind": "game",
+        "genres": [
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "686810",
-        "title": "Hell Let Loose"
+        "title": "Hell Let Loose",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Course",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Multijoueur"
+        ]
       },
       {
         "id": "553850",
-        "title": "HELLDIVERS™ 2"
+        "title": "HELLDIVERS™ 2",
+        "kind": "game",
+        "genres": [
+          "Action"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur"
+        ]
       },
       {
         "id": "863550",
-        "title": "HITMAN™ 2"
+        "title": "HITMAN™ 2",
+        "kind": "game",
+        "genres": [
+          "Action"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1124300",
-        "title": "HUMANKIND™"
+        "title": "HUMANKIND™",
+        "kind": "game",
+        "genres": [
+          "Stratégie"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1465460",
-        "title": "Infection Free Zone"
+        "title": "Infection Free Zone",
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Action",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1462490",
-        "title": "iVIBRATE Ultimate Edition"
+        "title": "iVIBRATE Ultimate Edition",
+        "kind": "game",
+        "genres": [
+          "Casual",
+          "Indépendant"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "225540",
-        "title": "Just Cause 3"
+        "title": "Just Cause 3",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "517630",
-        "title": "Just Cause 4"
+        "title": "Just Cause 4",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "701160",
-        "title": "Kingdom Two Crowns"
+        "title": "Kingdom Two Crowns",
+        "kind": "game",
+        "genres": [
+          "Aventure",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "736820",
-        "title": "Knights of Honor II: Sovereign"
+        "title": "Knights of Honor II: Sovereign",
+        "kind": "game",
+        "genres": [
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "213330",
-        "title": "LEGO® Batman™ 2: DC Super Heroes"
+        "title": "LEGO® Batman™ 2: DC Super Heroes",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "313690",
-        "title": "LEGO® Batman™ 3: Beyond Gotham"
+        "title": "LEGO® Batman™ 3: Beyond Gotham",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "21000",
-        "title": "LEGO® Batman™: The Videogame"
+        "title": "LEGO® Batman™: The Videogame",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "578330",
-        "title": "LEGO® City Undercover"
+        "title": "LEGO® City Undercover",
+        "kind": "game",
+        "genres": [
+          "Action"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "332310",
-        "title": "LEGO® Worlds"
+        "title": "LEGO® Worlds",
+        "kind": "game",
+        "genres": [
+          "Aventure"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "1599340",
-        "title": "Lost Ark"
+        "title": "Lost Ark",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Course",
+          "Free-to-play",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1363080",
-        "title": "Manor Lords"
+        "title": "Manor Lords",
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1129580",
-        "title": "Medieval Dynasty"
+        "title": "Medieval Dynasty",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Indépendant",
+          "RPG",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "486860",
-        "title": "MMORPG Tycoon 2"
+        "title": "MMORPG Tycoon 2",
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Indépendant",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "606150",
-        "title": "Moonlighter"
+        "title": "Moonlighter",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Indépendant"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "261550",
-        "title": "Mount & Blade II: Bannerlord"
+        "title": "Mount & Blade II: Bannerlord",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Indépendant",
+          "RPG",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "109600",
-        "title": "Neverwinter"
+        "title": "Neverwinter",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Course",
+          "Free-to-play",
+          "RPG"
+        ],
+        "modes": [
+          "Coopération",
+          "MMO",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1408680",
-        "title": "Nine to Five"
+        "title": "Nine to Five",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Free-to-play"
+        ],
+        "modes": [
+          "Multijoueur"
+        ]
       },
       {
         "id": "275850",
-        "title": "No Man's Sky"
+        "title": "No Man's Sky",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1977530",
-        "title": "One-armed cook"
+        "title": "One-armed cook",
+        "kind": "game",
+        "genres": [
+          "Casual",
+          "Free-to-play",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "238320",
-        "title": "Outlast"
+        "title": "Outlast",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Indépendant"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "792220",
-        "title": "Paunch"
+        "title": "Paunch",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Course",
+          "Free-to-play",
+          "Indépendant",
+          "RPG"
+        ],
+        "modes": [
+          "Multijoueur"
+        ]
       },
       {
         "id": "2269560",
-        "title": "Perseus: Titan Slayer Playtest"
+        "title": "Perseus: Titan Slayer Playtest",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2688950",
-        "title": "Planet Coaster 2"
+        "title": "Planet Coaster 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "703080",
-        "title": "Planet Zoo"
+        "title": "Planet Zoo",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "108600",
-        "title": "Project Zomboid"
+        "title": "Project Zomboid",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "578080",
-        "title": "PUBG: BATTLEGROUNDS"
+        "title": "PUBG: BATTLEGROUNDS",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "3241660",
-        "title": "R.E.P.O."
+        "title": "R.E.P.O.",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "813820",
-        "title": "Realm Royale Reforged"
+        "title": "Realm Royale Reforged",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1174180",
-        "title": "Red Dead Redemption 2"
+        "title": "Red Dead Redemption 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1236300",
-        "title": "Resident Evil Re:Verse"
+        "title": "Resident Evil Re:Verse",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1196590",
-        "title": "Resident Evil Village"
+        "title": "Resident Evil Village",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "294100",
-        "title": "RimWorld"
+        "title": "RimWorld",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1206610",
-        "title": "Rubber Bandits"
+        "title": "Rubber Bandits",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1172620",
-        "title": "Sea of Thieves"
+        "title": "Sea of Thieves",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "8930",
-        "title": "Sid Meier's Civilization V"
+        "title": "Sid Meier's Civilization V",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "289070",
-        "title": "Sid Meier's Civilization VI"
+        "title": "Sid Meier's Civilization VI",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1295660",
-        "title": "Sid Meier's Civilization VII"
+        "title": "Sid Meier's Civilization VII",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1575940",
-        "title": "Sins of a Solar Empire II"
+        "title": "Sins of a Solar Empire II",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1482620",
-        "title": "Slappyball"
+        "title": "Slappyball",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "583760",
-        "title": "Slash It 2"
+        "title": "Slash It 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1326470",
-        "title": "Sons Of The Forest"
+        "title": "Sons Of The Forest",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "17390",
-        "title": "Spore"
+        "title": "Spore",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "495420",
-        "title": "State of Decay 2"
+        "title": "State of Decay 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "281990",
-        "title": "Stellaris"
+        "title": "Stellaris",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "253250",
-        "title": "Stonehearth"
+        "title": "Stonehearth",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2386720",
-        "title": "STRAFTAT"
+        "title": "STRAFTAT",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2140020",
-        "title": "Stronghold: Definitive Edition"
+        "title": "Stronghold: Definitive Edition",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "264710",
-        "title": "Subnautica"
+        "title": "Subnautica",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1962700",
-        "title": "Subnautica 2"
+        "title": "Subnautica 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2670630",
-        "title": "Supermarket Simulator"
+        "title": "Supermarket Simulator",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2709570",
-        "title": "Supermarket Together"
+        "title": "Supermarket Together",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1693040",
-        "title": "Synthwave Burnout"
+        "title": "Synthwave Burnout",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1903510",
-        "title": "Technicity: Prologue"
+        "title": "Technicity: Prologue",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "868270",
-        "title": "The Cycle: Frontier"
+        "title": "The Cycle: Frontier",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "489830",
-        "title": "The Elder Scrolls V: Skyrim Special Edition"
+        "title": "The Elder Scrolls V: Skyrim Special Edition",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "242760",
-        "title": "The Forest"
+        "title": "The Forest",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1888930",
-        "title": "The Last of Us™ Part I"
+        "title": "The Last of Us™ Part I",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "780310",
-        "title": "The Riftbreaker"
+        "title": "The Riftbreaker",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1222670",
-        "title": "The Sims™ 4"
+        "title": "The Sims™ 4",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "352720",
-        "title": "The Universim"
+        "title": "The Universim",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "292030",
-        "title": "The Witcher 3: Wild Hunt - Complete Edition"
+        "title": "The Witcher 3: Wild Hunt - Complete Edition",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2221490",
-        "title": "Tom Clancy's The Division 2"
+        "title": "Tom Clancy's The Division 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1142710",
-        "title": "Total War: WARHAMMER III"
+        "title": "Total War: WARHAMMER III",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1881700",
-        "title": "Undawn"
+        "title": "Undawn",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "304930",
-        "title": "Unturned"
+        "title": "Unturned",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "438100",
-        "title": "VRChat"
+        "title": "VRChat",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "431960",
-        "title": "Wallpaper Engine"
+        "title": "Wallpaper Engine",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "236390",
-        "title": "War Thunder"
+        "title": "War Thunder",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "230410",
-        "title": "Warframe"
+        "title": "Warframe",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "489630",
-        "title": "Warhammer 40,000: Gladius - Relics of War"
+        "title": "Warhammer 40,000: Gladius - Relics of War",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "552500",
-        "title": "Warhammer: Vermintide 2"
+        "title": "Warhammer: Vermintide 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "447040",
-        "title": "Watch_Dogs 2"
+        "title": "Watch_Dogs 2",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "582500",
-        "title": "We Were Here"
+        "title": "We Were Here",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1341290",
-        "title": "We Were Here Forever"
+        "title": "We Were Here Forever",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "865360",
-        "title": "We Were Here Together"
+        "title": "We Were Here Together",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "552990",
-        "title": "World of Warships"
+        "title": "World of Warships",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1206560",
-        "title": "WorldBox - God Simulator"
+        "title": "WorldBox - God Simulator",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1705660",
-        "title": "WW2 Rebuilder Playtest"
+        "title": "WW2 Rebuilder Playtest",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "392160",
-        "title": "X4: Foundations"
+        "title": "X4: Foundations",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       }
     ]
   },
   "epic": {
-    "updatedAt": "2026-09-24T08:22:30Z",
+    "updatedAt": "2026-09-24T08:33:52Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
         "title": "20 Minutes Till Dawn",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/e35e2b0c2411423fb6cd97c1dda51e07/20-minutes-till-dawn-1bfkm.png"
       },
       {
         "id": "06b8b80d89c24a28a7e91127fcbd9542",
         "title": "A Game Of Thrones: The Board Game Digital Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/61c1413e3db0423f9ddd4a5edbee717e/a-game-of-thrones-offer-k71ow.jpg"
       },
       {
         "id": "e0fa47ae79514345823bff209ae29451",
         "title": "A Plague Tale: Innocence",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/1bbe911a-6c89-490c-9230-cdd99c3be4b5_2560x1440-1c47786e1130e040a090368a1551a627"
       },
       {
         "id": "Advanced2e37c87cf814V9",
-        "title": "Advanced Flock System – Multithreaded Fish AI and Reactive School Behavior"
-      },
-      {
-        "id": "Advanceda233ff62d942V10",
-        "title": "Advanced Flock System – Multithreaded Fish AI and Reactive School Behavior"
-      },
-      {
-        "id": "Advancedb327ad0c9de0V11",
-        "title": "Advanced Flock System – Multithreaded Fish AI and Reactive School Behavior"
-      },
-      {
-        "id": "Advancedec584d1bcfc9V12",
-        "title": "Advanced Flock System – Multithreaded Fish AI and Reactive School Behavior"
+        "title": "Advanced Flock System – Multithreaded Fish AI and Reactive School Behavior",
+        "kind": "software",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "ad8aff099d2a445599f9797a24e9ff93",
         "title": "Against All Odds",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/a2f2a8a46ff648928b50bcc776bf9857/slaughter-league-offer-9w1er.jpg"
       },
       {
         "id": "8a0173bbe3ac48ac903f5bc7277e7b4e",
         "title": "Alba - A Wildlife Adventure",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/c816cec291404812a9eacc03387dcbca/alba--a-wildlife-adventure-offer-10daj.jpg"
       },
       {
         "id": "8935bb3e1420443a9789fe01758039a5",
         "title": "Alien: Isolation",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/df37f065c3f14eadbf011177396e2966/item/EGS_AlienIsolation_CreativeAssembly_S5-1920x1080-1cf3b9a86adcefeebf903451b1b3fb49.jpg"
       },
       {
         "id": "f59de18db4dc445f88ffeff24d081234",
         "title": "Amnesia: Rebirth",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/b2df9b20c72446d690718965da41c7ad/item/EGS_AmnesiaRebirth_FrictionalGames_S1-2560x1440-7d6c96d8e0ab6bfd7347f6730a7260a1.jpg"
       },
       {
         "id": "aa78f7be2ee64193b6b6444c5fc50157",
         "title": "Among the Sleep - Enhanced Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_AmongtheSleepEnhancedEdition_KrillbiteStudioAS_S1_2560x1440-4a28ad52964cf887474fb3938a59e203"
       },
       {
         "id": "963137e4c29d4c79a81323b8fab03a40",
         "title": "Among Us",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/33956bcb55d4452d8c47e16b94e294bd/item/EGS_AmongUs_Innersloth_S1-2560x1440-0a2daa0c14a0e5bb142a3cd0e347e791.jpg"
       },
       {
         "id": "a96de508ac71471fa05e7c1c695e3b5d",
         "title": "Ancient Enemy",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/138c9362d8ff4c239076bc556e18cdac/item/EGS_AncientEnemy_GreyAlienGames_S1-2560x1440-5611384ea3fab5cf1deb1ca1003578e6.jpg"
       },
       {
         "id": "4f50a062a8c34a259e507260a0311163",
         "title": "Antstream Arcade",
+        "kind": "software",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/7c7e1c220ce74bd8b5df4190ca7c3098/EGS_AntstreamArcadeLifetime_AntstreamArcade_S1_2560x1440-05ad028bf476f372811f925bfcb73805"
       },
       {
         "id": "aafc587fbf654758802c8e41e4fb3255",
         "title": "ARK: Survival Evolved",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/ark/item/EGS_ARKSurvivalEvolved_StudioWildcard_S1-2560x1440-c316afb7c33a9dfb892eef6b99169e43.jpg"
       },
       {
         "id": "Albacore",
         "title": "Assassins Creed Syndicate",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/c9be94273fe244c08032ca493ad87434/item/ACS-STD-2560x1440-d38ba6341ab707a6ec99c4f921d8a9bc-2560x1440-d38ba6341ab707a6ec99c4f921d8a9bc.jpg"
       },
       {
         "id": "Chicken",
         "title": "Auto Chess",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/a0e5531492cd4473955fe0f0c61fd477/auto-chess-1aj3e.jpg"
       },
       {
         "id": "069a60f6b0514a5fbe81b38957c1ddfd",
         "title": "Automachef",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Automachef_HermesInteractive_S3_2560x1440-95402fd34b2e4abf33b3f7ef2e050ca5"
       },
       {
         "id": "dc07b9ead8214591b8df6d2546d2a0e3",
         "title": "Aven Colony",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_AvenColony_MothershipEntertainmentLLC_S3_2560x1440-3276f29fde89052103f0b650420d256b"
       },
       {
         "id": "39700e23ec114d7581aedea23779ce2d",
         "title": "Bendy and the Ink Machine",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/0b1283e5bfa64ad48f3862b79abc20b9/bendy-and-the-ink-machine-1tw1e.png"
       },
       {
         "id": "3a0cae9455844390ad00505a704d641e",
         "title": "Beyond Blue",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/bd9fd28ca1214868922f2ab41d6d3b65/item/EGS_BeyondBlue_ELineMedia_S1-2560x1440-5d205f1273f6b805db82bc525a1432b9.jpg"
       },
       {
         "id": "b22ce34b4ce0408c97a888554447479b",
         "title": "BioShock 2 Remastered",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/304724b675974566b1d7e23af80a1f52/bioshock2-remastered-wide_2560x1440-ae26b684679e5daec480292eade90c5c"
       },
       {
         "id": "f9d6f0530ea140909f8e8a997a7532d7",
         "title": "BioShock Infinite: Complete Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/df2da503f2074f078f8090da3c27ec47/EGS_BioShockInfiniteCompleteEdition_MassMediaGames_S1_2560x1440-bf29199cfe7a76f62965f582571024f6_2560x1440-bf29199cfe7a76f62965f582571024f6"
       },
       {
         "id": "bc2c95c6ff564a16b26644f1d3ac3c55",
         "title": "BioShock Remastered",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/e9e3ee13329f434f94105e6ec63435e0/EGS_BioShockRemastered_MassMediaGames_S1_2560x1440-cb7067c24252c5602497ab42fc488eed"
       },
       {
         "id": "a21fd90517bf428eb7c995a8c3261722",
         "title": "Black Widow: Recharged",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_BlackWidowRecharged_AdamVisionSneakyBox_S1_2560x1440-7c803f4fe9f510f0af76a2099d16aff7"
       },
       {
         "id": "Blinkand0983a9c7a6dbV11",
-        "title": "Blink and Dash VFX"
-      },
-      {
-        "id": "Blinkand0d15cf7b40abV12",
-        "title": "Blink and Dash VFX"
-      },
-      {
-        "id": "Blinkand601c36978ed6V10",
-        "title": "Blink and Dash VFX"
-      },
-      {
-        "id": "Blinkand7516572ae3aaV9",
-        "title": "Blink and Dash VFX"
+        "title": "Blink and Dash VFX",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "7786b355a13b47a6b3915335117cd0b2",
         "title": "Bloons TD 6",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/764b2d57552c436590f50318bd7587f9/bloons-td-6-offer-rh3dk.jpg"
       },
       {
         "id": "Catnip",
         "title": "Borderlands 3",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/catnip/item/BL3Wide_2560x1440-2560x1440-462318f36bee20de4412e111ef72dc62.jpg"
       },
       {
         "id": "0a20ccd3f1b3464da750a4dbf8c80d7c",
         "title": "Breathedge",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/item/egs-breathedge-redruinssoftworks-s1-2560x1440-76fd08cd9c2d-2560x1440-783424f6d4a7f32a0e75fc074f2f928e.jpg"
       },
       {
         "id": "998af0ab527c493baefb8049250c9a0e",
         "title": "Bridge Constructor: The Walking Dead",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/39697c68e46b48d2b75e17bdc417d859/item/EGS_BridgeConstructorTheWalkingDead_ClockStoneSoftware_S1-2560x1440-e75adb8c88714bc59f9ddb4fd000e3ff-2560x1440-e75adb8c88714bc59f9ddb4fd000e3ff.jpg"
       },
       {
         "id": "e8bbb84be35640cda646233152ff3428",
         "title": "Brotato",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/2c5525406ea34caebf391f1f4c8a44a5/brotato-8c0er.png"
       },
       {
         "id": "Tamarind",
         "title": "Brothers - A Tale of Two Sons",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/615659ff36244d258ef6c6a827e32c5d/EGS_BrothersATaleofTwoSons_StarbreezeStudiosAB_S1_2560x1440-a1455bfc980acece23a9fc9824a94e17_2560x1440-a1455bfc980acece23a9fc9824a94e17"
       },
       {
         "id": "8032b75cf0914afa87c78d6914adc165",
         "title": "Car Mechanic Simulator 2018",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/226306adde104c9092247dcd4bfa1499/EGS_CarMechanicSimulator2018_RedDotGames_S1_2560x1440-3489ef1499e64c168fdf4b14926d2c23"
       },
       {
         "id": "8727e9d0693542bda60769dc2ce33c20",
         "title": "Centipede Recharged",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_CentipedeRecharged_AdamVisionSneakyBox_S1_2560x1440-5a7cfd999625576fbc63f0dbc7d27c46"
       },
       {
         "id": "ChatAvate8c8aa18c67dV6",
-        "title": "ChatAvatar Plugin"
+        "title": "ChatAvatar Plugin",
+        "kind": "software",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "Peppermint",
         "title": "Chivalry 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/bd46d4ce259349e5bd8b3ded20274737/EGS_Chivalry2_TornBannerStudios_S1_2560x1440-4248ed263080045c7cb13960711c5f58"
       },
       {
         "id": "ca02598c9a5c4d5491d6431ce8e8d6e7",
         "title": "Chivalry 2 - Public Testing",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/public testing EGS 2560 x 1440 library_2560x1440-ecdbbd73fe497057d156aa4f3980599d"
       },
       {
         "id": "bcbc03d8812a44c18f41cf7d5f849265",
         "title": "Cities Skylines",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/6009be9994c2409099588cde6f3a5ed0/item/EGS_CitiesSkylines_ColossalOrder_S3-2560x1440-14df106873c918591e49bd9604841e83.jpg"
       },
       {
         "id": "Arrowroot",
         "title": "City of Brass",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/fa234e40c4d44dfa84fbcb302fef0233/item/DEVELOPER_CITYOFBRASS-2560x1440-10a228823a6be8c175ccbc1d34249a90.jpg"
       },
       {
         "id": "002b00085aeb49b1a3f3c42e3f918f2f",
         "title": "City of Gangsters",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/148df842b2b14082be6b004f59a2765b/city-of-gangsters-offer-1b4a7.jpg"
       },
       {
         "id": "CitySample_5.6",
-        "title": "City Sample"
-      },
-      {
-        "id": "CitySample_5.7",
-        "title": "City Sample"
-      },
-      {
-        "id": "CitySample_5.8",
-        "title": "City Sample"
+        "title": "City Sample",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "Calluna",
         "title": "Control",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/calluna/Control_Landscape_Image_2560X1440_2560x1440-ec7b2eb03bb70f61d17ed01fa76d95a6"
       },
       {
         "id": "680599141dc14accb456887a2be3ac0c",
         "title": "Cook, Serve, Delicious! 3?!",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/28430738e6554ff0a67d9a93402c4348/cook-serve-delicious-3-offer-1hqnm.jpg"
       },
       {
         "id": "a99769d95d8f400baad1f67ab5dfe508",
         "title": "Core",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/portrait_2560x1440-dd304f1615669d23722f6de52b4c9100"
       },
       {
         "id": "82a78a4dd6ef4eaa892707791b705073",
         "title": "Costume Quest 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/c660f57e1a164930a7196f1fd27ae45a/item/EGS_SequeltotheHalloweenadventurefromDoubleFine_DoubleFine_G1C_00-1920x1080-18c7498869f8989a44fdccdc27fd07a4.jpg"
       },
       {
         "id": "e7d92786abe54fae9319c1ddb94ae271",
         "title": "Cris Tales",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/ef361cdf19514595a8cb0945fb66962e/item/EGS_AgorgeousindielovelettertoclassicJRPGs_DreamsUncorporatedSYCK_S1-2560x1440-8c27d8ecb673f1438c6a4b0da48ff880.jpg"
       },
       {
         "id": "f4f0d39fbb4640e0be62aa91d9eca87d",
         "title": "DAEMON X MACHINA",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/offer/0dc18227b3f14162968d8e7969e454ef/EGS_DAEMONXMACHINA_MarvelousInc_S1_2560x1440-13963d321550a716af2ebdf13806c891"
       },
       {
         "id": "e21be436768f4add87d4935a180b4932",
         "title": "Dark Deity",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/1d1ceda7b1ba4e7893a36a1166ac3e41/dark-deity-offer-13ebi.jpg"
       },
       {
         "id": "36cbf259e631478eaac6ea244e55a709",
         "title": "Darkest Dungeon®",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/21916c391ae4425d8f6cce2382aebd0c/item/EGS_DarkestDungeon_RedHookStudios_S1-2560x1440-2be182928926fc00b92de0af67f12898.jpg"
       },
       {
         "id": "923130ebb546417b9d3115507f752d34",
         "title": "Darkwood",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/f98517036ab5480ebd9c68d7249188b4/darkwood-1mebf.jpg"
       },
       {
         "id": "ee96375fac2f47de978170a24398e581",
         "title": "DARQ",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DARQCompleteEdition_UnfoldGames_S1_2560x1440_2560x1440-15e5dda133bae02a6b9cdf6086ec03f3"
       },
       {
         "id": "Brill",
         "title": "Dead by Daylight",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-18nkz.jpg"
       },
       {
         "id": "Crow",
         "title": "Dead Island 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/236c74b4cd2e4e3099cbe2ebdc9686fd/EGS_DeadIsland2_DeepSilverDambusterStudios_S1_2560x1440-fdc688ce46680914ee3c4a7949ce8a67_2560x1440-fdc688ce46680914ee3c4a7949ce8a67"
       },
       {
         "id": "3206dba3f9b14fd3b01c18f9dcbc864a",
         "title": "DEATHLOOP",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/7dee3ddeac7d427eb35def472be64d9c/EGS_DEATHLOOP_ArkaneStudios_S1_2560x1440-bf6d342edbd2411ccf24e326852fca93"
       },
       {
         "id": "DeepElde26078aea74dcV17",
-        "title": "Deep Elder Caves"
-      },
-      {
-        "id": "DeepEldea49196f1f652V19",
-        "title": "Deep Elder Caves"
-      },
-      {
-        "id": "DeepEldeda8652d6e0c1V18",
-        "title": "Deep Elder Caves"
+        "title": "Deep Elder Caves",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "a434dcb20f0d439b93aaa31dac9e3210",
         "title": "Defense Grid: The Awakening",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/0dabb0f14acf4fef84bd2b2bf3085dfc/item/EGS_DefenseGridTheAwakening_HiddenPathEntertainment_G2_00-1920x1080-7b6cc3b4533d512f4e58800527b1c0a0.jpg"
       },
       {
         "id": "fa5aa7e6c28c4c94aeac239eee700d5f",
         "title": "Deliver At All Costs",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/7f4fad59713248f981e112c626c9d0da/deliver-at-all-costs-npyad.png"
       },
       {
         "id": "b8b37813c5634dbdac61d88ff411135c",
         "title": "DEMON'S TILT",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DEMONSTILT_WIZNWAR_S1_2560x1440_2560x1440-bfaff7f0ea54f6b901b95154e4cc20ab"
       },
       {
         "id": "592c359fb0e0413fb46dee2d24448eb4",
         "title": "Destiny 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/428115def4ca4deea9d69c99c5a5a99e/EN_Bungie_D2Evergreen_OfferLandscape_S1_2560x1440_2560x1440-3dff3d8ed94a40cda03c82f63c97e941"
       },
       {
         "id": "Didithit2b5cf2e933ebV11",
-        "title": "Did it hit - Trace Detection Plugin"
-      },
-      {
-        "id": "Didithit2d7889b28c08V9",
-        "title": "Did it hit - Trace Detection Plugin"
-      },
-      {
-        "id": "Didithit5f9ea3a90826V12",
-        "title": "Did it hit - Trace Detection Plugin"
-      },
-      {
-        "id": "Didithitfd030df5f542V10",
-        "title": "Did it hit - Trace Detection Plugin"
+        "title": "Did it hit - Trace Detection Plugin",
+        "kind": "software",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "6fbbc765b38c4f2ea3d9a9caa620bae7",
         "title": "Discord",
+        "kind": "software",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/egs-discord-discord-s1-2560x1440-834f227d1383_2560x1440-53f5d8dfeecbcb54b5ef5cc2acd8f21f"
       },
       {
         "id": "d2da64bd4c4e422da4b1a88041492a3a",
         "title": "Dishonored - Definitive Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DishonoredDefinitiveEdition_ArkaneStudios_S1_2560x1440-172cba030b0261550b46b6c1224330bf"
       },
       {
         "id": "2fb8273dcf6f41e4899c0c881e047053",
         "title": "Dishonored®: Death of the Outsider™",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/87c84bc5f43d4fe69ad8f3ccde0594b0/EGS_DishonoredDeathoftheOutsider_ArkaneStudios_S1_2560x1440-7384b1e04742564e240e5e92722f82d6"
       },
       {
         "id": "DLCInBluab5d0127ed44V9",
-        "title": "DLC in Blueprints"
-      },
-      {
-        "id": "DLCInBlub24ff2316775V10",
-        "title": "DLC in Blueprints"
-      },
-      {
-        "id": "Steamandb747a5b6060eV11",
-        "title": "DLC in Blueprints"
+        "title": "DLC in Blueprints",
+        "kind": "software",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "82cdbdf05c61474d89c4f9e8a8bf0ea4",
         "title": "DNF Duel",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/98cdc7484b264021ad8a3a6e1e721989/dnf-duel-xp2nm.jpg"
       },
       {
         "id": "818572d480784b9a904e54aab004d1c4",
         "title": "DOOMBLADE",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/df87b66c9f3042ac83311bdc9b442884/doomblade-1luo5.jpg"
       },
       {
         "id": "Dreamsca5d47ad51b755V3",
-        "title": "Dreamscape: Stylized Environment Tower - Stylized Nature Open World Fantasy"
+        "title": "Dreamscape: Stylized Environment Tower - Stylized Nature Open World Fantasy",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "DynamicK0276dfde433cV7",
-        "title": "Dynamic Katana Sword Combat Animations"
-      },
-      {
-        "id": "DynamicK0b45033db67eV4",
-        "title": "Dynamic Katana Sword Combat Animations"
-      },
-      {
-        "id": "DynamicKe22dca655a84V5",
-        "title": "Dynamic Katana Sword Combat Animations"
-      },
-      {
-        "id": "DynamicKe4a4e93db706V8",
-        "title": "Dynamic Katana Sword Combat Animations"
-      },
-      {
-        "id": "DynamicKf86411a30de7V6",
-        "title": "Dynamic Katana Sword Combat Animations"
+        "title": "Dynamic Katana Sword Combat Animations",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "9cd95454d2504b5c9c51a4e6c56ed61b",
-        "title": "Dynamic Katana Sword Combat Animations Format Audience"
+        "title": "Dynamic Katana Sword Combat Animations Format Audience",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "019b8e62a48c4278ac5ca98d7986cd75",
         "title": "Electrician Simulator",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/d0be4faac92a49ebae039c0e0d386e42/electrician-simulator-wzzjd.jpg"
       },
       {
         "id": "af0facaba8e643c1b9850d0683ff56df",
         "title": "Encased",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/48ee23bbc7c34ac09604253e74d17b49/EGS_Encased_DarkCrystalGames_S1_2560x1440_2560x1440-ec64e621befe963c25f91493a9c7fbfa"
       },
       {
         "id": "ff1d9bf6b1304cb9a12b8754afa78ae5",
         "title": "Eternal Threads",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/08813e055af64315b8a55b2e521f4e04/eternal-threads-cn7zm.jpg"
       },
       {
         "id": "da0103e959e54d139d0c109ded3b3672",
         "title": "Europa Universalis IV",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_EuropaUniversalisIV_ParadoxDevelopmentStudioParadoxTinto_S3_2560x1440-aa3002ec221d43dcd7e49f5458e74766"
       },
       {
         "id": "5c147002780d4e6eb292f54edfe73fda",
         "title": "Evil Dead The Game",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/95e09a8c24c44684bca1a6f25aea920c/evilDeadWide_2560x1440-fde136bc32f2b93006b9df0bc421fec0"
       },
       {
         "id": "530f09c9ac834a7bbc98056c69b44471",
         "title": "Evoland Legendary Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/aafde465b31e4bd5a169ff1c8a164a17/evoland-legendary-edition-casqq.png"
       },
       {
         "id": "70f92598b33d42e290e411f07397aeee",
         "title": "Eximius: Seize the Frontline",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/7d154d418a91400db2611275df5837d1/eximius-seize-the-frontline-1psvl.png"
       },
       {
         "id": "0a2d9f6403244d12969e11da6713137b",
         "title": "Fall Guys",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/50118b7f954e450f8823df1614b24e80/FGSS04_KeyArt_OfferImageLandscape_2560x1440_2560x1440-89c8edd4ffe307f5d760f286a28c3404"
       },
       {
         "id": "74034e8449f2470d9f45115f3a49f9aa",
         "title": "Fallout 2: A Post Nuclear Role Playing Game",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/aae22da1fb884fa395b25bc30dd61faf/EGS_Fallout2APostNuclearRolePlayingGame_BethesdaGameStudios_S1_2560x1440-4cfbea54e590ef00cb9c440ac3b3a36c"
       },
       {
         "id": "adeae8bbfc94427db57c7dfecce3f1d4",
         "title": "Fallout 3: Game of the Year Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/fa702d34a37248ba98fb17f680c085e3/EGS_Fallout3GameoftheYearEdition_BethesdaGameStudios_S1_2560x1440-073f5b4cf358f437a052a3c29806efa0"
       },
       {
         "id": "908f75e7f1624819a70c27f543741dcd",
         "title": "Fallout Tactics: Brotherhood of Steel",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/b90be973f6e74975ac1a6ff15dbfd0b3/EGS_FalloutTacticsBrotherhoodofSteel_BethesdaGameStudios_S1_2560x1440-36cd52e1846a29ad9f0cf60dff64d210"
       },
       {
         "id": "f8ef168f3522419caad27d82878e0329",
         "title": "Fallout: A Post Nuclear Role Playing Game",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/2e412cfcbd954e7180930e9784a47e18/EGS_FalloutAPostNuclearRolePlayingGame_BethesdaGameStudios_S1_2560x1440-548598863fb854e957d7706a24c6d381"
       },
       {
         "id": "5daeb974a22a435988892319b3a4f476",
         "title": "Fallout: New Vegas",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/3428aaab2c674c98b3acb789dcfaa548/EGS_FalloutNewVegas_ObsidianEntertainment_S1_2560x1440-7d7f9ea355650139d9ec6cc3cff97f5f"
       },
       {
         "id": "f452ea20ae1b43698209998b56c2cc1c",
         "title": "Farming Simulator 22",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/c93edfff-e8d3-4c0d-855b-03f44f1d9cd3_2560x1440-79fcb25480b4c1faf67a97207b97b7e2"
       },
       {
         "id": "14a38161ad3c45adab18425415b5df3d",
         "title": "Filament",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/5a72e62648d747189d2f5e7abb47444c/filament-offer-1vbz6.jpg"
       },
       {
         "id": "320ba4df8b36412d983ffcffd3e0e8f0",
         "title": "Fort Triumph",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_FortTriumph_CookieByteEntertainment_S1_2560x1440-a0b5e1aeb62c1ee5550d97886ab475a3"
       },
       {
         "id": "Fortnite",
         "title": "Fortnite",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/fn/FNECO_42-10_Tailgate_EGS_Mobile_FeatArt_800x800_800x800-e1770d69b7e148879730b3d63a04b5ac"
       },
       {
         "id": "b2e00fc16632475782a7730d1bd7cb60",
         "title": "Frostpunk",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Frostpunk_11bitstudios_S1_2560x1440-ef2f4d458120af0839dde35b1a022828"
       },
       {
         "id": "5f1c66366b2c4a6496d535d88c56e6cf",
         "title": "Galactic Civilizations III",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/3c52fbac843d4375803187739db84801/item/EGS_GalacticCivilizationsIIICoreEdition_StardockEntertainment_S1-2560x1440-54fd03f3d8441c3f43ad347e7c64da04.jpg"
       },
       {
         "id": "8931f79300d04c5889799bffc8ef70bd",
         "title": "Galactic Civilizations III (Test branch)",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/3c52fbac843d4375803187739db84801/item/gc3_bigart_testedition-2560x1440-a3a1f73ccfa39a1f23f19a2b4030b2ce.jpg"
       },
       {
         "id": "GameAnimationSample_5.6",
-        "title": "Game Animation Sample"
-      },
-      {
-        "id": "GameAnimationSample_5.7",
-        "title": "Game Animation Sample"
-      },
-      {
-        "id": "GameAnimationSample_5.8",
-        "title": "Game Animation Sample"
+        "title": "Game Animation Sample",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "caa2c69bf2dc40b2b883e4cbbf5b0ab2",
         "title": "Geneforge 1: Mutagen",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/308652d49c89470fbf45fe8696b9c1c1/item/egs-geneforge1mutagen-spiderwebsoftware-s1-2560x1440-c8cf464f2b2a-2560x1440-8427125eb377278c6aed260c7900f2b6.jpg"
       },
       {
         "id": "41869934302e4b8cafac2d3c0e7c293d",
         "title": "Genshin Impact",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/99dc46c68ea14324964a856d18dcac5b/genshin-impact-y8r0c.jpg"
       },
       {
         "id": "ea8df71f923649a193ab1c1fded7e1b3",
         "title": "Ghostrunner",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/95d0b9561be1464cb43bd029e94cf526/item/GR_Epic_Landscape_Offer2560x1440-2560x1440-08987c0c3e1701ea6a7217ed5616922d.jpg"
       },
       {
         "id": "cc3213f280df4b428e85b771c09d1891",
         "title": "Ghostrunner 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/708f57aaa04b42ef885be16c8288f0ac/EGS_Ghostrunner2PrePurchase_OneMoreLevel_S1_2560x1440-15845148fae1d0cfd7f3e98c9b3ba6ba"
       },
       {
         "id": "007ff8f4e30845a687e66aa77eb3e965",
         "title": "Ghostwire Tokyo",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/a93cd6111251461c953776a0c4ea4d80/ghostwire_wide_2560x1440-4bc1a83c819408d33e29e61f1a9d66e4"
       },
       {
         "id": "a7270bff1bad44298091dd61c6c7bc00",
         "title": "Gigapocalypse",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/79460c9ca0ac41f1bff52983d803a2d7/gigapocalypse-yieit.jpg"
       },
       {
         "id": "1bcd791d54684eb29ed32ad1c0593d12",
         "title": "Gloomhaven",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/ef2777467a3c49059a076e42fd9b41f0/gloomhaven-offer-9j1in.jpg"
       },
       {
         "id": "Carp",
         "title": "Godfall",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/b6b2ef0cc19a4adaaa1cf6c7ed000dfa/041ae880-9f02-4fdb-b4cf-e28012b24f1b_2560x1440-939e5c2b4d07e6f3524c24f0a8e54ae5"
       },
       {
         "id": "69911638c74449d2a2651241be1b3ad4",
         "title": "Gods Will Fall",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/28d06644e2f84b398c1b7fb96a2b6bd5/item/GWF_Wide-2560x1440-4d531d74db8b3f1aff7bd70386f55402.jpg"
       },
       {
         "id": "fab83c3bf3d449718e042d44369e7fb6",
         "title": "Guacamelee! 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/b05acd7d28d34f6d93a961b0e53ddf0b/guacamelee-2-1a7v4.jpg"
       },
       {
         "id": "25b902f42cf04b17bc8a3db2f7292d58",
         "title": "Guacamelee! Super Turbo Championship Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/7041a1ca4ed543459b95d78887047bd9/guacamelee-stce-n4u61.jpg"
       },
       {
         "id": "b8bdc716e79e461bbf161d99f842f29a",
         "title": "Guild of Dungeoneering",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/4382f8858f7941c0aa128810286d343d/EGS_GuildofDungeoneering_Gambrinous_S1_2560x1440-20318010e3590c4744b856c88ab754e7"
       },
       {
         "id": "ad57f5278b2f4a3b94b18d450f7736ae",
         "title": "Happy Game",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/61e093fe853d48eca37b3b7db72d6cd4/happy-game-eyg8k.jpg"
       },
       {
         "id": "5ade01bafec54a148024665ce978b2a4",
         "title": "Hell is other demons",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Hellisotherdemons_CuddleMonsterGames_S1_2560x1440-b9528f8932eadbc39d5e03db5d798859"
       },
       {
         "id": "3e02273b543f4ff0a1c24d3b534a9ac3",
         "title": "Hell Let Loose",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/0fac3450d5b24587a1d25b5c94676f99/hell-let-loose-qgzam.jpg"
       },
       {
         "id": "HelloNeighborEditor",
         "title": "Hello Mod Kit",
+        "kind": "software",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/helloneighbor/item/helloN_tal-1288x1450-de625b960d1cd22d56d4ce5d47077ee4.png"
       },
       {
         "id": "8836f84a700140bb86103556cd7db0d4",
         "title": "Heroes & Generals WWII",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/c3e63401d6ba410493de31ed69a798a1/EGS_HeroesGeneralsWWII_TLMPartners_S1_2560x1440-d1b416aae0c121727122fd69b2281abc"
       },
       {
         "id": "fa4240e57a3c46b39f169041b7811293",
         "title": "Hogwarts Legacy",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/e97659b501af4e3981d5430dad170911/EGS_HogwartsLegacy_AvalancheSoftware_S1_2560x1440-aa80981dd7c9b3f26b12606974a76dba"
       },
       {
         "id": "098f5323a3994362b6c68503d8cf3d57",
         "title": "Hood Outlaws and Legends",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HoodOutlawsLegends_SumoDigital_S1_2560x1440-8ba1f9be04e3d0c07f9890a0bb8860c7"
       },
       {
         "id": "bb406082b69a47208489d3616b22b5c2",
         "title": "Horizon Chase Turbo",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HorizonChaseTurbo_AQUIRIS_S1_2560x1440-1e6041993df289505da364dfe77dd561"
       },
       {
         "id": "Basil",
         "title": "Human Resource Machine",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/basil/EGS_HumanResourceMachine_TomorrowCorporation_S1_2560x1440-ea1281073444d2f46978ebe18b69f54a"
       },
       {
         "id": "a74e41bbacdc4a4798befb4d55b441de",
         "title": "Hundred Days - Winemaking Simulator",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/4d8b727a49144090b103f6b6ba471e71/item/EGS_HundredDaysWinemakingSimulatorDEMO_BrokenArmsGames_Demo_S1-2560x1440-8f0dd95b6027cd1243361d430b3bf552.jpg"
       },
       {
         "id": "40cb42e38c0b4a14a1bb133eb3291572",
         "title": "Idle Champions of the Forgotten Realms",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/a53f91e55c6840018cb5de0b204f1ad9/idle-champions-of-the-forgotten-realms-6efev.png"
       },
       {
         "id": "29ee5d32f328471590b3bd3ac03ed7d0",
         "title": "In Sound Mind",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_InSoundMind_WeCreateStuff_S1_2560x1440-78d2b96f4772d724e6f003a1e88f4844"
       },
       {
         "id": "Marigold",
         "title": "INSIDE",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/777fed0fb6b64ddaafa2d331a7f122db/inside-1j6mq.png"
       },
       {
         "id": "8b556e7471ac46eda46445d93fa2e73f",
         "title": "Insurmountable",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/dbc7343b22614dab86a493df7ba9803d/insurmountable-offer-xlz0l.jpg"
       },
       {
         "id": "Interact689555c6d0e9V5",
-        "title": "Interactive World"
-      },
-      {
-        "id": "Interactdf18ddb9f091V6",
-        "title": "Interactive World"
+        "title": "Interactive World",
+        "kind": "software",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "82ab0adb6e0b41bea531fcbb0c43cfc7",
         "title": "Iratus",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/e7bee97d9a88475487a71b456a81110f/iratus--lord-of-the-dead-offer-1awii.jpg"
       },
       {
         "id": "ac8f20a7931e4d63a1db4dc1267ec3d1",
         "title": "Ironcast",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/743ba10b-3846-411e-bc6e-d0398a94b9a9_2560x1440-37817b67478acbda7c7f709773cce0db"
       },
       {
         "id": "373a4372c20540aca7fdd880d27fa49a",
         "title": "Jurassic World Evolution",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/047392e91d5e4cfdb19e2767440ab206/item/EGS_JurassicWorldEvolution_FrontierDevelopments_S1-2560x1440-65771d1c16c9c78bfd4764bf0ad54d9a.jpg"
       },
       {
         "id": "70883ed009994efe86d00a5fb8f2b52e",
         "title": "Jurassic World Evolution 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/4817ba5c11504724ba4d5817c8995dff/EGS_JurassicWorldEvolution2_FrontierDevelopments_S1_2560x1440-4103be22950c498c9687d9457d9e0815"
       },
       {
         "id": "06621054d7d24f44bf13e3c31c9ec05d",
         "title": "Just Die Already",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_JustDieAlready_DoubleMoose_S5_1920x1080-ab0a72182a2dbbead850ff3ab81a4f73"
       },
       {
         "id": "7763cb8916654651a50593a813ae7c38",
         "title": "Kao the Kangaroo",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/4a2dcb55ecca496aaaf328f60263bb56/kao-the-kangaroo-offer-1jj1n.jpg"
       },
       {
         "id": "33411619626243f1859d0b7fb5cc5405",
         "title": "KID A MNESIA EXHIBITION",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_KIDAMNESIAEXHIBITION_namethemachinexAGP_S1_2560x1440-01dfad2110f87a6348843484091a2741"
       },
       {
         "id": "Finch",
         "title": "Killing Floor 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/affc33b82405457595a032f00284abd2/EGS_KillingFloor2_TripwireInteractive_S1_2560x1440-644173a0251b030bd2612e8f33b800d5"
       },
       {
         "id": "3223ccf6ac9b4189bd4e144c047d33fb",
         "title": "KillingFloor2Beta",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/affc33b82405457595a032f00284abd2/item/KF2_EGS_BETA_2560x1440-2560x1440-bb6e0327b726b1dcb1cbaae44cde9ddd.jpg"
       },
       {
         "id": "90f9ff166b404502a939ae217ff5109e",
         "title": "Knockout City",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/5bb3d43818ae4188850fe1dbad9d57a5/S8_Epic_Native-YT-Thumbnail_1280x720-d76e479f6319bb968c5af7fa568893de_1280x720-d76e479f6319bb968c5af7fa568893de"
       },
       {
         "id": "7a555b9dd80a4992a6ea33fe3f6b13c8",
         "title": "Lawn Mowing Simulator",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/977ce2dee0fe437d90d2a67adf9917d8/lawn-mowing-simulator-offer-1dk4h.jpg"
       },
       {
         "id": "d50bfa4d5a8c4b0885f846d826df16b8",
         "title": "Legion TD 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/29586d03c1c147569a1991a8616c1413/legion-td-2-12op3.png"
       },
       {
         "id": "806f3b7734764e2498962ce7b55c0dda",
         "title": "LEGO® Builder's Journey",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_LEGOBuildersJourney_LightBrickStudio_S1_2560x1440-6ae618ef78b4fe194f6f349a4fae9101"
       },
       {
         "id": "c390e58246ea4a778acd26473a489b48",
         "title": "LEGO® Star Wars™: The Skywalker Saga",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/9c59efaabb6a48f19b3485d5d9416032/EGS_LEGOStarWarsTheSkywalkerSaga_TTGames_S1_2560x1440_2560x1440-ae89e9c91aec1e461148f93f25b828ed"
       },
       {
         "id": "Hazelnut",
         "title": "Limbo",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/483e8369f22e4c46884b0b8406a33bde/limbo-1oyfn.jpg"
       },
       {
         "id": "f7a0ebb44f93430fb1c4388a395eba96",
         "title": "Loop Hero",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/ff50f85ed609454e80ac46d9496da34d/item/EGS_TheLichhasthrowntheworldintoatimelessloop_FourQuarters_S1-2560x1440-dd971b1a2d79b2984c22a3b7c66c60da.jpg"
       },
       {
         "id": "367b958278744d8c9f44dac339e5bd02",
         "title": "Luftrausers",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/85ddeeec9d4243b3a2d78aab87bfae7f/luftrausers-1ilzh.png"
       },
       {
         "id": "Lyra_5.6",
-        "title": "Lyra Starter Game"
-      },
-      {
-        "id": "Lyra_5.7",
-        "title": "Lyra Starter Game"
-      },
-      {
-        "id": "Lyra_5.8",
-        "title": "Lyra Starter Game"
+        "title": "Lyra Starter Game",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "M5VFXVol9bd13f92b688V3",
-        "title": "M5 VFX Vol2. Fire and Flames(Niagara)"
+        "title": "M5 VFX Vol2. Fire and Flames(Niagara)",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "4b920bb4aebf4586a4f6d823817fe32d",
         "title": "Mages of Mystralia",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/bd12fd574df14846ad24703ca7b1a12b/EGS_MagesofMystralia_BorealysGames_S1_2560x1440-fef9c8f9f6253ed99fb389372df85f88_2560x1440-fef9c8f9f6253ed99fb389372df85f88"
       },
       {
         "id": "Turtle",
         "title": "Maneater",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/turtle/item/Maneater_EGS_Landscape-2560x1440-cf27e86a8daeeb2915a49a8b4c954dbd.png"
       },
       {
         "id": "49550aa9fcd74552ae07c4e9f2c262fe",
         "title": "Marvel's Midnight Suns",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/ea73c08ac633414584e281f838b3a78c/EGS_MarvelsMidnightSuns_FiraxisGames_S1_2560x1440-2f3d597f3afd9e9fd4cea1df3394705e"
       },
       {
         "id": "Petunia",
         "title": "Metro 2033 Redux",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/petunia/metro_2033_epic_tile_2560x1440_2560x1440-c488c769949603c48c185a6f0800e9ba"
       },
       {
         "id": "456f53b28c384f02865874299f956501",
         "title": "Midnight Ghost Hunt",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/964f58c4c2074404bf9c359483ab1a48/EGS_MidnightGhostHunt_VaultedSkyGames_S1_2560x1440-05551e661e36a253a7ecd4ead27b58bc"
       },
       {
         "id": "Petrel",
         "title": "Minit",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/MINIT_S1_2560x1440_2560x1440-ac642c99abfa88c9263ca1e996ed4373"
       },
       {
         "id": "a327fdb31e934dc2984c3b7b45b1ef0b",
         "title": "Monument Valley 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/ec6e53ce95cc432d895dfb1285254bfd/monument-valley-2-tbqx3.jpg"
       },
       {
         "id": "MooresRP79dffed884cfV5",
-        "title": "Moore's RPG Template"
-      },
-      {
-        "id": "MooresRP8cd21c647346V4",
-        "title": "Moore's RPG Template"
-      },
-      {
-        "id": "MooresRPd0c0aa724be0V2",
-        "title": "Moore's RPG Template"
+        "title": "Moore's RPG Template",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "0055e45ce7654c55aade646467349e83",
         "title": "Mortal Shell",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/066a34b0-e1dc-4eee-87f9-42b95d5238c6_2560x1440-60b72b7b1479ebafc188502d441c3ee5"
       },
       {
         "id": "f0ac8218ef7d4b5aabec153e3f193db6",
         "title": "Mortal Shell Tech Beta",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/ff8c96d781824ba1ae62d18d207fc52e/item/MS_TechBeta-1920x1080-9622a04d28c0de2307349f15841d8032.png"
       },
       {
         "id": "ee5c6a659d0f478fba0049fa44429a1f",
         "title": "Mothergunship",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/egs-mothergunship-terribleposturegames-s1-2560x1440-fa17afd9d70b_2560x1440-0202fbd2d45da63b7f072a3076e62e3a"
       },
       {
         "id": "8e29583ae4b44a21883038668f7e301e",
         "title": "Moving Out",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/f919a1262081444fb28f0fdef68d6b14/EGS_MovingOut_SMGStudioDevmGames_S1_2560x1440-86272cbdeb4cc4b39f0760ab720ac585_2560x1440-86272cbdeb4cc4b39f0760ab720ac585"
       },
       {
         "id": "Falcon",
         "title": "Mutant Year Zero Road to Eden",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/4756b80eb0f74d45b77922e54052cfed/item/EGS_THEBEARDEDLADIES_MUTANTYEARZERO_L1_COPSHOT-2560x1440-efe7c4f177baa455d8161d7de4426b20.jpg"
       },
       {
         "id": "Cobra",
         "title": "My Time at Portia",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/cobra/item/MyTimeAtPortia_SecondaryPromo-1032x580-910e41e751b04e8114c1826a5e98c3bc.png"
       },
       {
         "id": "a26f991a5e6c4e9c9572fc200cbea47f",
         "title": "Neon Abyss",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/b0ebefb11a9145488af78f6d2488afff/item/EGS_NeonAbyss_VeewoGames_S1-2560x1440-a5d38c2d5a422a1c7682082d64343e2b.jpg"
       },
       {
         "id": "f38de9fa4c6d43eabac080942cb394a1",
         "title": "Never Alone (Kisima Ingitchuna)",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/b13f6a1e5121469d8a825947b759339d/EGS_NeverAloneKisimaIngitchuna_UpperOneGamesELineMedia_S1_2560x1440-97a1d9c3e47e439ea05e900feaa4a892"
       },
       {
         "id": "87be9bd6707748888bce1f79b025c5dd",
         "title": "Neverwinter",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/53f1e648009a4aa489b803266e819f58/neverwinter-e5hxx.jpeg"
       },
       {
         "id": "cd1b8a6e5b6c47369e2a1e2cf7b7f536",
         "title": "Night in the Woods",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/abd29ccc8c2a4a40a31f27de63cb0603/item/EGS_NightintheWoods_InfiniteFall_S1-2560x1440-640a95478bd710d021b862372cfa3274.jpg"
       },
       {
         "id": "b5e42b0dc2f544a5bbb4080a433b8b71",
         "title": "Nioh: The Complete Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_NiohTheCompleteEdition_KOEITECMOGAMESCOLTD_S1_2560x1440-2a6124e6033545b37abd715282f8ba98"
       },
       {
         "id": "NPCOptim06b444d31a84V10",
-        "title": "NPC Optimizator - automatic optimize NPC for you game"
-      },
-      {
-        "id": "NPCOptim1bf51dd88c85V11",
-        "title": "NPC Optimizator - automatic optimize NPC for you game"
-      },
-      {
-        "id": "NPCOptim9e05c2a4d763V9",
-        "title": "NPC Optimizator - automatic optimize NPC for you game"
+        "title": "NPC Optimizator - automatic optimize NPC for you game",
+        "kind": "software",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "635e08e4b4824baabd24ef3cf941743c",
         "title": "Obduction",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Obduction_CyanInc_S1_2560x1440-c44b609e5dcdc9a145067cfc958ea5dc"
       },
       {
         "id": "7c566548d24343e48151125ced4b494c",
         "title": "Oddworld: New 'n' Tasty",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/56eab841eaab4016b9fedd2350f997b6/item/EGS_OddworldNewnTasty_JustAddWater_S1-2560x1440-ef590ffd342627994efeb96591e63489.jpg"
       },
       {
         "id": "Snapper",
         "title": "Offworld Trading Company",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/e8882546f28e4832af823c646aed232e/item/Diesel_productv2_offworld-trading-company_home_EGS_MohawkGames_OffworldTradingCompany_S1-2560x1440-836395b78496a58a1e2b2ce21f9084a0.jpg"
       },
       {
         "id": "ad10e9b2f38d491499785412149cdc49",
         "title": "Ogu and the Secret Forest",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/ab32c6c664f340f0bb18afcb9b036dae/ogu-and-the-secret-forest-1uk56.png"
       },
       {
         "id": "Potoo",
         "title": "Overcooked! 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/2d94b7b33d7f4d02a8fff6fbf71ac7ab/item/egs-overcooked2-ghosttowngamesandteam17digitalltd-s5-1920x1080-846624431-1920x1080-199f84aa92269c75b85715c0d281e86e.jpg"
       },
       {
         "id": "Antbird",
         "title": "Paladins",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/badb0ee71b474ed591ec43212547cfc8/Paladins_EGS_BaseGame_2560x1440_2560x1440-99d0ed45c628c499ad600a52217b4123"
       },
       {
         "id": "7a2c2b2504844b2c9c96bc08a12da647",
         "title": "Paradigm",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/8e9d84a3fd2b4a3cbe4ac6b89ce9789d/paradigm-offer-eka1w.jpg"
       },
       {
         "id": "b21f394024ef4b75afc2f09c04f0b9f1",
         "title": "Pathfinder Kingmaker - Enhanced Plus Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_PathfinderKingmakerEnhancedPlusEdition_OwlcatGames_S1_2560x1440-c4bf090dc58356921f9cfc3506ac020f"
       },
       {
         "id": "7d6b8784bab94d6cac5fea5ab7bb07a4",
         "title": "PAYDAY 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/14eb3477a6084940b49de5aa73c60f98/payday-2-t9o58.jpg"
       },
       {
         "id": "ab277c0995e945d2b2c50c46883627f1",
         "title": "PC Building Simulator",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/8f5f5eff22f3468fa5551771406fc868/EGS_PCBuildingSimulator_TheIrregularCorporation_S1_2560x1440-053592d64b04adff6734a480dcead96d"
       },
       {
         "id": "6d564ff21f9c45b7b782b7113ad60be8",
         "title": "Pine",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/940a3561-eebf-4c61-8079-69da737bc4b4_2560x1440-9070fe88ec21432ce9234327f3164eb5"
       },
       {
         "id": "52d88e9a6df248da913c8e99f1e4c526",
         "title": "PREY",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Prey_ArkaneStudios_S3_2560x1440-66103490180b56a8a132ae2487e18f2f_2560x1440-66103490180b56a8a132ae2487e18f2f"
       },
       {
         "id": "2283c9da109c4aebba9cdbaf55db8308",
-        "title": "Primitive Characters (Pack) Format Audience"
+        "title": "Primitive Characters (Pack) Format Audience",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "668ffa8fce0847ef9f1c005995cee6df",
         "title": "Prison Architect",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/3ffb410dab2d409aacd39a1abc6fcbba/EGS_PrisonArchitect_DoubleEleven_S1_2560x1440-032995cc5b2eefb8ce2b7b3b446a76ce"
       },
       {
         "id": "31d26cc98fcd4aa9920315f03b55ad0b",
         "title": "Project Winter",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/8b114e51c13344978e0b8693dea6bb74/project-winter-1kokt.png"
       },
       {
         "id": "f8e2163786ea463d81e1374df329fe5b",
         "title": "Prop Sumo",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/a965174568cb492ca3ebbe7a95886261/propsumo-147wn.jpg"
       },
       {
         "id": "Weaver",
         "title": "Rebel Galaxy",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/weaver/ENG_DoubleDamageGames_RebelGalaxy_S1_2560x1440_2560x1440-e2aa8771e78cfeb48b8c915874159470"
       },
       {
         "id": "16a37a0080e3414aafb30f1cc8390f6c",
         "title": "Redout 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/05ae696a3c5f49af91a7433547460c21/EGS_Redout2_34BigThings_S1_2560x1440-15165db53ba987f704968f8c3e4c0f0b"
       },
       {
         "id": "b4670484aae24db492f0b468a98fe361",
         "title": "Relicta",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/d79920221de24b448e24516a7810804e/item/Blades_Mobile_horizontal-480x270-2f443f91cd89da427b8efd6a910fbe04.jpg"
       },
       {
         "id": "b4a0d2d15acb4db894a599b810297543",
         "title": "Remnant: From the Ashes",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/663e521f2a444199be58152fd93fa66e/offer/EGS_RemnantFromtheAshes_GunfireGames_S1-2560x1440-7263019d76982af81d67ed2c1c0e7c7b.jpg"
       },
       {
         "id": "Renovati532b19f97062V4",
-        "title": "Renovation simulator"
+        "title": "Renovation simulator",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "130285de16cc429abc603eaf95b8787b",
         "title": "Ring of Pain",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/b9c7474c6bdf4e9ab8ca5a5da60059d4/EGS_RingofPain_SimonBoxerTwiceDifferent_S1_2560x1440-a913b4a4f4ad707131f0d3a681847afa_2560x1440-a913b4a4f4ad707131f0d3a681847afa"
       },
       {
         "id": "f7cc1c999ac146f39b356f53e3489514",
         "title": "Rise of the Tomb Raider: 20 Year Celebration",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_RiseoftheTombRaider20YearCelebration_CrystalDynamics_S1_2560x1440-3bd5b3c4c11d46cc2dcb06bdf2f77627"
       },
       {
         "id": "b7c6482e93cb4cd3a31d8e758c394e19",
         "title": "Rising Hell",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/8f7e0537b57d4a14bdd11a3e719973a1/rising-hell-offer-gk6u6.jpg"
       },
       {
         "id": "Tern",
         "title": "Rising Storm 2: Vietnam",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/3542a1df211e492bb2abecb7c734f7f9/item/EGS_RisingStorm2Vietnam_AntimatterGamesTripwireInteractive_S3-2560x1440-e08edd93cb71bf15b50a74f3de2d17b0.jpg"
       },
       {
         "id": "087f062df2574091a67fe614a6ec15a4",
         "title": "Riverbond",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/9d351e3efed04d1daa1fd6d7f8934f68/riverbond-offer-4anbp.jpg"
       },
       {
         "id": "Sugar",
         "title": "Rocket League®",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S1_2560x1440-210388d6fcf24369aa34461f9544c0b1"
       },
       {
         "id": "Pewee",
         "title": "Rogue Company",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/933ada2ec45e4184ae840d64c99e0ba9/RoCo_EGS_3_1920x1080-3c7184891bf4c43ad9ea14cc824e6c7d"
       },
       {
         "id": "01f1e8046e9e433db190a611a0411579",
         "title": "Rogue Legacy",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/66ce501aea0a424cb80cfe5f31f80f03/EGS_RogueLegacy_CellarDoorGames_S1_2560x1440-d135ac25ec63d39ffbc35415712c385a_2560x1440-d135ac25ec63d39ffbc35415712c385a"
       },
       {
         "id": "d68f964c809145b682e1d768aa126f31",
-        "title": "RPG in a Box"
+        "title": "RPG in a Box",
+        "kind": "software",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "85efb11aaeec4239989113f9a598b372",
         "title": "Runbow",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/c4dde13fcdea4aaa84dabb303006a870/runbow-offer-v8wvy.png"
       },
       {
         "id": "9b48cbb1a0cf4a73b87ccbf4cde04b26",
         "title": "Sable",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Sable_Shedworks_S1_2560x1440_2560x1440-64ec090eed8335263a9083de0eb7f5cf"
       },
       {
         "id": "Cormorant",
         "title": "Saints Row",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_SaintsRow_DeepSilverVolition_S1_2560x1440-1ba560d3f228fe5c7341777a6ac9abb7"
       },
       {
         "id": "0d35a1d0eade40c5ac0bea5eed8b5338",
         "title": "Saints Row IV Re-Elected",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/151e56468b5049628653dedab7c88007/EGS_SaintsRowIVReElected_DeepSilverVolition_S1_2560x1440-77ce5721cb572e6ce6f37537edcb4fb1"
       },
       {
         "id": "Loon",
         "title": "Saints Row The Third Remastered",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/3928fd8975b2437d894bbc5cd21de9a0/item/SRTT_Wide-1060x596-d7d3c2e363a215dff5a954cb82131747.jpg"
       },
       {
         "id": "499f085e442048aa854d6250b21c42fb",
         "title": "Salt and Sanctuary",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/79d9bff700bb46a790b21e8c73b34899/EGS_SaltandSanctuary_SkaStudiosLLCDevouredStudiosLLC_S1_2560x1440-4cc7404bc7c31329b8e80a320ebf5122"
       },
       {
         "id": "CrabEA",
         "title": "Satisfactory",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/crab/Epic_Satisfactory_Offer_Landscape_Image_2560x1440_2560x1440-0c097ac2e8054974b62119443fbd15c1"
       },
       {
         "id": "CrabDedicatedServer",
         "title": "Satisfactory Dedicated Server",
+        "kind": "unknown",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/crab/Epic_DEDICATEDSERVERS_Landscape_2560x1440_with_10_2560x1440-0cd5815fab95fa0e5c02e3a2df1e3f33"
       },
       {
         "id": "c509233193024c5f8124467d3aa36199",
         "title": "Satisfactory Dedicated Server - Experimental",
+        "kind": "unknown",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/crab/Epic_DEDICATEDSERVERS_Landscape_2560x1440_with_10_2560x1440-0cd5815fab95fa0e5c02e3a2df1e3f33"
       },
       {
         "id": "CrabTest",
         "title": "Satisfactory Experimental",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/crab/Satisfactory_U8_Epic_2560x1440_Logo_2560x1440-7c2149c828336352a3e79541fa5de064"
       },
       {
         "id": "Cobia",
         "title": "Saturnalia",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/c749cd78da34408d8434a46271f4bb79/EpicCoverLandscapeSaturnalia_2560x1440-54891524f6479f44cef864c4b48a2a30"
       },
       {
         "id": "bf363d9625a5406f904d925f3e613327",
         "title": "Scourgebringer",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/c03a3687567a4cf3910ea5ec7279664e/item/d536fc52-f970-4df6-85ee-8460d24f513e-2560x1440-53ed06898f05cb70a58dcff472a21a25.jpg"
       },
       {
         "id": "18a85afedeac4ea885b27fee3e0c81db",
         "title": "Second Extinction™",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/EGS_SecondExtinction_SystemicReaction_S1_2560x1440-4a9d265c505b45c75b65916c366f5fca"
       },
       {
         "id": "7179f095efcc4f92a950a6d9dbd9c602",
         "title": "Severed Steel",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/5db7394e65044dd1bb083ee983e2b3a5/EGS_SeveredSteel_GreylockStudio_S1_2560x1440-7563487f2c1135a79b72a4d2c198d544"
       },
       {
         "id": "890d9cf396d04922a1559333df419fed",
         "title": "Shadow of the Tomb Raider: Definitive Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/4b5461ca8d1c488787b5200b420de066/egs-shadowofthetombraiderdefinitiveedition-eidosmontralcrystaldynamicsnixxessoftware-s1-2560x1440-eca6506e95a1_2560x1440-193582a5fd76a593804e0171d6395cf4"
       },
       {
         "id": "Fangtooth",
         "title": "Shadow Tactics: Blades of the Shogun",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/2f215955790d456b80c291bc2feaf7f7/item/EGS_MimimiGames_ShadowTacticsBladesoftheShogun_S3-1360x766-216c2e04b177c6b7252f1f535edef030.jpg"
       },
       {
         "id": "b9af0845f9d64b0d9e851d9811141f67",
         "title": "Sheltered",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Sheltered_Unicube_S3_2560x1440-c24e2bf4318dc189a15e7f659c1377b0"
       },
       {
         "id": "Pepper",
         "title": "Shenmue 3",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/5d582c08e31a43128a61093a2c3ff7f0/shenmue3_epic_tile_2560x1440_2560x1440-eacc114ddc68f89a33fc4a76d58f040f"
       },
       {
         "id": "329064225aaf4df29c4658f141173905",
         "title": "Shop Titans",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/8ae16e8a55fa4f3897fa726a90dbd750/shop-titans-offer-1wny0.jpg"
       },
       {
         "id": "Kinglet",
         "title": "Sid Meier's Civilization VI",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/cd14dcaa4f3443f19f7169a980559c62/item/EGS_SidMeiersCivilizationVI_FiraxisGames_S5-1360x766-43ec615712394b3c4acbe77bce54975c.jpg"
       },
       {
         "id": "d36336f190094951873ed6138ac208d8",
         "title": "Sifu",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/b7b42e2078524ab386a8b2a9856ef557/EGS_SIFUStandardEdition_Sloclap_G1A_03_1920x1080-1df3ab45b895adfee06b011673df20aa_1920x1080-1df3ab45b895adfee06b011673df20aa"
       },
       {
         "id": "c1c537c7cc7b424c936ea37ca521e56d",
-        "title": "Skeleton Knight Modular Format Audience"
+        "title": "Skeleton Knight Modular Format Audience",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "d8a4c98b5020483881eb7f0c3fc4cea3",
         "title": "Slain: Back From Hell",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/c314efd052d048908cbd57ce7bf9e28a/slain-10sjj.jpg"
       },
       {
         "id": "Greenbul",
         "title": "SMITE",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/076207fa2b5c4803a636af606c3c28b7/SMITE-Hero-1920x1080_jan25_1920x1080-8298c71910dfb6659d18046770ac29a8"
       },
       {
         "id": "f3a0b50da2dd4226b8308c7e5fa1fbb6",
         "title": "Songs of Silence",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/717e784a701e49bba02e27f7774e966a/songs-of-silence-acb7y.jpg"
       },
       {
         "id": "818447bb519b46d48d365d5753362796",
         "title": "Sonic Mania",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_SonicMania_Lab42_S5-1360x765-31b5379f91e2451e57e0273339bf68b8_1360x765-31b5379f91e2451e57e0273339bf68b8"
       },
       {
         "id": "3da18aede8e64def832464ecbbfa3d0a",
         "title": "Space Punks",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/0ded1556336546bf849c9d28878ec86c/EGS_SpacePunks_FlyingWildHog_S1_2560x1440-f1836394c24ad706d84b41236b96dc7c"
       },
       {
         "id": "6ffe878bb1ce490ba6d3a359a1f88df2",
         "title": "Speed Brawl",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/3bc192d2-c308-49ff-b381-a4833b954cec_2560x1440-5b2cec10a59f7594e863eff0a51ecc37"
       },
       {
         "id": "d2d941e5c1ec44ae9e87e9e7cdddf1dd",
         "title": "Spirit of the North",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/177dc72233934ac487abd83b01587086/spirit-of-the-north-offer-wih1t.jpg"
       },
       {
         "id": "bobcat",
         "title": "Star Wars Squadrons",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/bc2b0372eaa448469cb9a769f27acea1/item/MAV_EPIC_LANDSCAPE-Product-Image_2560x1440-2560x1440-f09b204b4eb17f85e997a247901b8d81-2560x1440-f09b204b4eb17f85e997a247901b8d81.jpg"
       },
       {
         "id": "02107cba432c4551a027d25d597adc49",
         "title": "Stranded Deep",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_StrandedDeep_BeamTeamGames_S1_2560x1440-5011dfe67d355a332f3b50472fa69955"
       },
       {
         "id": "272d51db75be476f9ad60c0e7fc24470",
         "title": "Stubbs the Zombie in Rebel Without a Pulse",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_StubbstheZombieinRebelWithoutaPulse_Aspyr_S1_2560x1440-84943e5f6ce5f32aeaa690b79efc14e1"
       },
       {
         "id": "Stylizedb0683a48ca4aV2",
-        "title": "Stylized Dynamic Sky & Weather System"
+        "title": "Stylized Dynamic Sky & Weather System",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "Stylizedb0876115cea0V12",
-        "title": "Stylized Nature Pack"
+        "title": "Stylized Nature Pack",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "639c5116ad7d4f31856c34aacda45f2d",
         "title": "Styx: Master of Shadows",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/45709e0bb07e43bd9e652991779d4dfa/styx-master-of-shadows-hnki8.jpg"
       },
       {
         "id": "e68e9229fd4a4a6c9a76038705ba6ae3",
         "title": "Styx: Shards of Darkness - Deluxe Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/6ccdf6a1518741f0842177137adc00b0/styx-shards-of-darkness-c752r.jpg"
       },
       {
         "id": "2fb0eae795104757977dfe8f93b5e593",
         "title": "Submerged Hidden Depths",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/5409bde4ade34d51a33baabe6ad10234/submerged-hidden-depths-offer-1ysy0.jpg"
       },
       {
         "id": "860368784274471e8d4082df2a4dc120",
         "title": "Sunderfolk",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/71c943751e9642c3918ba6b20ebe4b13/sunderfolk-17uyu.png"
       },
       {
         "id": "1b037ad2c1e94e7e996b4a16f741025a",
         "title": "Supraland",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Supraland_SupraGames_S5_1920x1080-3d9ef81461113b21916c011f1d131469"
       },
       {
         "id": "0dac2fd1f95240bda133d1f2fb27c705",
         "title": "Tales of the Neon Sea",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/37e6d41ce91e44988190c2f10108d4e9/item/Hero Art_TotNS_031821-1920x1080-3386e5a6eebd354045f16499840d1271.jpg"
       },
       {
         "id": "ecfdc10170eb49b6b61cf16b3aa36d56",
         "title": "Tannenberg",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Tannenberg_M2HBlackmillGames_S1_2560x1440-ac40112254aee2c0d5b1f9e488c41a11"
       },
       {
         "id": "Batfish",
         "title": "Telltale Batman Season 1",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/f2bfff793b224f6190a394f461c9a4b8/item/TheTelltaleBatmanShadowsEdition-2560x1440-1ababb36a948b5c732ab85a330787e85.jpg"
       },
       {
         "id": "BatfishS2",
         "title": "Telltale Batman Season 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/f2bfff793b224f6190a394f461c9a4b8/item/EGS_LCGEntertainmentInc_TheTelltaleBatmanShadowsEdition_S3-1360x765-3889838769b884f97d33546bc15b10df.jpg"
       },
       {
         "id": "266d978cc221471787b597695cbb9a75",
         "title": "Tharsis",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Tharsis_ChoiceProvisions_S1_2560x1440-f2bafbbf1629a48af6e394261b2dc3e7"
       },
       {
         "id": "3ce838d7a25c49368a22918b56e88f2a",
         "title": "The Battle of Polytopia",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/b312dfc1b33d459daa55a67d53a56223/the-battle-of-polytopia-1y082.png"
       },
       {
         "id": "f00b5acabb0f49a7b49e8350d1cd0de0",
         "title": "The Captain",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_TheCaptain_Sysiacgames_S1_2560x1440-b58c40c02e67f0e2317a62c4b51d5c9f"
       },
       {
         "id": "5cd54ad0ead447738bd9552b3d2a105b",
         "title": "The Drone Racing League Simulator",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_TheDroneRacingLeagueSimulator_TheDroneRacingLeague_S1_2560x1440-39456325d9a12441a58f5385b5719224"
       },
       {
         "id": "Peony",
         "title": "The Escapists",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/61bc780f42f84fe29e6dfee957ab82de/item/TheEscapists_PDP Promo-2560x1440-03fae261503534b25a35bf41d4949e02.jpg"
       },
       {
         "id": "591e049d72b349daa64784a171379357",
         "title": "The Evil Within",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/d602fd70876141ba9bf4d54809c423d1/EGS_TheEvilWithin_TangoGameworks_S1_2560x1440-16b7f817d8803517fbecbf3f175ac997"
       },
       {
         "id": "ed93b18355a84230938c705121c63661",
         "title": "The Long Dark",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/58dfcd1952ee48c1a1fa31c6ace5fe3d/item/EGS_TheLongDark_HinterlandStudioInc_S5-1920x1080-fcfdd407ac1990bec320b49101862585.jpg"
       },
       {
         "id": "8e4f8dc250364e30aef276555bba1734",
         "title": "The Lord of The Rings: Return to Moria™",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tcss2.jpg"
       },
       {
         "id": "Rosemallow",
         "title": "The Outer Worlds",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/rosemallow/item/Diesel_productv2_the-outer-worlds_home_ANC_Banner_TOW_NoLogo_1920x1080-(1)-1920x1080-ebae8a5f2e33aeda17905df7c4d61ae65d6c72da-1920x1080-d71ee9b36e9b95adace99e39cc33e557.jpg"
       },
       {
         "id": "cb3bf7ba89574a66ae3b795e039d4dbc",
         "title": "The Outer Worlds: Spacer's Choice Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/dc61166eea95474e912953b163791d42/EGS_TheOuterWorldsSpacersChoiceEdition_ObsidianEntertainment_S1_2560x1440-dd9211a8277a2392a9dd5b108858ba33"
       },
       {
         "id": "7b8fb449c8d3404ba7eda9cd4da1401b",
         "title": "The Spectrum Retreat",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/52b99d72-9223-4524-ab74-240ae808c489_2560x1440-d583c45997a46d39e1a31525ae883b84"
       },
       {
         "id": "ee9aba2358a7484da67fef34106bb13a",
         "title": "The Stone of Madness",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/8de621e8d91b473f892472024035dc22/the-stone-of-madness-11a59.jpg"
       },
       {
         "id": "9447b19ffb6a47e1a654b75178779a28",
         "title": "The Vanishing of Ethan Carter",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/f401d7e187e349138380d22e991b29ca/EGS_TheVanishingofEthanCarter_TheAstronauts_S1_2560x1440-c0166f0ef48b7f939393e5cedc973ac2_2560x1440-c0166f0ef48b7f939393e5cedc973ac2"
       },
       {
         "id": "58a6b5e81c644fba8bab2e05137429d9",
         "title": "The Vanishing of Ethan Carter Redux",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/f401d7e187e349138380d22e991b29ca/EGS_TheVanishingofEthanCarter_TheAstronauts_S1_2560x1440-c0166f0ef48b7f939393e5cedc973ac2_2560x1440-c0166f0ef48b7f939393e5cedc973ac2"
       },
       {
         "id": "4f0c34d469bb47b2bcf5b377f47ccfe3",
         "title": "theHunter: Call of the Wild™",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/c7f9346e3db148fca6dd63e9dd8451bd/EGS_theHunterCalloftheWild_ExpansiveWorlds_S1_2560x1440_2560x1440-69120885e0b3acfb87f34ac0bad68ec6"
       },
       {
         "id": "2d9d7555ccdd4ceaa1b60e501ba0bacd",
         "title": "Them's Fightin' Herds",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/offer/a567c32599bf4d4fb609e424f3691b39/EGS_ThemsFightinHerds_Mane6Inc_S1_2560x1440-da3a940faafe30c602d3966d2c295825"
       },
       {
         "id": "4123bcce398b4b1d8b9ef878f81055d1",
         "title": "Thief",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/44b12bc6a7f045a3bf313574c344dfd7/thief-nny72.png"
       },
       {
         "id": "9e296d276ad447108f12c654c3341d59",
         "title": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/d98b6c292e224a59b359372f4f5152df/EGS_TinyTinasAssaultonDragonKeepAWonderlandsOneshotAdventure_GearboxSoftwareStrayKiteStudios_S3Wide_2560x1440-e156d1f0c97520ac901d73c7582bbd9d"
       },
       {
         "id": "eb6ddfb245f647e2bb6902f52f38a535",
         "title": "Tiny Tina's Wonderlands",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/c37115918ccc4969a57b6b1bdc28af4a/TTW_wide_2560x1440-698fba08f2bcd7cb08fc6cf1829b02d1"
       },
       {
         "id": "37d84dd0b65a40e9b0719141b987a216",
         "title": "ToeJam & Earl: Back in the Groove!",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/428b51d4cd29482889841fa188b362b4/toejam-and-earl-back-in-the-groove-offer-kdma7.png"
       },
       {
         "id": "d6264d56f5ba434e91d4b0a0b056c83a",
         "title": "Tomb Raider GAME OF THE YEAR EDITION",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/caca23a0954f4c1aba1fdd7e277b81e2/EGS_TombRaiderGAMEOFTHEYEAREDITION_CrystalDynamics_S1_2560x1440-0c41fcc8db62992e8d098d304b2277f8_2560x1440-0c41fcc8db62992e8d098d304b2277f8"
       },
       {
         "id": "8e425d507bd6473dbb927f0fea8ef4f6",
         "title": "Torchlight II",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/8432511ef63b489b843d21ff486a0355/item/EGS_TorchlightII_RunicGames_S3-2560x1440-d8785a9ad9572e68e45d5a9471e4b81b.jpg"
       },
       {
         "id": "30d3a88d29e24716ac5a4720042289f7",
         "title": "Total War: WARHAMMER",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_TotalWarWARHAMMER_CREATIVEASSEMBLY_S5_1920x1080-d80e36258e890a67e4e514ecc425ec6e"
       },
       {
         "id": "a019487eae90442baa6e2cc84a61447e",
         "title": "Total War: WARHAMMER II",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_TotalWarWARHAMMERII_CREATIVEASSEMBLY_S1_2560x1440-787d1d3d23a985419885f094cbefdfd3"
       },
       {
         "id": "37a618f3d198405ead9c48c7749b52e5",
         "title": "Total War: WARHAMMER III",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/dda64c2956b54f1ba3cd97f6aaee775f/item/EGS_TotalWarWARHAMMERIII_CreativeAssembly_S1-2560x1440-2560x1440-f2b9adc02c4aa5d6c61f03cb4b1ec9c2.jpg"
       },
       {
         "id": "Pigeon",
         "title": "Trackmania Starter Access",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/TM_StarterEd_Store_Landscape_2560x1440_2560x1440-0208bfc8d824b707130420b61249d4f5"
       },
       {
         "id": "dd75b5c168d546cc869582c0389f0a1d",
         "title": "Train Sim World 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/home_2560x1440-0bc89f2c71c91b711b22eb7d634834bd"
       },
       {
         "id": "TriplexHd2547a773113V2",
-        "title": "Triplex House Villa"
+        "title": "Triplex House Villa",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "e4867c438f854da5a1d1f8c8609cac22",
         "title": "Tropico 5",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/7015c51a49be4592b5ba3ae2577723c5/item/EGS_Tropico5_HaemimontGames_S5-1920x1080-bc07360268fcba08b9368670d7d8a40b.jpg"
       },
       {
         "id": "c2f8a766b83340b7a6a3fdcf29f59caf",
-        "title": "Underwater World / 70 Assets Format Audience"
+        "title": "Underwater World / 70 Assets Format Audience",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "eee2a5f53e9e47ef84899d0610ed9c0e",
-        "title": "Underwater World / 70 Assets Format Audience"
+        "title": "Underwater World / 70 Assets Format Audience",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "76233c0af0a441c7bd541e7d7ab3cde1",
         "title": "Unrailed",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/dc57439aac3c481aaa52ccb443a4d01a/unrailed-1s7bg.jpg"
       },
       {
         "id": "602eb4abc8764c87b7f2607a1ef8c18e",
         "title": "VALORANT",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-b9cb8b7e2f5b42f99f5df1b7640e578d"
       },
       {
         "id": "1136763135c0482cbbb4b2d45e978156",
         "title": "Vampire Survivors",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/6091b3f3943e4a7aa25fcac13de15cd1/vampire-survivors-1ijme.jpg"
       },
       {
         "id": "Nautilus",
         "title": "Vampyr",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/nautilus/item/Vampyr_Game_Icon-400x400-eada7e669930d88e46b14d272a11095e.png"
       },
       {
         "id": "38c0129b680e4843b4807b98bad67027",
         "title": "Verdun",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/e4a2a414d46849f49a35c0f80df2903a/EGS_Verdun_BlackmillGamesM2H_S1_2560x1440-1519c10619790e4094cbbc62faa50fcb"
       },
       {
         "id": "595e35287b824902a2f7107139603732",
         "title": "Void Bastards",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_VoidBastards_BlueManchu_S1_2560x1440-6ffb5f547e5434d115cc6de7d13b1bc6"
       },
       {
         "id": "8471bbbefe8d410fbee5483d860302fc",
         "title": "Warface: Clutch",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/80e804312c2149c69a75aee703e85a9a/EGS_WarfaceClutch_MYGAMES_S1_2560x1440-1fbdeb85ac0fcf0d8802bbdc61f3d1be"
       },
       {
         "id": "398965b67f314d31b0683b8ea11c93a4",
         "title": "Warframe",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/9cd9aa0477474023a6cdf18823e481c6/warframe-at3za.jpg"
       },
       {
         "id": "dd95e8c01b4b456f8ecbf18376a49c94",
         "title": "Warhammer 40,000: Mechanicus - Standard Edition",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/d26f2f9ea65c462dbd39040ae8389d36/warhammer-mechanicus-offer-g5juh.jpg"
       },
       {
         "id": "4f272a49a39742b795d63e1f483a7c7d",
         "title": "while True: learn()",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_whileTruelearn_Ludenio_S1_2560x1440-82ec741d970d9f66fa4aa5129313f73b"
       },
       {
         "id": "e9c18eae78964527853bfa2053d346e2",
         "title": "Wildcat Gun Machine",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/d92266115f8d4d5680562d993435daa5/wildcat-gun-machine-offer-1y94l.jpg"
       },
       {
         "id": "a95bf4df6627431ca5baff8173c59635",
         "title": "Windbound",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/a47cb01bef994749ac731aa3366796e8/item/Wishlist_2560x1440-2560x1140-0942f3c760dc6c7862b938975f1c2c9e-2560x1140-0942f3c760dc6c7862b938975f1c2c9e.jpg"
       },
       {
         "id": "a64dcf9b711a4a60a3c0b6f052dfc7da",
         "title": "Wolfenstein: The New Order",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_WolfensteinTheNewOrder_MachineGames_S1_2560x1440-3a75b2c45a2a12e882feb2e2ff180b0c"
       },
       {
         "id": "4c30fe9841264abfb120b581d061a8fd",
         "title": "Wonder Boy The Dragons Trap",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/e488839155be4d05bb14f6e05129daef/wonder-boy-the-dragons-trap-offer-ff7to.jpg"
       },
       {
         "id": "Wombat",
         "title": "World War Z",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/wombat/landscapewwz-aftermath-1248x702_1248x702-43415cb8226261eba181a914f0bc85bc"
       },
       {
         "id": "3be3c4d681bc46b3b8b26c5df3ae0a18",
         "title": "XCOM 2",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/item/7ec453d446194b8f8afe82aaa9561211/XCOM2_Set_Up_Assets_2560x1440_2560x1440-24cabf9f3c4eedd602a340a4658b2278"
       },
       {
         "id": "3acb0920074446e8baaa4c249200d892",
         "title": "Yoku's Island Express",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_YokusIslandExpress_VillaGorilla_S3_2560x1440-8af00b59559d95cb80e7167c8fa696b7"
       },
       {
         "id": "ce2a78bf70b646e9b9f57c46dac99184",
         "title": "Yooka-Laylee",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_YookaLaylee_Playtonic_S3_2560x1440-779ed9403879e74fe1992fefeec9b0d5"
       },
       {
         "id": "Duckbill",
         "title": "Yooka-Laylee and the Impossible Lair",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/fa11862b1cfd42e3b3c6395af46efe3e/item/EGS_PlaytonicGamesLtd_YookaLayleeandtheImpossibleLair_S3-1360x766-8faccccfe9ca390483f8a177b7fccbd4.jpg"
       },
       {
         "id": "0074f9a4082041f1869d9d6f26b99521",
         "title": "Zero Hour",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/24397552e51f404d8f89e93ed383d35a/zero-hour-1eeru.png"
       }
     ]
