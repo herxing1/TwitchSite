@@ -90,15 +90,23 @@
   if (page === 'accueil') { renderHome(); setInterval(renderHome, 60000); }
   if (page === 'calendrier' || page === 'evenements') { renderSchedule(); setInterval(renderSchedule, 60000); }
   if (page === 'informations') {
-    $('.page-heading .lead').textContent = content.site.description;
+    $('.page-heading .lead').textContent = 'Un peu de moi, beaucoup de jeux… et le matériel derrière les lives.';
     const panels = document.querySelectorAll('.info-grid .panel');
-    panels[0].querySelector('h2').textContent = content.site.name;
+    panels[0].querySelector('h2').textContent = 'Moi et ma chaîne';
     panels[0].querySelector('.multiline').textContent = content.site.about || 'La présentation de la chaîne arrive bientôt. En attendant, retrouve le programme et les prochains rendez-vous.';
     const links = [...content.site.links];
     if (content.site.twitch) links.unshift({ label: 'Twitch', url: 'https://www.twitch.tv/' + content.site.twitch });
     panels[1].replaceChildren(el('p', 'ON GARDE LE CONTACT', 'eyebrow'), el('h2', 'Les liens utiles'));
     for (const item of links) { const a = el('a', undefined, 'social-row'); a.href = item.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.append(el('span', item.label), el('span', '↗')); panels[1].append(a); }
     if (!links.length) panels[1].append(el('p', 'Les liens de la chaîne seront ajoutés ici.'));
+    for (const item of [{label:'Le programme des lives',url:'calendrier/index.html'}, {label:'Ma bibliothèque de jeux',url:'jeux/index.html'}, {label:'Proposer une idée',url:'suggestions/index.html'}]) {
+      const a = el('a', undefined, 'social-row'); a.href = href(item.url); a.append(el('span', item.label), el('span','↗')); panels[1].append(a);
+    }
+    const setup = $('#setup-list');
+    for (const item of content.site.setup || []) {
+      const row = el('div', undefined, 'setup-item'); row.append(el('dt',item.label),el('dd',item.value)); setup.append(row);
+    }
+    $('#setup-panel').hidden = !(content.site.setup || []).length;
   }
 
   let games = [], selectedPlatform = 'all';
