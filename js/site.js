@@ -226,13 +226,27 @@
       <textarea id="message" name="message" rows="6" minlength="10" maxlength="1500" required placeholder="Raconte ton idée…" aria-describedby="message-help"></textarea>
       <div class="field-note"><span id="message-help">10 à 1 500 caractères.</span><span id="character-count">0 / 1 500</span></div>
       <div class="honeypot" aria-hidden="true"><label for="website">Ne pas remplir</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+      <p class="privacy-note" id="suggestion-privacy">Je reçois ton idée et ton pseudo facultatif en privé sur Discord pour préparer mes lives, sur la base de mon intérêt légitime à échanger avec ma communauté. Je prévois de les conserver six mois maximum et je dois les supprimer manuellement. Évite toute donnée sensible ou concernant une autre personne. Pour tes droits : <a href="mailto:herxingapp@gmail.com">herxingapp@gmail.com</a>. <a href="${href('confidentialite/index.html')}">Données, destinataires et droits</a>.</p>
+      <div id="antibot-activation">
+        <p class="privacy-note">Pour envoyer ici, active le contrôle antibot Cloudflare Turnstile. Il analyse ton adresse IP et des signaux du navigateur pour bloquer les robots et améliorer sa détection. Tu peux aussi envoyer ton idée par e-mail sans activer ce contrôle. <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener noreferrer">Informations de Cloudflare</a>.</p>
+        <div class="privacy-actions"><button class="button secondary" id="activate-antibot" type="button">Activer la vérification</button><a class="button secondary" href="mailto:herxingapp@gmail.com">Utiliser l’e-mail</a></div>
+      </div>
       <div class="cf-turnstile" data-action="suggestion" data-theme="dark" data-size="flexible"></div>
       <button class="button primary" type="submit">Envoyer mon idée ↗</button>
       <p id="form-status" role="status" aria-live="polite"></p>`;
     form.querySelector('.cf-turnstile').dataset.sitekey = config.turnstileSiteKey;
     $('.form-panel').append(form);
-    const script = el('script'); script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js'; script.async = true; script.defer = true; document.head.append(script);
-    const message = $('#message'), status = $('#form-status'), button = form.querySelector('button');
+    form.setAttribute('aria-describedby', 'suggestion-privacy');
+    const message = $('#message'), status = $('#form-status'), button = form.querySelector('button[type="submit"]');
+    const activation = $('#activate-antibot');
+    activation.addEventListener('click', () => {
+      activation.disabled = true;
+      status.textContent = 'Chargement de la protection antibot…';
+      const script = el('script'); script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js'; script.async = true; script.defer = true;
+      script.addEventListener('load', () => { activation.textContent = 'Vérification activée'; status.textContent = 'Termine la vérification avant d’envoyer ton idée.'; });
+      script.addEventListener('error', () => { script.remove(); activation.disabled = false; status.textContent = 'La protection ne peut pas se charger. Réessaie ou utilise le contact par e-mail.'; });
+      document.head.append(script);
+    });
     message.addEventListener('input', () => $('#character-count').textContent = message.value.length + ' / 1 500');
     form.addEventListener('submit', async event => {
       event.preventDefault(); if (!form.reportValidity() || button.disabled) return;
