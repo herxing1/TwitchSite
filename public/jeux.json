@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-09-24T08:33:52Z",
+    "updatedAt": "2026-09-25T04:30:46Z",
     "games": [
       {
         "id": "933110",
@@ -1283,7 +1283,7 @@
       {
         "id": "2269560",
         "title": "Perseus: Titan Slayer Playtest",
-        "kind": "unknown",
+        "kind": "game",
         "genres": [],
         "modes": []
       },
@@ -1304,9 +1304,19 @@
       {
         "id": "108600",
         "title": "Project Zomboid",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Indépendant",
+          "RPG",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo",
+          "Écran partagé"
+        ]
       },
       {
         "id": "578080",
@@ -1318,9 +1328,16 @@
       {
         "id": "3241660",
         "title": "R.E.P.O.",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Action"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "813820",
@@ -1332,9 +1349,16 @@
       {
         "id": "1174180",
         "title": "Red Dead Redemption 2",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1236300",
@@ -1416,16 +1440,34 @@
       {
         "id": "1326470",
         "title": "Sons Of The Forest",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "17390",
         "title": "Spore",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Casual",
+          "RPG",
+          "Simulation",
+          "Stratégie"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "495420",
@@ -1493,23 +1535,44 @@
       {
         "id": "1693040",
         "title": "Synthwave Burnout",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Indépendant",
+          "Sport"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1903510",
         "title": "Technicity: Prologue",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "868270",
         "title": "The Cycle: Frontier",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Course",
+          "Free-to-play"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur"
+        ]
       },
       {
         "id": "489830",
@@ -1521,9 +1584,18 @@
       {
         "id": "242760",
         "title": "The Forest",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
+        ]
       },
       {
         "id": "1888930",
@@ -1668,14 +1740,20 @@
       {
         "id": "1206560",
         "title": "WorldBox - God Simulator",
-        "kind": "unknown",
-        "genres": [],
-        "modes": []
+        "kind": "game",
+        "genres": [
+          "Accès anticipé",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Solo"
+        ]
       },
       {
         "id": "1705660",
         "title": "WW2 Rebuilder Playtest",
-        "kind": "unknown",
+        "kind": "game",
         "genres": [],
         "modes": []
       },
@@ -1689,7 +1767,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-09-24T08:33:52Z",
+    "updatedAt": "2026-09-25T04:30:46Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
