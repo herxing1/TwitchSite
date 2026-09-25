@@ -1,11 +1,11 @@
 /* Site de herxing_ — JavaScript natif, sans framework ni compilation.
    Le contenu éditorial vient de public/contenu.js.
    Les jeux viennent de public/jeux.json, actualisé par la synchronisation privée. */
-(() => {
+(async () => {
   'use strict';
   const page = document.documentElement.dataset.page;
   const root = new URL(document.documentElement.dataset.root, location.href);
-  const content = window.SALON_CONTENT;
+  let content = window.SALON_CONTENT;
   const config = window.SALON_CONFIG || {};
   const $ = selector => document.querySelector(selector);
   const href = path => new URL(path, root).href;
@@ -19,6 +19,14 @@
     let box = $('#data-notice');
     if (!box) { box = el('p', '', 'shell data-notice'); box.id = 'data-notice'; box.setAttribute('role', 'status'); $('main').prepend(box); }
     box.textContent = message;
+  }
+  if (SalonData.safeUrl(config.contentUrl)) {
+    try {
+      const response = await fetch(config.contentUrl, {cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(5000)});
+      if (!response.ok) throw Error();
+      const data = await response.json(); SalonData.validateContent(data.content);
+      content = data.content;
+    } catch { notice('La mise à jour du contenu est indisponible. Cette copie de secours peut ne pas refléter les derniers horaires.'); }
   }
   try { SalonData.validateContent(content); }
   catch { notice('Le fichier de contenu ne peut pas être lu. Réexporte-le avec l’éditeur puis recharge la page.'); return; }
