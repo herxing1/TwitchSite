@@ -39,7 +39,17 @@
     const end = el('time', (date(item.start) !== date(item.end) ? date(item.end) + ' · ' : '') + time(item.end)); end.dateTime = item.end;
     when.append(start, document.createTextNode(' — '), end); body.append(when);
     if (item.description) body.append(el('p', item.description, 'multiline'));
-    article.append(tile, body); return article;
+    article.append(tile, body);
+    if (typeof item.gameImage === 'string') {
+      try {
+        const localCategory = item.gameImage === 'images/just-chatting.jpg';
+        const u = new URL(localCategory ? href(item.gameImage) : item.gameImage);
+        if (localCategory || (u.protocol === 'https:' && ['cdn1.epicgames.com','cdn2.unrealengine.com','cdn.akamai.steamstatic.com'].includes(u.hostname) && !u.username && !u.password && !u.search && !u.hash)) {
+          const image = el('img', undefined, 'appointment-art'); image.src = u.href; image.alt = ''; image.loading = 'lazy'; image.width = localCategory ? 285 : 460; image.height = localCategory ? 380 : 215; if(localCategory) image.style.objectFit = 'contain'; image.addEventListener('error', () => image.remove(), {once:true}); article.append(image);
+        }
+      } catch {}
+    }
+    return article;
   }
 
   // Informations communes aux pages. Toutes les valeurs personnelles sont du texte.
