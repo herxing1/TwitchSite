@@ -38,3 +38,12 @@ html[data-page=accueil] .portal:hover h3,html[data-page=accueil] .portal:focus-v
 html[data-page=accueil] .portal:hover .portal-footer:after,html[data-page=accueil] .portal:focus-visible .portal-footer:after{transform:translate(4px,-4px);color:#f5f4f7}
 @media(max-width:600px){html[data-page=accueil] .portal .portal-footer{justify-content:flex-start;color:#bcbcc3}}
 @media(prefers-reduced-motion:reduce){html[data-page=accueil] .portal h3,html[data-page=accueil] .portal .portal-footer:after{transition:none}html[data-page=accueil] .portal:hover .portal-footer:after,html[data-page=accueil] .portal:focus-visible .portal-footer:after{transform:none}}
+
+/* Cohesive home palette, with a compact offline status. */
+html[data-page=accueil] .next-card{background:#201c26;color:#e7e1ee}
+.next-card .card-top .eyebrow{color:#ae9cbf}.next-card .next-empty h2,.next-card .appointment h3{color:#e7e1ee}
+.next-card .next-empty p,.next-card .appointment p,.next-card .appointment time,.next-card .appointment .eyebrow,.next-card .agenda-note{color:#bdb3c7}
+.next-card .card-bottom{border-color:#4a3d55;color:#c4acf6}.next-card .card-bottom span{color:#c4acf6}
+.next-card .date-tile{background:#c4acf6;color:#241c2e}.next-card .badge{color:#c4acf6;border-color:#6e567f}.next-card .secondary{color:#d5bff4;border-color:#6e567f}.next-card .secondary:hover{background:#33263f;color:#f4ebff}
+html[data-page=accueil] .home-discord,.home-discord h2{color:#c4acf6}.home-discord:before{color:#a497b2}.home-discord .button{color:#c4acf6;border-color:#8f74af}.home-discord .button:hover{color:#eee3ff;background:none}
+.live-banner{border-left-color:#8f74af}.live-banner.is-offline{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:18px;border:0;padding-top:0;padding-bottom:0}.live-banner.is-offline strong{font-size:.9rem;color:#bcb4c5}.live-banner.is-offline strong:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#8c809a;margin-right:10px;vertical-align:middle}.live-banner.is-offline .button{font-size:.85rem;padding:4px 0;white-space:nowrap}

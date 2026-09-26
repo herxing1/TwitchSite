@@ -137,10 +137,12 @@
         const data = await response.json();
         if(data.login?.toLowerCase() !== content.site.twitch.toLowerCase() || !['live','offline','unknown'].includes(data.status)) throw Error();
         box.classList.toggle('is-live', data.status === 'live');
-        label.textContent = data.status === 'live' ? '🔴 Je suis en live !' : data.status === 'offline' ? 'On se retrouve au prochain live' : 'Retrouve-moi sur Twitch';
-        detail.textContent = data.status === 'live' ? [data.title,data.game].filter(Boolean).join(' · ') : data.status === 'offline' ? 'Je suis hors ligne pour le moment. Mon prochain rendez-vous est indiqué ci-dessous.' : 'Le statut du direct est momentanément indisponible.';
+        box.classList.toggle('is-offline', data.status === 'offline');
+        detail.hidden = data.status === 'offline';
+        label.textContent = data.status === 'live' ? '🔴 Je suis en live !' : data.status === 'offline' ? 'Hors ligne' : 'Retrouve-moi sur Twitch';
+        detail.textContent = data.status === 'live' ? [data.title,data.game].filter(Boolean).join(' · ') : data.status === 'offline' ? '' : 'Le statut du direct est momentanément indisponible.';
         link.textContent = data.status === 'live' ? 'Rejoindre le live ↗' : 'Voir ma chaîne ↗';
-      } catch { box.classList.remove('is-live');label.textContent='Retrouve-moi sur Twitch';detail.textContent='Le statut du direct est momentanément indisponible.';link.textContent='Voir ma chaîne ↗'; }
+      } catch { box.classList.remove('is-live','is-offline');detail.hidden=false;label.textContent='Retrouve-moi sur Twitch';detail.textContent='Le statut du direct est momentanément indisponible.';link.textContent='Voir ma chaîne ↗'; }
       finally { busy = false; }
     }
     refreshLive(); setInterval(refreshLive,60000);
