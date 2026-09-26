@@ -47,6 +47,18 @@
     const end = el('time', (date(item.start) !== date(item.end) ? date(item.end) + ' · ' : '') + time(item.end)); end.dateTime = item.end;
     when.append(start, document.createTextNode(' — '), end); body.append(when);
     if (item.description) body.append(el('p', item.description, 'multiline'));
+    const state = item.status || 'confirmed';
+    body.append(el('span', {confirmed:'Confirmé',postponed:'Reporté — nouvelle date à confirmer',cancelled:'Annulé'}[state] || 'Confirmé', 'badge schedule-status'));
+    article.classList.toggle('appointment-cancelled', state === 'cancelled');
+    if (state === 'confirmed' && Date.parse(item.end) > Date.now()) {
+      const add = el('button', 'Ajouter à mon agenda', 'button secondary agenda-button'); add.type = 'button';
+      add.addEventListener('click', () => {
+        const blob = new Blob([SalonCalendar.create(item, content.site.twitch)], {type:'text/calendar;charset=utf-8'});
+        const url = URL.createObjectURL(blob), link = el('a'); link.href = url; link.download = 'herxing-' + item.id + '.ics'; link.click();
+        setTimeout(() => URL.revokeObjectURL(url), 30000);
+      });
+      body.append(add, el('p', 'Fichier agenda (.ics). Pense à vérifier ici si le rendez-vous change.', 'agenda-note'));
+    }
     article.append(tile, body);
     if (typeof item.gameImage === 'string') {
       try {
@@ -90,7 +102,7 @@
   function renderHome() {
     $('.hero h1').textContent = content.site.tagline;
     $('.hero .lead').textContent = content.site.description;
-    const next = sorted(content.streams).find(row => Date.parse(row.end) > Date.now());
+    const next = sorted(content.streams).find(row => Date.parse(row.end) > Date.now() && (!row.status || row.status === 'confirmed'));
     $('#next-stream').replaceChildren();
     if (next) $('#next-stream').append(appointment(next));
     $('#next-empty').hidden = !!next;
@@ -106,6 +118,34 @@
   }
 
   if (page === 'accueil') { renderHome(); setInterval(renderHome, 60000); }
+  if (page === 'accueil' && SalonData.safeUrl(config.contentUrl)) {
+    const box = el('section', undefined, 'live-banner shell'); box.setAttribute('aria-label', 'Ma chaîne Twitch');
+    const label = el('strong', 'Retrouve-moi sur Twitch');
+    const detail = el('p', 'Vérification du direct…');
+    const link = el('a', 'Voir ma chaîne ↗', 'button secondary');
+    link.href = 'https://www.twitch.tv/' + content.site.twitch; link.target = '_blank'; link.rel = 'noopener noreferrer';
+    const copy = el('div'); copy.append(label, detail); box.append(copy,link);
+    $('.hero').after(box);
+    let busy = false;
+    async function refreshLive() {
+      if (busy || document.hidden) return; busy = true;
+      try {
+        const endpoint = new URL(config.contentUrl); endpoint.pathname = '/live'; endpoint.search = ''; endpoint.hash = '';
+        const response = await fetch(endpoint, {cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(12000)});
+        if (!response.ok) throw Error();
+        const data = await response.json();
+        if(data.login?.toLowerCase() !== content.site.twitch.toLowerCase() || !['live','offline','unknown'].includes(data.status)) throw Error();
+        box.classList.toggle('is-live', data.status === 'live');
+        label.textContent = data.status === 'live' ? '🔴 Je suis en live !' : data.status === 'offline' ? 'On se retrouve au prochain live' : 'Retrouve-moi sur Twitch';
+        detail.textContent = data.status === 'live' ? [data.title,data.game].filter(Boolean).join(' · ') : data.status === 'offline' ? 'Je suis hors ligne pour le moment. Mon prochain rendez-vous est indiqué ci-dessous.' : 'Le statut du direct est momentanément indisponible.';
+        link.textContent = data.status === 'live' ? 'Rejoindre le live ↗' : 'Voir ma chaîne ↗';
+      } catch { box.classList.remove('is-live');label.textContent='Retrouve-moi sur Twitch';detail.textContent='Le statut du direct est momentanément indisponible.';link.textContent='Voir ma chaîne ↗'; }
+      finally { busy = false; }
+    }
+    refreshLive(); setInterval(refreshLive,60000);
+    document.addEventListener('visibilitychange',refreshLive);
+  }
+
   if (page === 'calendrier' || page === 'evenements') { renderSchedule(); setInterval(renderSchedule, 60000); }
   if (page === 'informations') {
     const moodButton = $('#mood-button');
