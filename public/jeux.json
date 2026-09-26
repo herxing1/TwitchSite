@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-09-25T04:30:46Z",
+    "updatedAt": "2026-09-26T04:29:43Z",
     "games": [
       {
         "id": "933110",
@@ -1767,7 +1767,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-09-25T04:30:46Z",
+    "updatedAt": "2026-09-26T04:29:43Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -3197,7 +3197,7 @@
         "kind": "game",
         "genres": [],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/item/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S1_2560x1440-210388d6fcf24369aa34461f9544c0b1"
+        "image": "https://cdn1.epicgames.com/item/9773aa1aa54f4f7b80e44bef04986cea/Rocket_Wide_2560x1440-b102a5ee64c64a9199673ad09fae6e42"
       },
       {
         "id": "Pewee",
