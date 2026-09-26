@@ -17,13 +17,13 @@ window.SalonNotebook={render(content){
     const q=normal(search.value);const found=rows.filter(r=> (!filter.value||(resources?r.category:r.status)===filter.value)&&(!game?.value||r.game===game.value)&&normal(resources?[r.title,r.category,r.game,r.note].join(' '):r.game).includes(q));
     count.textContent=`${found.length} ${resources?'ressource'+(found.length===1?'':'s'):'jeu'+(found.length===1?'':'x')}`;
     if(!found.length){list.append(node('p',rows.length?'Aucun résultat avec ces filtres.':resources?'Je partagerai ici les liens et références évoqués en live.':'Je publierai ici ma progression et les objectifs des prochaines parties.','empty-state'));return;}
-    for(const r of found){const article=node('article',undefined,'notebook-entry');article.append(node('p',resources?[r.category,r.game].filter(Boolean).join(' / '):statuses[r.status],'eyebrow'),node('h2',resources?r.title:r.game));
+    for(const r of found){const article=node('article',undefined,'notebook-entry');article.id='item-'+r.id;article.append(node('p',resources?[r.category,r.game].filter(Boolean).join(' / '):statuses[r.status],'eyebrow'),node('h2',resources?r.title:r.game));
       if(resources){if(r.note)article.append(node('p',r.note,'multiline'));const a=link(r.url,{playlist:'Écouter la playlist',track:'Écouter le morceau',link:'Ouvrir le lien'}[r.kind]||'Ouvrir le lien');if(a)article.append(a);}
       else{if(r.updated){const when=node('time','Mis à jour le '+new Intl.DateTimeFormat('fr-FR',{dateStyle:'long',timeZone:'UTC'}).format(new Date(r.updated)));when.dateTime=r.updated;article.append(when);}
         const body=node(r.spoiler?'details':'div',undefined,'progress-summary');if(r.spoiler)body.append(node('summary','Afficher ma progression — spoilers possibles'));
         if(r.summary)body.append(node('h3','Où j’en suis'),node('p',r.summary,'multiline'));if(r.next)body.append(node('h3','La prochaine étape'),node('p',r.next,'multiline'));article.append(body);const a=link(r.url,'Voir le replay');if(a)article.append(a);
-      }list.append(article);
+      }if(r.game&&window.SalonDiscovery){const related=node('a','Tout sur '+r.game+' ↗','related-game');related.href=SalonDiscovery.gameUrl(r.game);article.append(related);}list.append(article);
     }
   }
-  search.addEventListener('input',draw);filter.addEventListener('change',draw);game?.addEventListener('change',draw);reset.addEventListener('click',()=>{search.value='';filter.value='';if(game)game.value='';draw();search.focus();});draw();
+  search.addEventListener('input',draw);filter.addEventListener('change',draw);game?.addEventListener('change',draw);reset.addEventListener('click',()=>{search.value='';filter.value='';if(game)game.value='';draw();search.focus();});draw();if(location.hash.startsWith('#item-'))requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView());
 }};

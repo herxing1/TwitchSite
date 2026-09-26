@@ -32,6 +32,7 @@
   catch { notice('Le fichier de contenu ne peut pas être lu. Réexporte-le avec l’éditeur puis recharge la page.'); return; }
   window.SalonCommunity?.render(content, config);
   window.SalonNotebook?.render(content);
+  window.SalonDiscovery?.render(content);
   const zone = content.site.timezone;
   const date = (value, options = {}) => new Intl.DateTimeFormat('fr-FR', { timeZone: zone, day: 'numeric', month: 'long', year: 'numeric', ...options }).format(new Date(value));
   const time = value => date(value, { day: undefined, month: undefined, year: undefined, hour: '2-digit', minute: '2-digit' });
@@ -39,7 +40,7 @@
 
   function appointment(item, kind = 'Stream') {
     const article = el('article', undefined, 'appointment');
-    article.dataset.appointment = ''; article.dataset.start = item.start; article.dataset.end = item.end;
+    article.id='item-'+item.id; article.dataset.appointment = ''; article.dataset.start = item.start; article.dataset.end = item.end;
     const tile = el('div', undefined, 'date-tile');
     tile.append(el('span', date(item.start, { day: undefined, month: 'short', year: undefined }).replace('.', '')), el('strong', date(item.start, { month: undefined, year: undefined, day: '2-digit' })));
     const body = el('div', undefined, 'appointment-body');
@@ -48,6 +49,7 @@
     const start = el('time', date(item.start, { weekday: 'long' }) + ' · ' + time(item.start)); start.dateTime = item.start;
     const end = el('time', (date(item.start) !== date(item.end) ? date(item.end) + ' · ' : '') + time(item.end)); end.dateTime = item.end;
     when.append(start, document.createTextNode(' — '), end); body.append(when);
+    if(item.game&&window.SalonDiscovery){const related=el('a','Tout sur '+item.game+' ↗','related-game');related.href=SalonDiscovery.gameUrl(item.game);body.append(related);}
     if (item.description) body.append(el('p', item.description, 'multiline'));
     const state = item.status || 'confirmed';
     body.append(el('span', {confirmed:'Confirmé',postponed:'Reporté — nouvelle date à confirmer',cancelled:'Annulé'}[state] || 'Confirmé', 'badge schedule-status'));
@@ -75,7 +77,7 @@
   }
 
   // Informations communes aux pages. Toutes les valeurs personnelles sont du texte.
-  const titles = { reperes: 'C’était quoi déjà ?', progression: 'On en est où ?', accueil: 'Accueil', calendrier: 'Calendrier', jeux: 'Jeux', evenements: 'Événements', informations: 'Informations', suggestions: 'Suggestions', '404': 'Page introuvable' };
+  const titles = { recherche: 'Recherche', reperes: 'C’était quoi déjà ?', progression: 'On en est où ?', accueil: 'Accueil', calendrier: 'Calendrier', jeux: 'Jeux', evenements: 'Événements', informations: 'Informations', suggestions: 'Suggestions', '404': 'Page introuvable' };
   document.title = (titles[page] || 'Accueil') + ' — ' + content.site.name;
   $('meta[name="description"]').content = content.site.description;
   const brand = $('.brand');
@@ -101,6 +103,7 @@
     if (!isEvents) $('.page-heading .lead').textContent = 'Choisis ton prochain rendez-vous. Les horaires sont indiqués en ' + zone + '.';
   }
 
+  let latestLive=null;
   function renderHome() {
     $('.hero h1').textContent = content.site.tagline;
     $('.hero .lead').textContent = content.site.description;
@@ -108,6 +111,7 @@
     $('#next-stream').replaceChildren();
     if (next) $('#next-stream').append(appointment(next));
     $('#next-empty').hidden = !!next;
+    window.SalonDiscovery?.home(content,latestLive);
     $('#home-events')?.remove();
     const upcoming = sorted(content.events).filter(row => Date.parse(row.end) > Date.now()).slice(0, 3);
     if (upcoming.length) {
@@ -119,6 +123,7 @@
     }
   }
 
+  if (location.hash.startsWith('#item-')) requestAnimationFrame(()=>{const target=document.getElementById(location.hash.slice(1));const details=target?.closest('details');if(details)details.open=true;target?.scrollIntoView();});
   if (page === 'accueil') { renderHome(); setInterval(renderHome, 60000); }
   if (page === 'accueil' && SalonData.safeUrl(config.contentUrl)) {
     const box = el('section', undefined, 'live-banner shell'); box.setAttribute('aria-label', 'Ma chaîne Twitch');
@@ -137,13 +142,14 @@
         if (!response.ok) throw Error();
         const data = await response.json();
         if(data.login?.toLowerCase() !== content.site.twitch.toLowerCase() || !['live','offline','unknown'].includes(data.status)) throw Error();
+        latestLive=data;window.SalonDiscovery?.home(content,data);
         box.classList.toggle('is-live', data.status === 'live');
         box.classList.toggle('is-offline', data.status === 'offline');
         detail.hidden = data.status === 'offline';
         label.textContent = data.status === 'live' ? '🔴 Je suis en live !' : data.status === 'offline' ? 'Hors ligne' : 'Retrouve-moi sur Twitch';
         detail.textContent = data.status === 'live' ? [data.title,data.game].filter(Boolean).join(' · ') : data.status === 'offline' ? '' : 'Le statut du direct est momentanément indisponible.';
         link.textContent = data.status === 'live' ? 'Rejoindre le live ↗' : 'Voir ma chaîne ↗';
-      } catch { box.classList.remove('is-live','is-offline');detail.hidden=false;label.textContent='Retrouve-moi sur Twitch';detail.textContent='Le statut du direct est momentanément indisponible.';link.textContent='Voir ma chaîne ↗'; }
+      } catch { latestLive=null;window.SalonDiscovery?.home(content,null);box.hidden=false;box.classList.remove('is-live','is-offline');detail.hidden=false;label.textContent='Retrouve-moi sur Twitch';detail.textContent='Le statut du direct est momentanément indisponible.';link.textContent='Voir ma chaîne ↗'; }
       finally { busy = false; }
     }
     refreshLive(); setInterval(refreshLive,60000);
@@ -191,6 +197,7 @@
   }
 
   let games = [], selectedPlatform = 'all';
+  if(page==='jeux')$('#game-search').value=new URLSearchParams(location.search).get('q')||'';
   function renderGames() {
     const search = $('#game-search');
     const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -217,6 +224,7 @@
       card.append(el('span', game.platform === 'steam' ? 'Steam' : 'Epic Games', 'badge'), el('h2', game.title));
       card.append(el('p', game.genres?.length ? game.genres.join(' · ') : 'Genre non renseigné', 'game-genres'));
       if (game.platform === 'steam' && /^\d+$/.test(game.id)) { const a = el('a', 'Voir sur Steam ↗'); a.href = 'https://store.steampowered.com/app/' + game.id + '/'; a.target = '_blank'; a.rel = 'noopener noreferrer'; card.append(a); }
+      if(window.SalonDiscovery){const related=el('a','Progression, liens et lives ↗','related-game');related.href=SalonDiscovery.gameUrl(game.title);card.append(related);}
       grid.append(card);
     }
     $('#game-count').textContent = visible.length + ' jeu' + (visible.length !== 1 ? 'x' : '');
