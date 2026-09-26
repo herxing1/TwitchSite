@@ -31,6 +31,7 @@
   try { SalonData.validateContent(content); }
   catch { notice('Le fichier de contenu ne peut pas être lu. Réexporte-le avec l’éditeur puis recharge la page.'); return; }
   window.SalonCommunity?.render(content, config);
+  window.SalonNotebook?.render(content);
   const zone = content.site.timezone;
   const date = (value, options = {}) => new Intl.DateTimeFormat('fr-FR', { timeZone: zone, day: 'numeric', month: 'long', year: 'numeric', ...options }).format(new Date(value));
   const time = value => date(value, { day: undefined, month: undefined, year: undefined, hour: '2-digit', minute: '2-digit' });
@@ -74,7 +75,7 @@
   }
 
   // Informations communes aux pages. Toutes les valeurs personnelles sont du texte.
-  const titles = { accueil: 'Accueil', calendrier: 'Calendrier', jeux: 'Jeux', evenements: 'Événements', informations: 'Informations', suggestions: 'Suggestions', '404': 'Page introuvable' };
+  const titles = { reperes: 'C’était quoi déjà ?', progression: 'On en est où ?', accueil: 'Accueil', calendrier: 'Calendrier', jeux: 'Jeux', evenements: 'Événements', informations: 'Informations', suggestions: 'Suggestions', '404': 'Page introuvable' };
   document.title = (titles[page] || 'Accueil') + ' — ' + content.site.name;
   $('meta[name="description"]').content = content.site.description;
   const brand = $('.brand');
