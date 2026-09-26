@@ -286,7 +286,7 @@
       <textarea id="message" name="message" rows="6" minlength="10" maxlength="1500" required placeholder="Raconte ton idée…" aria-describedby="message-help"></textarea>
       <div class="field-note"><span id="message-help">10 à 1 500 caractères.</span><span id="character-count">0 / 1 500</span></div>
       <div class="honeypot" aria-hidden="true"><label for="website">Ne pas remplir</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
-      <p class="privacy-note" id="suggestion-privacy">Je reçois ton idée et ton pseudo facultatif en privé sur Discord pour préparer mes lives, sur la base de mon intérêt légitime à échanger avec ma communauté. Je prévois de les conserver six mois maximum et je dois les supprimer manuellement. Évite toute donnée sensible ou concernant une autre personne. Pour tes droits : <a href="mailto:herxingapp@gmail.com">herxingapp@gmail.com</a>. <a href="${href('confidentialite/index.html')}">Données, destinataires et droits</a>.</p>
+      <p class="privacy-note" id="suggestion-privacy">Je reçois ton idée ou ton signalement et ton pseudo facultatif en privé sur Discord pour préparer mes lives et entretenir le site, sur la base de mon intérêt légitime à échanger avec ma communauté. Je prévois de les conserver six mois maximum et je dois les supprimer manuellement. Évite toute donnée sensible ou concernant une autre personne. Pour tes droits : <a href="mailto:herxingapp@gmail.com">herxingapp@gmail.com</a>. <a href="${href('confidentialite/index.html')}">Données, destinataires et droits</a>.</p>
       <div id="antibot-activation">
         <p class="privacy-note">Pour envoyer ici, active le contrôle antibot Cloudflare Turnstile. Il analyse ton adresse IP et des signaux du navigateur pour bloquer les robots et améliorer sa détection. Tu peux aussi envoyer ton idée par e-mail sans activer ce contrôle. <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener noreferrer">Informations de Cloudflare</a>.</p>
         <div class="privacy-actions"><button class="button secondary" id="activate-antibot" type="button">Activer la vérification</button><a class="button secondary" href="mailto:herxingapp@gmail.com">Utiliser l’e-mail</a></div>
@@ -298,6 +298,22 @@
     $('.form-panel').append(form);
     form.setAttribute('aria-describedby', 'suggestion-privacy');
     const message = $('#message'), status = $('#form-status'), button = form.querySelector('button[type="submit"]');
+    const reportParams=new URLSearchParams(location.search);
+    if(reportParams.has('report')) {
+      try {
+        const broken=new URL(reportParams.get('report'));
+        if(broken.protocol!=='https:'||broken.username||broken.password||broken.href.length>1000)throw Error();
+        const title=(reportParams.get('title')||'Lien du site').slice(0,120).replace(/[\r\n]/g,' ');
+        const panel=$('.form-panel');panel.id='signalement';panel.querySelector('h2').textContent='Signaler un lien cassé';
+        document.querySelector('label[for="message"]').textContent='Ton signalement';
+        message.value='Lien cassé : '+title+'\n'+broken.href+'\n\nCe qui ne fonctionne pas : ';
+        $('#character-count').textContent=message.value.length+' / 1 500';
+        button.textContent='Envoyer mon signalement ↗';
+        const note=el('p','Précise le problème, puis active la vérification et envoie ton signalement. Rien n’est envoyé automatiquement.','report-note');form.prepend(note);
+        requestAnimationFrame(()=>{panel.scrollIntoView();message.focus({preventScroll:true});});
+      } catch { /* Ignore malformed report URLs; keep the ordinary suggestion form. */ }
+    }
+
     const activation = $('#activate-antibot');
     activation.addEventListener('click', () => {
       activation.disabled = true;

@@ -73,3 +73,5 @@ html[data-page=accueil] .home-discord,.home-discord h2{color:#c4acf6}.home-disco
 
 @media(max-width:900px){.header.has-menu nav .nav-more{display:grid;grid-column:1/-1;grid-template-columns:1fr 1fr;gap:4px 18px;min-width:0}.nav-more::details-content{display:contents}.header.has-menu nav .nav-more>a{display:block;min-width:0;white-space:normal;line-height:1.4}.header.has-menu nav .twitch-link{width:100%;min-width:0;box-sizing:border-box}}
 @media(min-width:901px){.nav-more[open]{position:relative;right:auto;top:auto;background:transparent}.nav-more[open] summary{padding:12px 0}.nav-more::details-content{position:absolute;right:0;top:100%;min-width:230px;background:#201c26;box-shadow:0 15px 30px #0006}.header nav:has(.nav-more[open]){padding-right:0}}
+
+.report-link{display:block;width:fit-content;margin-top:14px;color:#a99bb7;font-size:.8rem;text-decoration:underline;text-underline-offset:4px}.report-link:hover{color:#e7e1ee}.report-note{padding:16px 0;color:#c4acf6}#signalement{scroll-margin-top:24px}
