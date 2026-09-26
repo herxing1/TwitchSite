@@ -21,7 +21,7 @@
   const setBackground=open=>{document.documentElement.classList.toggle('navigation-open',open);background.forEach(n=>n.inert=open);};
   const backdrop=document.createElement('div');backdrop.className='menu-backdrop';backdrop.setAttribute('aria-hidden','true');header.before(backdrop);
   function close(focus=false){setBackground(false);header.classList.remove('menu-open');backdrop.classList.remove('visible');button.setAttribute('aria-expanded','false');label.textContent='Menu';if(focus)button.focus();}
-  function layout(){close();if(twitch){if(mobile.matches)nav.append(twitch);else header.append(twitch);}}
+  function layout(){header.classList.add('menu-reset');close();if(twitch){if(mobile.matches)nav.append(twitch);else header.append(twitch);}requestAnimationFrame(()=>requestAnimationFrame(()=>header.classList.remove('menu-reset')));}
   button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';header.classList.toggle('menu-open',open);setBackground(open);backdrop.classList.toggle('visible',open);button.setAttribute('aria-expanded',String(open));label.textContent=open?'Fermer':'Menu';});
   nav.addEventListener('click',event=>{if(event.target.closest('a'))close();});
   backdrop.addEventListener('click',()=>close(true));
