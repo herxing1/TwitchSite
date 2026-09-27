@@ -258,6 +258,7 @@
       games = ['steam', 'epic'].flatMap(platform => libraries[platform].games.map(game => ({ ...game, platform }))).sort((a, b) => a.title.localeCompare(b.title, 'fr'));
       const unclassified = games.filter(g => !g.kind || g.kind === 'unknown').length;
       games = games.filter(g => g.kind === 'game');
+      window.SalonDiscovery?.gameCovers(games);
       if (page === 'accueil') $('.portal[href*=\"jeux/\"] .portal-footer').textContent = games.length ? games.length + ' jeux à découvrir' : 'Steam & Epic Games';
       if (page === 'jeux') {
         $('#catalog-note').textContent = 'Jeux uniquement : logiciels, plugins et extensions exclus.' + (unclassified ? ' ' + unclassified + ' titres en attente de classification sont masqués. Les informations se complètent lors des synchronisations.' : '') + ' Les genres et modes non fournis restent « Non renseigné ».';

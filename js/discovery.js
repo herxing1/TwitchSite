@@ -10,6 +10,8 @@ window.SalonDiscovery = (()=>{
  }
  function spotify(url){try{const u=new URL(url);return u.protocol==='https:'&&u.hostname==='open.spotify.com'&&!u.username&&!u.password?u.href:null;}catch{return null;}}
  function coverLink(cover,url,title){const a=node('a',undefined,'cover-link');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label','Écouter '+title+' sur Spotify');a.append(cover);return a;}
+ let libraryGames=[];
+ function gameCovers(games){if(games)libraryGames=games;document.querySelectorAll('[data-progress-game]').forEach(card=>{if(card.querySelector('.progress-art'))return;const game=libraryGames.find(g=>normalize(g.title)===normalize(card.dataset.progressGame));if(!game)return;let src=game.platform==='steam'&&/^\d+$/.test(String(game.id))?'https://cdn.akamai.steamstatic.com/steam/apps/'+game.id+'/header.jpg':game.image;try{const u=new URL(src);if(u.protocol!=='https:'||!['cdn1.epicgames.com','cdn2.unrealengine.com','cdn.akamai.steamstatic.com'].includes(u.hostname))return;const image=node('img',undefined,'progress-art');image.src=u.href;image.alt=game.title;image.width=460;image.height=259;image.loading='lazy';image.addEventListener('error',()=>image.remove(),{once:true});card.prepend(image);}catch{}});}
  function home(content,live){
   if(document.documentElement.dataset.page!=='accueil')return;
   let box=document.querySelector('#home-priority');if(!box){box=node('section',undefined,'shell home-priority');box.id='home-priority';document.querySelector('.hero').after(box);}
@@ -48,7 +50,7 @@ window.SalonDiscovery = (()=>{
   section.append(node('p','LE CARNET DE LA CHAÎNE','eyebrow'),node('h2','À découvrir entre deux lives.'));
   const grid=node('div',undefined,'home-updates-grid');section.append(grid);
   for(const [kind,row] of [...progress.map(r=>['progress',r]),...resources.map(r=>['resource',r])]){
-   const article=node('article');const body=node('div',undefined,'update-body');const isProgress=kind==='progress';
+   const article=node('article');const body=node('div',undefined,'update-body');const isProgress=kind==='progress';if(isProgress){article.classList.add('home-progress-card');article.dataset.progressGame=row.game;}
    if(!isProgress&&window.SALON_CONFIG?.contentUrl){
     try{if(new URL(row.url).hostname==='open.spotify.com'){
      const cover=node('img',undefined,'home-resource-cover');const endpoint=new URL('/artwork',window.SALON_CONFIG.contentUrl);endpoint.searchParams.set('id',row.id);
@@ -57,11 +59,12 @@ window.SalonDiscovery = (()=>{
    }
 
    body.append(node('p',isProgress?({playing:'Partie en cours',paused:'Partie en pause',finished:'Partie terminée'}[row.status]||'Ma progression'):row.category,'eyebrow'),node('h3',isProgress?row.game:row.title));
+   if(isProgress&&Number.isInteger(row.percent)&&row.percent>=0&&row.percent<=100){const meter=node('div',undefined,'game-progress');const label=node('p','Progression');label.append(node('strong',row.percent+' %'));meter.append(label);const track=node('div',undefined,'game-progress-track');track.setAttribute('role','progressbar');track.setAttribute('aria-label','Progression de '+row.game);track.setAttribute('aria-valuemin','0');track.setAttribute('aria-valuemax','100');track.setAttribute('aria-valuenow',String(row.percent));const fill=node('span',undefined,'game-progress-fill');fill.style.setProperty('--progress',row.percent+'%');track.append(fill);meter.append(track);body.append(meter);const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){fill.classList.add('filled');observer.disconnect();}},{threshold:.2});observer.observe(track);}
    const note=isProgress?(row.spoiler?'La suite de ma partie est à retrouver avec les spoilers masqués.':row.next||row.summary):row.note;
    if(note)body.append(node('p',note.length>150?note.slice(0,147)+'…':note));
    if(isProgress&&row.updated){const date=node('p','Mis à jour le '+new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeZone:'UTC'}).format(new Date(row.updated)),'update-date');body.append(date);}
    const link=node('a',isProgress?'Suivre la partie ↗':'Retrouver la référence ↗','text-link');link.href=href((isProgress?'progression':'reperes')+'/#item-'+row.id);if(!isProgress&&spotify(row.url)){link.href=spotify(row.url);link.textContent='Écouter sur Spotify ↗';link.target='_blank';link.rel='noopener noreferrer';}body.append(link,copyLink((isProgress?'progression':'reperes')+'/#item-'+row.id,isProgress?row.game:row.title));article.append(body);grid.append(article);
-  }
+  }gameCovers();
  }
  async function render(content){
   const host=document.querySelector('#discovery');if(!host)return;
@@ -89,5 +92,5 @@ window.SalonDiscovery = (()=>{
   if(!game)input.addEventListener('input',()=>{history.replaceState(null,'',href('recherche/?q='+encodeURIComponent(input.value)));draw();});draw();
   try{const r=await fetch(href('public/jeux.json'),{signal:AbortSignal.timeout(8000)});if(!r.ok)throw Error();const data=await r.json();games=['steam','epic'].flatMap(platform=>(data[platform]?.games||[]).filter(g=>!g.kind||g.kind==='game').map(g=>({...g,platform})));}catch{failed=true;}finally{loading=false;draw();}
  }
- return {gameUrl,home,render,copyLink,spotify,coverLink};
+ return {gameUrl,home,render,copyLink,spotify,coverLink,gameCovers};
 })();
