@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-09-26T04:29:43Z",
+    "updatedAt": "2026-09-27T04:30:14Z",
     "games": [
       {
         "id": "933110",
@@ -1767,7 +1767,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-09-26T04:29:43Z",
+    "updatedAt": "2026-09-27T04:30:14Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -1879,6 +1879,14 @@
         "genres": [],
         "modes": [],
         "image": "https://cdn1.epicgames.com/c9be94273fe244c08032ca493ad87434/item/ACS-STD-2560x1440-d38ba6341ab707a6ec99c4f921d8a9bc-2560x1440-d38ba6341ab707a6ec99c4f921d8a9bc.jpg"
+      },
+      {
+        "id": "f9685170f7b142909c661a080bd9e60c",
+        "title": "Astrea Six Sided Oracles",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
+        "image": "https://cdn1.epicgames.com/spt-assets/4515173972ae4444a2582bc690c150bd/astrea-six-sided-oracles-offer-1l6ev.png"
       },
       {
         "id": "Chicken",
@@ -2850,6 +2858,14 @@
         "genres": [],
         "modes": [],
         "image": "https://cdn1.epicgames.com/item/ea73c08ac633414584e281f838b3a78c/EGS_MarvelsMidnightSuns_FiraxisGames_S1_2560x1440-2f3d597f3afd9e9fd4cea1df3394705e"
+      },
+      {
+        "id": "a477f73fc8b54e09ba7a35f9579797cb",
+        "title": "Mechabellum",
+        "kind": "game",
+        "genres": [],
+        "modes": [],
+        "image": "https://cdn1.epicgames.com/spt-assets/131adc2288294d74aaff6a2f02b51d59/mechabellum-10qbb.jpg"
       },
       {
         "id": "Petunia",
