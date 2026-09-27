@@ -43,7 +43,7 @@ window.SalonDiscovery = (()=>{
   const grid=node('div',undefined,'home-updates-grid');section.append(grid);
   for(const [kind,row] of [...progress.map(r=>['progress',r]),...resources.map(r=>['resource',r])]){
    const article=node('article');const body=node('div',undefined,'update-body');const isProgress=kind==='progress';
-   if(!isProgress&&['playlist','track'].includes(row.kind)&&window.SALON_CONFIG?.contentUrl){
+   if(!isProgress&&window.SALON_CONFIG?.contentUrl){
     try{if(new URL(row.url).hostname==='open.spotify.com'){
      const cover=node('img',undefined,'home-resource-cover');const endpoint=new URL('/artwork',window.SALON_CONFIG.contentUrl);endpoint.searchParams.set('id',row.id);
      cover.src=endpoint.href;cover.alt='Pochette de '+row.title;cover.width=240;cover.height=240;cover.loading='lazy';cover.referrerPolicy='no-referrer';cover.addEventListener('error',()=>cover.remove(),{once:true});article.append(cover);

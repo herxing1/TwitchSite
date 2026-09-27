@@ -19,7 +19,7 @@ window.SalonNotebook={render(content){
     if(!found.length){list.append(node('p',rows.length?'Aucun résultat avec ces filtres.':resources?'Je partagerai ici les liens et références évoqués en live.':'Je publierai ici ma progression et les objectifs des prochaines parties.','empty-state'));const help=node('a',rows.length?'Réinitialiser les filtres':'Proposer une idée ↗','button secondary');help.href=rows.length?'#notebook':'../suggestions/index.html';if(rows.length)help.addEventListener('click',e=>{e.preventDefault();reset.click();});list.append(help);return;}
     for(const r of found){const article=node('article',undefined,'notebook-entry');article.id='item-'+r.id;article.append(node('p',resources?[r.category,r.game].filter(Boolean).join(' / '):statuses[r.status],'eyebrow'),node('h2',resources?r.title:r.game));
       if(resources){
-        if(['playlist','track'].includes(r.kind)&&window.SALON_CONFIG?.contentUrl){
+        if(window.SALON_CONFIG?.contentUrl){
           try{const source=new URL(r.url);if(source.hostname==='open.spotify.com'){
             const cover=node('img',undefined,'playlist-cover');const endpoint=new URL('/artwork',window.SALON_CONFIG.contentUrl);endpoint.searchParams.set('id',r.id);cover.src=endpoint.href;cover.alt='Pochette de '+r.title;cover.width=300;cover.height=300;cover.loading='lazy';cover.referrerPolicy='no-referrer';cover.addEventListener('error',()=>cover.remove(),{once:true});article.prepend(cover);
           }}catch{}
