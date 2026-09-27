@@ -38,6 +38,13 @@ window.SalonDiscovery = (()=>{
   const grid=node('div',undefined,'home-updates-grid');section.append(grid);
   for(const [kind,row] of [...progress.map(r=>['progress',r]),...resources.map(r=>['resource',r])]){
    const article=node('article');const isProgress=kind==='progress';
+   if(!isProgress&&['playlist','track'].includes(row.kind)&&window.SALON_CONFIG?.contentUrl){
+    try{if(new URL(row.url).hostname==='open.spotify.com'){
+     const cover=node('img',undefined,'home-resource-cover');const endpoint=new URL('/artwork',window.SALON_CONFIG.contentUrl);endpoint.searchParams.set('id',row.id);
+     cover.src=endpoint.href;cover.alt='Pochette de '+row.title;cover.width=240;cover.height=240;cover.loading='lazy';cover.referrerPolicy='no-referrer';cover.addEventListener('error',()=>cover.remove(),{once:true});article.append(cover);
+    }}catch{}
+   }
+
    article.append(node('p',isProgress?({playing:'Partie en cours',paused:'Partie en pause',finished:'Partie terminée'}[row.status]||'Ma progression'):row.category,'eyebrow'),node('h3',isProgress?row.game:row.title));
    const note=isProgress?(row.spoiler?'La suite de ma partie est à retrouver avec les spoilers masqués.':row.next||row.summary):row.note;
    if(note)article.append(node('p',note.length>150?note.slice(0,147)+'…':note));

@@ -99,3 +99,5 @@ html[data-page=accueil] .portal:before{color:#a497b2}
 .notebook-filter-toggle .notebook-tools{margin-top:20px}
 #suggestion-form #antibot-activation{border-left:2px solid #51465c;padding-left:16px;margin:22px 0}
 @media(max-width:600px){.home-updates-grid{gap:28px}.home-updates{padding-top:24px;padding-bottom:30px}}
+
+.home-resource-cover{display:block;width:min(240px,100%);height:auto;aspect-ratio:1;object-fit:cover;margin:0 0 22px;border-radius:4px}
