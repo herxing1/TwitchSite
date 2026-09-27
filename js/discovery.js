@@ -42,7 +42,7 @@ window.SalonDiscovery = (()=>{
     const section=node('section',undefined,'discovery-group');section.append(node('h2',title));for(const r of selected){const a=node('a',undefined,'discovery-result');a.href=r.url;a.append(node('strong',r.title),node('span',r.note||r.game),node('span','↗'));section.append(a);}results.append(section);
    }
    status.textContent=!q&&!game?'Recherche dans les jeux, la progression, les références et les rendez-vous.':`${total} résultat${total===1?'':'s'}${loading?' · Chargement de la bibliothèque…':failed?' · Bibliothèque indisponible, résultats partiels.':''}`;
-   if(!total&&(q||game))results.append(node('p',loading?'Recherche en cours…':'Aucun contenu associé pour le moment.','empty-state'));
+   if(!total&&(q||game)){results.append(node('p',loading?'Recherche en cours…':'Aucun contenu associé pour le moment.','empty-state'));if(!loading){const a=node('a','Parcourir les références ↗','button secondary');a.href=href('reperes/index.html');results.append(a);}}if(failed){const retry=node('button','Réessayer de charger la bibliothèque','button secondary');retry.addEventListener('click',()=>location.reload());results.append(retry);}
   }
   form.addEventListener('submit',event=>{event.preventDefault();location.href=href('recherche/index.html?q='+encodeURIComponent(input.value.trim()));});
   if(!game)input.addEventListener('input',()=>{history.replaceState(null,'',href('recherche/index.html?q='+encodeURIComponent(input.value)));draw();});draw();

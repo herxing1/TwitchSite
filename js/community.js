@@ -65,5 +65,5 @@ window.SalonCommunity = {render(content,config) {
     panel.append(form,reload,privacy);
   }
   panel.append(make('p','Chargement du vote…'));
-  refresh().catch(()=>{panel.replaceChildren(make('p','Le vote est momentanément indisponible. Recharge la page dans un instant.'));});
+  function load(){refresh().catch(()=>{panel.replaceChildren(make('p','Le vote est momentanément indisponible.'));const retry=make('button','Réessayer','button secondary');retry.type='button';retry.addEventListener('click',()=>{retry.disabled=true;load();});panel.append(retry);});}load();
 }};

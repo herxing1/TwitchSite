@@ -16,7 +16,7 @@ window.SalonNotebook={render(content){
   function draw(){list.replaceChildren();
     const q=normal(search.value);const found=rows.filter(r=> (!filter.value||(resources?r.category:r.status)===filter.value)&&(!game?.value||r.game===game.value)&&normal(resources?[r.title,r.category,r.game,r.note].join(' '):r.game).includes(q));
     count.textContent=`${found.length} ${resources?'ressource'+(found.length===1?'':'s'):'jeu'+(found.length===1?'':'x')}`;
-    if(!found.length){list.append(node('p',rows.length?'Aucun résultat avec ces filtres.':resources?'Je partagerai ici les liens et références évoqués en live.':'Je publierai ici ma progression et les objectifs des prochaines parties.','empty-state'));return;}
+    if(!found.length){list.append(node('p',rows.length?'Aucun résultat avec ces filtres.':resources?'Je partagerai ici les liens et références évoqués en live.':'Je publierai ici ma progression et les objectifs des prochaines parties.','empty-state'));const help=node('a',rows.length?'Réinitialiser les filtres':'Proposer une idée ↗','button secondary');help.href=rows.length?'#notebook':'../suggestions/index.html';if(rows.length)help.addEventListener('click',e=>{e.preventDefault();reset.click();});list.append(help);return;}
     for(const r of found){const article=node('article',undefined,'notebook-entry');article.id='item-'+r.id;article.append(node('p',resources?[r.category,r.game].filter(Boolean).join(' / '):statuses[r.status],'eyebrow'),node('h2',resources?r.title:r.game));
       if(resources){
         if(['playlist','track'].includes(r.kind)&&window.SALON_CONFIG?.contentUrl){

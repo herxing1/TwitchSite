@@ -25,12 +25,13 @@
   const background=[...document.querySelectorAll('main,body>.footer')];
   const setBackground=open=>{document.documentElement.classList.toggle('navigation-open',open);background.forEach(n=>n.inert=open);};
   const backdrop=document.createElement('div');backdrop.className='menu-backdrop';backdrop.setAttribute('aria-hidden','true');header.before(backdrop);
-  function close(focus=false){more.open=false;setBackground(false);header.classList.remove('menu-open');backdrop.classList.remove('visible');button.setAttribute('aria-expanded','false');label.textContent='Menu';if(focus)button.focus();}
+  function close(focus=false){nav.inert=mobile.matches;more.open=false;setBackground(false);header.classList.remove('menu-open');backdrop.classList.remove('visible');button.setAttribute('aria-expanded','false');label.textContent='Menu';if(focus)button.focus();}
   function layout(){header.classList.add('menu-reset');close();more.open=mobile.matches;if(twitch){if(mobile.matches)nav.append(twitch);else header.append(twitch);}requestAnimationFrame(()=>requestAnimationFrame(()=>header.classList.remove('menu-reset')));}
-  button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';header.classList.toggle('menu-open',open);more.open=open;setBackground(open);backdrop.classList.toggle('visible',open);button.setAttribute('aria-expanded',String(open));label.textContent=open?'Fermer':'Menu';});
+  button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';header.classList.toggle('menu-open',open);nav.inert=!open;more.open=open;setBackground(open);backdrop.classList.toggle('visible',open);button.setAttribute('aria-expanded',String(open));label.textContent=open?'Fermer':'Menu';});
   nav.addEventListener('click',event=>{if(event.target.closest('a'))close();});
   backdrop.addEventListener('click',()=>close(true));
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&header.classList.contains('menu-open'))close(true);});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){if(header.classList.contains('menu-open'))close(true);else if(more.open){more.open=false;summary.focus();}}
+    if(event.key==='Tab'&&mobile.matches&&header.classList.contains('menu-open')){const focusable=[...header.querySelectorAll('a,button,summary')].filter(e=>e.getClientRects().length);const first=focusable[0],last=focusable.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
   header.addEventListener('focusout',()=>{setTimeout(()=>{if(!header.contains(document.activeElement))close();},0);});
   mobile.addEventListener('change',layout);layout();
 })();

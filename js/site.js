@@ -18,7 +18,7 @@
   function notice(message) {
     let box = $('#data-notice');
     if (!box) { box = el('p', '', 'shell data-notice'); box.id = 'data-notice'; box.setAttribute('role', 'status'); $('main').prepend(box); }
-    box.textContent = message;
+    box.textContent = message; const retry=el('button','Réessayer','button secondary');retry.type='button';retry.addEventListener('click',()=>location.reload());box.append(document.createTextNode(' '),retry);
   }
   if (SalonData.safeUrl(config.contentUrl)) {
     try {
@@ -79,7 +79,7 @@
   // Informations communes aux pages. Toutes les valeurs personnelles sont du texte.
   const titles = { recherche: 'Recherche', reperes: 'C’était quoi déjà ?', progression: 'On en est où ?', accueil: 'Accueil', calendrier: 'Calendrier', jeux: 'Jeux', evenements: 'Événements', informations: 'Informations', suggestions: 'Suggestions', '404': 'Page introuvable' };
   document.title = (titles[page] || 'Accueil') + ' — ' + content.site.name;
-  $('meta[name="description"]').content = content.site.description;
+
   const brand = $('.brand');
   const mark = brand.querySelector('.brand-mark').cloneNode(true);
   brand.replaceChildren(mark, document.createTextNode(content.site.name));
