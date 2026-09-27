@@ -140,3 +140,16 @@ html[data-page=accueil] .home-rendezvous.home-secondary{margin:24px auto!importa
 .game-progress{margin:24px 0;max-width:600px}.game-progress p{color:#c4acf6;font-size:.95rem}.game-progress-track{height:10px;background:#302839;border-radius:5px;overflow:hidden}.game-progress-fill{display:block;height:100%;width:0;background:#c4acf6;border-radius:inherit;transition:width 1.1s cubic-bezier(.22,1,.36,1)}.game-progress-fill.filled{width:var(--progress)}@media(prefers-reduced-motion:reduce){.game-progress-fill{transition:none}}
 
 .home-updates-grid .home-progress-card{border:1px solid #493e54;border-radius:8px;overflow:hidden;padding:0;background:#18151d}.home-progress-card .progress-art{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.home-progress-card .update-body{padding:24px}.home-progress-card .game-progress{margin:22px 0}.home-progress-card .game-progress p{display:flex;justify-content:space-between;align-items:center}.home-progress-card .game-progress strong{font-size:1.5rem;color:#d8c5ff}.home-progress-card .copy-link-wrap{margin-top:10px}.home-progress-card .update-date{margin-top:16px}@media(min-width:800px){.home-updates-grid>.home-progress-card:only-child{display:grid;grid-template-columns:1fr 1fr;align-items:center}.home-updates-grid>.home-progress-card:only-child .progress-art{height:100%;object-fit:cover}}
+/* Même traitement éditorial pour les jeux et les références. */
+.home-updates-grid{align-items:start}
+.home-updates-grid .home-progress-card{border:0;border-top:1px solid #51465c;border-radius:0;background:transparent;padding:22px 0 0;overflow:visible}
+.home-progress-card .update-body{padding:0}
+.home-updates-grid .progress-art{width:100%;height:240px;aspect-ratio:auto;object-fit:contain;object-position:left center;background:transparent;margin:0 0 22px;border-radius:4px}
+.home-updates-grid .cover-link{height:240px;display:flex;align-items:center;margin-bottom:22px}
+.home-updates-grid .cover-link .home-resource-cover{height:240px;width:auto;max-width:100%;object-fit:contain;margin:0}
+.home-updates-grid .update-body>.eyebrow{margin-top:0}
+.home-progress-card .game-progress{margin:22px 0}
+.home-updates-grid>article:only-child .cover-link{height:auto;margin:0}
+.home-updates-grid>article:only-child .cover-link .home-resource-cover{height:auto;width:180px}
+@media(min-width:800px){.home-updates-grid>.home-progress-card:only-child{display:grid;grid-template-columns:1fr 1fr;gap:28px}.home-updates-grid>.home-progress-card:only-child .progress-art{height:auto;margin:0;object-fit:contain}}
+@media(max-width:600px){.home-updates-grid .progress-art{height:auto;aspect-ratio:16/9;object-fit:cover}.home-updates-grid .cover-link{height:auto}.home-updates-grid .cover-link .home-resource-cover{height:auto;width:min(240px,100%)}.home-updates-grid>article:only-child .cover-link .home-resource-cover{width:96px}}
