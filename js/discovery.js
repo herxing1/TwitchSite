@@ -9,6 +9,8 @@ window.SalonDiscovery = (()=>{
   let box=document.querySelector('#home-priority');if(!box){box=node('section',undefined,'shell home-priority');box.id='home-priority';document.querySelector('.hero').after(box);}
   const next=[...content.streams,...content.events].filter(r=>Date.parse(r.end)>Date.now()&&(!r.status||r.status==='confirmed')).sort((a,b)=>Date.parse(a.start)-Date.parse(b.start))[0];
   const poll=content.poll?.open&&Date.parse(content.poll.endsAt)>Date.now()?content.poll:null;
+  const progress=(content.progress||[]).find(r=>r.status==='playing')||(content.progress||[])[0];
+  const resource=(content.resources||[])[0];
   const running=live?.status==='live';box.replaceChildren();
   const aside=document.querySelector('.next-card');if(aside)aside.hidden=true;
   document.querySelectorAll('.community-teaser').forEach(e=>e.hidden=!!poll&&!running&&!next);
@@ -18,9 +20,30 @@ window.SalonDiscovery = (()=>{
   else if(poll){box.append(node('p','À TOI DE CHOISIR','eyebrow'),node('h2',poll.question),node('p','Vote pour le jeu que tu veux voir au prochain live.'));}
   else{box.append(node('p','ENTRE DEUX LIVES','eyebrow'),node('h2','Retrouve le fil.'),node('p','Mes dernières parties et les références partagées en stream.'));}
   const a=node('a',running?'Rejoindre le live ↗':next?'Voir le programme ↗':poll?'Je participe au vote ↗':'Voir ma progression ↗','button primary');
-  a.href=running?'https://www.twitch.tv/'+encodeURIComponent(content.site.twitch):next?href(content.events.includes(next)?'evenements/index.html':'calendrier/index.html'):poll?href('suggestions/index.html#vote'):href('progression/index.html');
+  a.href=running?'https://www.twitch.tv/'+encodeURIComponent(content.site.twitch):next?href(content.events.includes(next)?'evenements/index.html':'calendrier/index.html'):poll?href('suggestions/index.html#vote'):href(progress?'progression/index.html#item-'+progress.id:resource?'reperes/index.html#item-'+resource.id:'jeux/index.html');
+  if(!running&&!next&&!poll){a.textContent=progress?'Suivre ma partie ↗':resource?'Retrouver les références ↗':'Explorer les jeux ↗';box.querySelector('h2').textContent=progress?progress.game:resource?resource.title:'On joue à quoi ?';box.querySelector('p:not(.eyebrow)').textContent=progress&&!progress.spoiler?(progress.next||progress.summary||'Retrouve ma partie en cours.'):progress?'Retrouve ma progression, avec les spoilers masqués.':resource?'Une référence partagée avec la communauté.':'Parcours ma bibliothèque pour trouver une idée de prochain live.';}
+  const hero=document.querySelector('.hero .button.primary');if(hero){hero.textContent=a.textContent;hero.href=a.href;if(running){hero.target='_blank';hero.rel='noopener noreferrer';}else{hero.removeAttribute('target');hero.removeAttribute('rel');}}
+  homeUpdates(content);
   if(running){a.target='_blank';a.rel='noopener noreferrer';}box.append(a);
   const banner=document.querySelector('.live-banner');if(banner)banner.hidden=running;
+ }
+ function homeUpdates(content){
+  let section=document.querySelector('#home-updates');
+  if(!section){section=node('section',undefined,'shell home-updates');section.id='home-updates';document.querySelector('.explore').before(section);}
+  section.replaceChildren();
+  const progress=[...(content.progress||[])].sort((a,b)=>String(b.updated||'').localeCompare(String(a.updated||''))).slice(0,1);
+  const resources=(content.resources||[]).slice(0,2);
+  if(!progress.length&&!resources.length){section.hidden=true;return;}section.hidden=false;
+  section.append(node('p','LE CARNET DE LA CHAÎNE','eyebrow'),node('h2','À découvrir entre deux lives.'));
+  const grid=node('div',undefined,'home-updates-grid');section.append(grid);
+  for(const [kind,row] of [...progress.map(r=>['progress',r]),...resources.map(r=>['resource',r])]){
+   const article=node('article');const isProgress=kind==='progress';
+   article.append(node('p',isProgress?({playing:'Partie en cours',paused:'Partie en pause',finished:'Partie terminée'}[row.status]||'Ma progression'):row.category,'eyebrow'),node('h3',isProgress?row.game:row.title));
+   const note=isProgress?(row.spoiler?'La suite de ma partie est à retrouver avec les spoilers masqués.':row.next||row.summary):row.note;
+   if(note)article.append(node('p',note.length>150?note.slice(0,147)+'…':note));
+   if(isProgress&&row.updated){const date=node('p','Mis à jour le '+new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeZone:'UTC'}).format(new Date(row.updated)),'update-date');article.append(date);}
+   const link=node('a',isProgress?'Suivre la partie ↗':'Retrouver la référence ↗','text-link');link.href=href((isProgress?'progression':'reperes')+'/index.html#item-'+row.id);article.append(link);grid.append(article);
+  }
  }
  async function render(content){
   const host=document.querySelector('#discovery');if(!host)return;

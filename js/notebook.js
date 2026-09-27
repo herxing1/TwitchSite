@@ -11,7 +11,7 @@ window.SalonNotebook={render(content){
   let game;
   if(resources){const label=node('label','Jeu associé');game=node('select');const all=node('option','Tous les jeux');all.value='';game.append(all);[...new Set(rows.map(r=>r.game).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'fr')).forEach(title=>{const o=node('option',title);o.value=title;game.append(o);});label.append(game);toolbar.append(label);}
   const reset=node('button','Réinitialiser','button secondary');reset.type='button';toolbar.append(reset);
-  const count=node('p',undefined,'results-line');count.setAttribute('role','status');const list=node('div',undefined,'notebook-list');host.append(toolbar,count,list);
+  const count=node('p',undefined,'results-line');count.setAttribute('role','status');const list=node('div',undefined,'notebook-list');if(rows.length>4){host.append(toolbar);}else if(rows.length>1){const more=node('details',undefined,'notebook-filter-toggle');more.append(node('summary','Rechercher ou filtrer'),toolbar);host.append(more);}host.append(count,list);
   const link=(url,title)=>{try{const u=new URL(url);if(u.protocol!=='https:'||u.username||u.password)return null;const a=node('a',title+' ↗','notebook-link');a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';return a;}catch{return null;}};
   function draw(){list.replaceChildren();
     const q=normal(search.value);const found=rows.filter(r=> (!filter.value||(resources?r.category:r.status)===filter.value)&&(!game?.value||r.game===game.value)&&normal(resources?[r.title,r.category,r.game,r.note].join(' '):r.game).includes(q));

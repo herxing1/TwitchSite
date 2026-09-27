@@ -84,3 +84,18 @@ html[data-page=accueil] .home-discord,.home-discord h2{color:#c4acf6}.home-disco
 @media(max-height:500px) and (max-width:900px){.header.has-menu{padding-top:10px;padding-bottom:10px}.header.has-menu nav{top:64px;padding-top:14px}.header.has-menu nav a:nth-of-type(-n+3) .menu-link-title{font-size:1.8rem}.header.has-menu .menu-heading{margin-bottom:6px}.header.has-menu .menu-secondary-heading{margin-top:12px;padding-top:10px}.header.has-menu nav .twitch-link{margin-top:12px}.header.has-menu nav a:nth-of-type(-n+3){padding:7px 0}}
 
 html[data-page=accueil] .portal:before{color:#a497b2}
+
+/* Des nouvelles concrètes, sans ajouter de navigation. */
+.home-updates{padding-top:36px;padding-bottom:48px}
+.home-updates>h2{font-size:clamp(27px,3.5vw,42px);margin:12px 0 30px}
+.home-updates-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:32px}
+.home-updates-grid article{border-top:1px solid #51465c;padding-top:22px;min-width:0}
+.home-updates-grid h3{font-size:28px;margin:12px 0;color:var(--accent,#c4acf6);overflow-wrap:anywhere}
+.home-updates-grid p{max-width:48ch;overflow-wrap:anywhere}
+.home-updates-grid .update-date{font-size:13px;opacity:.75}
+.home-updates-grid .text-link{display:inline-block;margin-top:12px}
+.form-details,.notebook-filter-toggle{border-bottom:1px solid #51465c;margin:12px 0 24px;padding-bottom:14px}
+.form-details summary,.notebook-filter-toggle summary{cursor:pointer;color:#c4acf6;padding:8px 0}
+.notebook-filter-toggle .notebook-tools{margin-top:20px}
+#suggestion-form #antibot-activation{border-left:2px solid #51465c;padding-left:16px;margin:22px 0}
+@media(max-width:600px){.home-updates-grid{gap:28px}.home-updates{padding-top:24px;padding-bottom:30px}}
