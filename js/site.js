@@ -63,7 +63,7 @@
       });
       body.append(add, el('p', 'Fichier agenda (.ics). Pense à vérifier ici si le rendez-vous change.', 'agenda-note'));
     }
-    body.append(SalonDiscovery.copyLink((kind==='Événement'?'evenements':'calendrier')+'/index.html#item-'+item.id,item.title));article.append(tile, body);
+    body.append(SalonDiscovery.copyLink((kind==='Événement'?'evenements':'calendrier')+'/#item-'+item.id,item.title));article.append(tile, body);
     if (typeof item.gameImage === 'string') {
       try {
         const localCategory = item.gameImage === 'images/just-chatting.jpg';
@@ -117,7 +117,7 @@
     if (upcoming.length) {
       const section = el('section', undefined, 'shell section-block'); section.id = 'home-events';
       const heading = el('div', undefined, 'section-heading');
-      const link = el('a', 'Tous les événements ↗', 'text-link'); link.href = href('evenements/index.html');
+      const link = el('a', 'Tous les événements ↗', 'text-link'); link.href = href('evenements/');
       heading.append(el('h2', 'Les prochains rendez-vous spéciaux'), link); section.append(heading);
       upcoming.forEach(row => section.append(appointment(row, 'Événement'))); $('main').append(section);
     }
@@ -186,7 +186,7 @@
     panels[1].replaceChildren(el('p', 'ON GARDE LE CONTACT', 'eyebrow'), el('h2', 'Les liens utiles'));
     for (const item of links) { const a = el('a', undefined, 'social-row'); a.href = item.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.append(el('span', item.label), el('span', '↗')); panels[1].append(a); }
     if (!links.length) panels[1].append(el('p', 'Les liens de la chaîne seront ajoutés ici.'));
-    for (const item of [{label:'Le programme des lives',url:'calendrier/index.html'}, {label:'Ma bibliothèque de jeux',url:'jeux/index.html'}, {label:'Proposer une idée',url:'suggestions/index.html'}]) {
+    for (const item of [{label:'Le programme des lives',url:'calendrier/'}, {label:'Ma bibliothèque de jeux',url:'jeux/'}, {label:'Proposer une idée',url:'suggestions/'}]) {
       const a = el('a', undefined, 'social-row'); a.href = href(item.url); a.append(el('span', item.label), el('span','↗')); panels[1].append(a);
     }
     const setup = $('#setup-list');
@@ -286,7 +286,7 @@
       <textarea id="message" name="message" rows="6" minlength="10" maxlength="1500" required placeholder="Raconte ton idée…" aria-describedby="message-help"></textarea>
       <div class="field-note"><span id="message-help">10 à 1 500 caractères.</span><span id="character-count">0 / 1 500</span></div>
       <div class="honeypot" aria-hidden="true"><label for="website">Ne pas remplir</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
-      <p class="privacy-note" id="suggestion-privacy">Ton message arrive en privé sur mon Discord. Pseudo facultatif, sans compte. Évite les informations personnelles.</p><details class="form-details"><summary>Comment tes données sont utilisées</summary><p class="privacy-note">Je reçois ton idée ou ton signalement et ton pseudo facultatif en privé sur Discord pour préparer mes lives et entretenir le site, sur la base de mon intérêt légitime à échanger avec ma communauté. Je prévois de les conserver six mois maximum et je dois les supprimer manuellement. Évite toute donnée sensible ou concernant une autre personne. Pour tes droits : <a href="mailto:herxingapp@gmail.com">herxingapp@gmail.com</a>. <a href="${href('confidentialite/index.html')}">Données, destinataires et droits</a>.</p></details>
+      <p class="privacy-note" id="suggestion-privacy">Ton message arrive en privé sur mon Discord. Pseudo facultatif, sans compte. Évite les informations personnelles.</p><details class="form-details"><summary>Comment tes données sont utilisées</summary><p class="privacy-note">Je reçois ton idée ou ton signalement et ton pseudo facultatif en privé sur Discord pour préparer mes lives et entretenir le site, sur la base de mon intérêt légitime à échanger avec ma communauté. Je prévois de les conserver six mois maximum et je dois les supprimer manuellement. Évite toute donnée sensible ou concernant une autre personne. Pour tes droits : <a href="mailto:herxingapp@gmail.com">herxingapp@gmail.com</a>. <a href="${href('confidentialite/')}">Données, destinataires et droits</a>.</p></details>
       <div id="antibot-activation">
         <p class="privacy-note">Pour envoyer ici, active le contrôle antibot Cloudflare Turnstile. Il analyse ton adresse IP et des signaux du navigateur pour bloquer les robots et améliorer sa détection. Tu peux aussi envoyer ton idée par e-mail sans activer ce contrôle. <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener noreferrer">Informations de Cloudflare</a>.</p>
         <div class="privacy-actions"><button class="button secondary" id="activate-antibot" type="button">Activer la vérification</button><a class="button secondary" href="mailto:herxingapp@gmail.com">Utiliser l’e-mail</a></div>

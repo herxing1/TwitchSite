@@ -1,3 +1,4 @@
+if(location.pathname.endsWith('/index.html')){history.replaceState(history.state,'',location.pathname.slice(0,-10)+location.search+location.hash);}
 (() => {
   const header=document.querySelector('.header'), nav=header?.querySelector('nav');
   if(!nav)return;

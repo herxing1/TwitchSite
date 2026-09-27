@@ -7,7 +7,7 @@ window.SalonCommunity = {render(content,config) {
     if(!content.poll)return;
     const box=make('section',undefined,'shell community-teaser');
     box.append(make('p','LE PROCHAIN JEU, ON LE CHOISIT ENSEMBLE','eyebrow'),make('h2',content.poll.question));
-    const a=make('a','Voir le vote et les résultats ↗','button secondary');a.href='suggestions/index.html#vote';box.append(a);
+    const a=make('a','Voir le vote et les résultats ↗','button secondary');a.href='suggestions/#vote';box.append(a);
     document.querySelector('main').append(box);return;
   }
   const section=make('section',undefined,'community-section');section.id='vote';
@@ -60,7 +60,7 @@ window.SalonCommunity = {render(content,config) {
         try{await refresh();}catch{button.textContent='Mon vote est enregistré';status.textContent='Ton vote est enregistré. Recharge la page pour actualiser les résultats.';}
       }catch(error){status.textContent=error.name==='TimeoutError'||error.name==='TypeError'?'La réception n’a pas pu être confirmée. Réessaie : le même identifiant évite de compter deux fois ton vote.':error.message;button.disabled=false;}
     });
-    const privacy=make('a','Comment mon vote est mémorisé');privacy.href='../confidentialite/index.html#votes';
+    const privacy=make('a','Comment mon vote est mémorisé');privacy.href='../confidentialite/#votes';
     const reload=make('button','Actualiser les résultats','button secondary');reload.type='button';reload.addEventListener('click',async()=>{reload.disabled=true;try{await refresh();status.textContent='Résultats actualisés.';}catch(e){status.textContent=e.message;reload.disabled=false;}});
     panel.append(form,reload,privacy);
   }
