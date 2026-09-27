@@ -22,7 +22,7 @@ window.SalonCommunity = {render(content,config) {
   const labels={retained:'Retenue',planned:'Prévue',done:'Réalisée'};
   for(const idea of content.ideas||[]){if(!labels[idea.status])continue;const card=make('article',undefined,'community-idea');card.append(make('span',labels[idea.status],'badge'),make('h3',idea.title),make('p',idea.note,'multiline'));grid.append(card);}
   if(!grid.children.length)grid.append(make('p','Je n’ai pas encore publié d’idée retenue. Tu peux déjà m’en proposer une ci-dessous.'));
-  ideas.append(grid);section.after(ideas);
+  ideas.append(grid);ideas.hidden=!(content.ideas||[]).some(idea=>labels[idea.status]);section.after(ideas);
   if(!config.contentUrl){panel.append(make('p','Les votes seront disponibles une fois le service connecté.'));return;}
   const endpoint=path=>new URL(path,config.contentUrl).href;
   const key='herxing-current-vote';

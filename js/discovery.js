@@ -13,7 +13,7 @@ window.SalonDiscovery = (()=>{
   const resource=(content.resources||[])[0];
   const running=live?.status==='live';box.replaceChildren();
   const aside=document.querySelector('.next-card');if(aside)aside.hidden=true;
-  document.querySelectorAll('.community-teaser').forEach(e=>e.hidden=!!poll&&!running&&!next);
+  document.querySelectorAll('.community-teaser').forEach(e=>e.hidden=true);
   document.querySelector('.home-rendezvous')?.classList.add('home-secondary');
   if(running){box.append(node('p','EN DIRECT','eyebrow'),node('h2',live.title||'Je suis en live !'),node('p',live.game||'Rejoins-moi sur Twitch.'));}
   else if(next){box.append(node('p','LE PROCHAIN RENDEZ-VOUS','eyebrow'),node('h2',next.title),node('p',new Intl.DateTimeFormat('fr-FR',{dateStyle:'full',timeStyle:'short',timeZone:content.site.timezone}).format(new Date(next.start))+(next.game?' · '+next.game:'')));}
@@ -24,6 +24,11 @@ window.SalonDiscovery = (()=>{
   if(!running&&!next&&!poll){a.textContent=progress?'Suivre ma partie ↗':resource?'Retrouver les références ↗':'Explorer les jeux ↗';box.querySelector('h2').textContent=progress?progress.game:resource?resource.title:'On joue à quoi ?';box.querySelector('p:not(.eyebrow)').textContent=progress&&!progress.spoiler?(progress.next||progress.summary||'Retrouve ma partie en cours.'):progress?'Retrouve ma progression, avec les spoilers masqués.':resource?'Une référence partagée avec la communauté.':'Parcours ma bibliothèque pour trouver une idée de prochain live.';}
   const hero=document.querySelector('.hero .button.primary');if(hero){hero.textContent=a.textContent;hero.href=a.href;if(running){hero.target='_blank';hero.rel='noopener noreferrer';}else{hero.removeAttribute('target');hero.removeAttribute('rel');}}
   homeUpdates(content);
+  const heroActions=document.querySelector('.hero .actions');if(heroActions)heroActions.hidden=true;
+  const availability={'reperes':!!content.resources?.length,'progression':!!content.progress?.length,'evenements':content.events.some(r=>Date.parse(r.end)>Date.now()&&r.status!=='cancelled')};
+  document.querySelectorAll('.portal').forEach(portal=>{const key=Object.keys(availability).find(k=>portal.getAttribute('href').includes(k+'/'));portal.hidden=key?!availability[key]:false;});
+  const discord=document.querySelector('.home-rendezvous');if(discord)document.querySelector('.explore').after(discord);
+
   if(running){a.target='_blank';a.rel='noopener noreferrer';}box.append(a);
   const banner=document.querySelector('.live-banner');if(banner)banner.hidden=running;
  }
@@ -37,7 +42,7 @@ window.SalonDiscovery = (()=>{
   section.append(node('p','LE CARNET DE LA CHAÎNE','eyebrow'),node('h2','À découvrir entre deux lives.'));
   const grid=node('div',undefined,'home-updates-grid');section.append(grid);
   for(const [kind,row] of [...progress.map(r=>['progress',r]),...resources.map(r=>['resource',r])]){
-   const article=node('article');const isProgress=kind==='progress';
+   const article=node('article');const body=node('div',undefined,'update-body');const isProgress=kind==='progress';
    if(!isProgress&&['playlist','track'].includes(row.kind)&&window.SALON_CONFIG?.contentUrl){
     try{if(new URL(row.url).hostname==='open.spotify.com'){
      const cover=node('img',undefined,'home-resource-cover');const endpoint=new URL('/artwork',window.SALON_CONFIG.contentUrl);endpoint.searchParams.set('id',row.id);
@@ -45,11 +50,11 @@ window.SalonDiscovery = (()=>{
     }}catch{}
    }
 
-   article.append(node('p',isProgress?({playing:'Partie en cours',paused:'Partie en pause',finished:'Partie terminée'}[row.status]||'Ma progression'):row.category,'eyebrow'),node('h3',isProgress?row.game:row.title));
+   body.append(node('p',isProgress?({playing:'Partie en cours',paused:'Partie en pause',finished:'Partie terminée'}[row.status]||'Ma progression'):row.category,'eyebrow'),node('h3',isProgress?row.game:row.title));
    const note=isProgress?(row.spoiler?'La suite de ma partie est à retrouver avec les spoilers masqués.':row.next||row.summary):row.note;
-   if(note)article.append(node('p',note.length>150?note.slice(0,147)+'…':note));
-   if(isProgress&&row.updated){const date=node('p','Mis à jour le '+new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeZone:'UTC'}).format(new Date(row.updated)),'update-date');article.append(date);}
-   const link=node('a',isProgress?'Suivre la partie ↗':'Retrouver la référence ↗','text-link');link.href=href((isProgress?'progression':'reperes')+'/index.html#item-'+row.id);article.append(link);grid.append(article);
+   if(note)body.append(node('p',note.length>150?note.slice(0,147)+'…':note));
+   if(isProgress&&row.updated){const date=node('p','Mis à jour le '+new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeZone:'UTC'}).format(new Date(row.updated)),'update-date');body.append(date);}
+   const link=node('a',isProgress?'Suivre la partie ↗':'Retrouver la référence ↗','text-link');link.href=href((isProgress?'progression':'reperes')+'/index.html#item-'+row.id);body.append(link);article.append(body);grid.append(article);
   }
  }
  async function render(content){

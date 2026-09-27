@@ -315,6 +315,13 @@
     }
 
     const activation = $('#activate-antibot');
+    const step=el('p','1. Écris ton message · 2. Active la vérification · 3. Envoie','form-steps');form.prepend(step);
+    const widget=form.querySelector('.cf-turnstile');
+    widget.dataset.callback='salonSuggestionReady';widget.dataset.expiredCallback='salonSuggestionExpired';widget.dataset.errorCallback='salonSuggestionError';
+    window.salonSuggestionReady=()=>{step.textContent='Vérification réussie — tu peux envoyer ton message.';button.classList.add('ready-to-send');};
+    window.salonSuggestionExpired=()=>{step.textContent='La vérification a expiré. Vérifie-toi à nouveau avant l’envoi.';button.classList.remove('ready-to-send');};
+    window.salonSuggestionError=()=>{step.textContent='Vérification indisponible. Ton texte reste ici ; réessaie ou utilise l’e-mail.';button.classList.remove('ready-to-send');};
+
     activation.addEventListener('click', () => {
       activation.disabled = true;
       status.textContent = 'Chargement de la protection antibot…';
@@ -327,7 +334,7 @@
     form.addEventListener('submit', async event => {
       event.preventDefault(); if (!form.reportValidity() || button.disabled) return;
       const data = new FormData(form), token = data.get('cf-turnstile-response');
-      if (!token) { status.textContent = 'Termine la vérification antibot avant l’envoi.'; return; }
+      if (!token) { status.textContent = 'Étape 2 : active puis termine la vérification avant l’envoi. Ton message reste ici.'; activation.focus(); return; }
       button.disabled = true; status.textContent = 'Envoi en cours…';
       try {
         const response = await fetch(config.suggestionsUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pseudo: data.get('pseudo'), message: data.get('message'), token, website: data.get('website') }), signal: AbortSignal.timeout(20000) });
@@ -336,7 +343,7 @@
         status.textContent = 'Merci ! Ton idée a bien été transmise.'; form.reset(); $('#character-count').textContent = '0 / 1 500';
       } catch (error) {
         status.textContent = error.name === 'TypeError' || error.name === 'TimeoutError' ? 'La réception n’a pas pu être confirmée. Ton texte est conservé ; vérifie ta connexion avant de réessayer.' : error.message;
-      } finally { button.disabled = false; window.turnstile?.reset(); }
+      } finally { button.disabled = false; button.classList.remove('ready-to-send'); step.textContent='Pour un nouvel envoi, termine à nouveau la vérification.'; window.turnstile?.reset(); }
     });
   }
 })();

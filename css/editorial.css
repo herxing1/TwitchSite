@@ -101,3 +101,33 @@ html[data-page=accueil] .portal:before{color:#a497b2}
 @media(max-width:600px){.home-updates-grid{gap:28px}.home-updates{padding-top:24px;padding-bottom:30px}}
 
 .home-resource-cover{display:block;width:min(240px,100%);height:auto;aspect-ratio:1;object-fit:cover;margin:0 0 22px;border-radius:4px}
+
+/* Accueil compact : une action principale, des aperçus proportionnés. */
+html[data-page=accueil] .hero{padding-top:38px;padding-bottom:26px;gap:32px}
+html[data-page=accueil] .hero h1{font-size:clamp(2.7rem,5vw,4.6rem)}
+html[data-page=accueil] .hero .actions[hidden],html[data-page=accueil] .portal[hidden],html[data-page=accueil] .community-teaser{display:none!important}
+.home-updates-grid:has(>article:only-child){grid-template-columns:1fr}
+.home-updates-grid>article:only-child:has(.home-resource-cover){display:grid;grid-template-columns:180px minmax(0,1fr);gap:28px;align-items:center}
+.home-updates-grid>article:only-child .home-resource-cover{width:180px;margin:0}
+.update-body{min-width:0}
+html[data-page=accueil] .portal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}
+html[data-page=accueil] .portal,html[data-page=accueil] .portal:first-child,html[data-page=accueil] .portal:nth-child(2){display:block;padding:22px 0;min-height:0}
+html[data-page=accueil] .portal:before{display:none}
+html[data-page=accueil] .portal h3{font-size:1.6rem;margin:0 0 10px}
+html[data-page=accueil] .portal p{min-height:0;margin:0;font-size:.95rem}
+html[data-page=accueil] .portal .portal-footer{display:block;text-align:left;margin-top:12px}
+html[data-page=accueil] .home-rendezvous.home-secondary{margin:24px auto!important;padding-top:22px;padding-bottom:22px;border-top:1px solid #51465c}
+.home-secondary .home-discord h2{font-size:1.7rem!important}
+.home-secondary .home-discord .eyebrow,.home-secondary .home-discord:before{display:none}
+.home-secondary .home-discord p{margin:10px 0}
+.form-steps{font-size:.9rem;border-left:2px solid #c4acf6;padding-left:14px;line-height:1.7}
+.ready-to-send{outline:2px solid #c4acf6;outline-offset:4px}
+@media(max-width:600px){
+ html[data-page=accueil] .hero{padding-top:26px;padding-bottom:18px;gap:18px}
+ html[data-page=accueil] .hero-scene{max-width:210px;justify-self:end;margin:0!important}
+ html[data-page=accueil] .hero .lead{font-size:1rem;line-height:1.6;margin-bottom:0}
+ html[data-page=accueil] .portal-grid{grid-template-columns:1fr}
+ .home-updates-grid>article:only-child:has(.home-resource-cover){grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:start}
+ .home-updates-grid>article:only-child .home-resource-cover{width:96px}
+ .home-updates-grid h3{font-size:23px}.home-updates-grid .eyebrow{margin-top:0}
+}
