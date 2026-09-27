@@ -4,6 +4,12 @@ window.SalonDiscovery = (()=>{
  const href=(path)=>new URL(path,root).href;
  const gameUrl=name=>href('recherche/index.html?jeu='+encodeURIComponent(name));
  const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
+ function copyLink(path,title){
+  const wrap=node('span',undefined,'copy-link-wrap'),button=node('button','Copier le lien','copy-link'),status=node('span',undefined,'copy-status');button.type='button';button.setAttribute('aria-label','Copier le lien : '+title);status.setAttribute('role','status');
+  const url=href(path);button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(url);status.textContent='Lien copié !';}catch{status.replaceChildren();const input=node('input');input.readOnly=true;input.value=url;input.setAttribute('aria-label','Lien à copier');status.append(node('span','Copie ce lien : '),input);input.focus();input.select();}});wrap.append(button,status);return wrap;
+ }
+ function spotify(url){try{const u=new URL(url);return u.protocol==='https:'&&u.hostname==='open.spotify.com'&&!u.username&&!u.password?u.href:null;}catch{return null;}}
+ function coverLink(cover,url,title){const a=node('a',undefined,'cover-link');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label','Écouter '+title+' sur Spotify');a.append(cover);return a;}
  function home(content,live){
   if(document.documentElement.dataset.page!=='accueil')return;
   let box=document.querySelector('#home-priority');if(!box){box=node('section',undefined,'shell home-priority');box.id='home-priority';document.querySelector('.hero').after(box);}
@@ -46,7 +52,7 @@ window.SalonDiscovery = (()=>{
    if(!isProgress&&window.SALON_CONFIG?.contentUrl){
     try{if(new URL(row.url).hostname==='open.spotify.com'){
      const cover=node('img',undefined,'home-resource-cover');const endpoint=new URL('/artwork',window.SALON_CONFIG.contentUrl);endpoint.searchParams.set('id',row.id);
-     cover.src=endpoint.href;cover.alt='Pochette de '+row.title;cover.width=240;cover.height=240;cover.loading='lazy';cover.referrerPolicy='no-referrer';cover.addEventListener('error',()=>cover.remove(),{once:true});article.append(cover);
+     cover.src=endpoint.href;cover.alt='Pochette de '+row.title;cover.width=240;cover.height=240;cover.loading='lazy';cover.referrerPolicy='no-referrer';const linked=coverLink(cover,spotify(row.url),row.title);cover.addEventListener('error',()=>linked.remove(),{once:true});article.append(linked);
     }}catch{}
    }
 
@@ -54,7 +60,7 @@ window.SalonDiscovery = (()=>{
    const note=isProgress?(row.spoiler?'La suite de ma partie est à retrouver avec les spoilers masqués.':row.next||row.summary):row.note;
    if(note)body.append(node('p',note.length>150?note.slice(0,147)+'…':note));
    if(isProgress&&row.updated){const date=node('p','Mis à jour le '+new Intl.DateTimeFormat('fr-FR',{dateStyle:'medium',timeZone:'UTC'}).format(new Date(row.updated)),'update-date');body.append(date);}
-   const link=node('a',isProgress?'Suivre la partie ↗':'Retrouver la référence ↗','text-link');link.href=href((isProgress?'progression':'reperes')+'/index.html#item-'+row.id);body.append(link);article.append(body);grid.append(article);
+   const link=node('a',isProgress?'Suivre la partie ↗':'Retrouver la référence ↗','text-link');link.href=href((isProgress?'progression':'reperes')+'/index.html#item-'+row.id);if(!isProgress&&spotify(row.url)){link.href=spotify(row.url);link.textContent='Écouter sur Spotify ↗';link.target='_blank';link.rel='noopener noreferrer';}body.append(link,copyLink((isProgress?'progression':'reperes')+'/index.html#item-'+row.id,isProgress?row.game:row.title));article.append(body);grid.append(article);
   }
  }
  async function render(content){
@@ -83,5 +89,5 @@ window.SalonDiscovery = (()=>{
   if(!game)input.addEventListener('input',()=>{history.replaceState(null,'',href('recherche/index.html?q='+encodeURIComponent(input.value)));draw();});draw();
   try{const r=await fetch(href('public/jeux.json'),{signal:AbortSignal.timeout(8000)});if(!r.ok)throw Error();const data=await r.json();games=['steam','epic'].flatMap(platform=>(data[platform]?.games||[]).filter(g=>!g.kind||g.kind==='game').map(g=>({...g,platform})));}catch{failed=true;}finally{loading=false;draw();}
  }
- return {gameUrl,home,render};
+ return {gameUrl,home,render,copyLink,spotify,coverLink};
 })();

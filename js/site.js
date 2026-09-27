@@ -63,7 +63,7 @@
       });
       body.append(add, el('p', 'Fichier agenda (.ics). Pense à vérifier ici si le rendez-vous change.', 'agenda-note'));
     }
-    article.append(tile, body);
+    body.append(SalonDiscovery.copyLink((kind==='Événement'?'evenements':'calendrier')+'/index.html#item-'+item.id,item.title));article.append(tile, body);
     if (typeof item.gameImage === 'string') {
       try {
         const localCategory = item.gameImage === 'images/just-chatting.jpg';

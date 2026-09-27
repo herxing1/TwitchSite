@@ -131,3 +131,6 @@ html[data-page=accueil] .home-rendezvous.home-secondary{margin:24px auto!importa
  .home-updates-grid>article:only-child .home-resource-cover{width:96px}
  .home-updates-grid h3{font-size:23px}.home-updates-grid .eyebrow{margin-top:0}
 }
+
+.cover-link{display:block;width:fit-content;max-width:100%}.cover-link:focus-visible{outline:2px solid #c4acf6;outline-offset:5px}.cover-link img{transition:opacity .15s}.cover-link:hover img{opacity:.85}
+.copy-link-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:18px}.copy-link{background:transparent;border:0;border-bottom:1px solid #71627f;padding:8px 0;color:#c4acf6;font:inherit;font-size:.85rem;cursor:pointer}.copy-status{font-size:.8rem;color:#ccc3d5;max-width:100%}.copy-status input{width:100%;min-width:0}.home-updates-grid>article:only-child>.cover-link{width:180px}@media(max-width:600px){.home-updates-grid>article:only-child>.cover-link{width:96px}}
