@@ -153,3 +153,5 @@ html[data-page=accueil] .home-rendezvous.home-secondary{margin:24px auto!importa
 .home-updates-grid>article:only-child .cover-link .home-resource-cover{height:auto;width:180px}
 @media(min-width:800px){.home-updates-grid>.home-progress-card:only-child{display:grid;grid-template-columns:1fr 1fr;gap:28px}.home-updates-grid>.home-progress-card:only-child .progress-art{height:auto;margin:0;object-fit:contain}}
 @media(max-width:600px){.home-updates-grid .progress-art{height:auto;aspect-ratio:16/9;object-fit:cover}.home-updates-grid .cover-link{height:auto}.home-updates-grid .cover-link .home-resource-cover{height:auto;width:min(240px,100%)}.home-updates-grid>article:only-child .cover-link .home-resource-cover{width:96px}}
+
+.cover-unavailable{min-height:150px;padding:20px;background:#211b29;color:#c4acf6;align-content:center}#more-games{display:block;margin:28px auto}#more-games[hidden]{display:none}

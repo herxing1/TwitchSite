@@ -12,6 +12,7 @@ window.SalonDiscovery = (()=>{
  function coverLink(cover,url,title){const a=node('a',undefined,'cover-link');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label','Écouter '+title+' sur Spotify');a.append(cover);return a;}
  let libraryGames=[];
  function gameCovers(games){if(games)libraryGames=games;document.querySelectorAll('[data-progress-game]').forEach(card=>{if(card.querySelector('.progress-art'))return;const game=libraryGames.find(g=>normalize(g.title)===normalize(card.dataset.progressGame));if(!game)return;let src=game.platform==='steam'&&/^\d+$/.test(String(game.id))?'https://cdn.akamai.steamstatic.com/steam/apps/'+game.id+'/header.jpg':game.image;try{const u=new URL(src);if(u.protocol!=='https:'||!['cdn1.epicgames.com','cdn2.unrealengine.com','cdn.akamai.steamstatic.com'].includes(u.hostname))return;const image=node('img',undefined,'progress-art');image.src=u.href;image.alt=game.title;image.width=460;image.height=259;image.loading='lazy';image.addEventListener('error',()=>image.remove(),{once:true});card.prepend(image);}catch{}});}
+ let homeSignature="",updatesSignature="";
  function home(content,live){
   if(document.documentElement.dataset.page!=='accueil')return;
   let box=document.querySelector('#home-priority');if(!box){box=node('section',undefined,'shell home-priority');box.id='home-priority';document.querySelector('.hero').after(box);}
@@ -19,7 +20,7 @@ window.SalonDiscovery = (()=>{
   const poll=content.poll?.open&&Date.parse(content.poll.endsAt)>Date.now()?content.poll:null;
   const progress=(content.progress||[]).find(r=>r.status==='playing')||(content.progress||[])[0];
   const resource=(content.resources||[])[0];
-  const running=live?.status==='live';box.replaceChildren();
+  const running=live?.status==='live';const signature=JSON.stringify([content,running?live:null,next?.id,poll?.id]);if(signature===homeSignature)return;homeSignature=signature;box.replaceChildren();
   const aside=document.querySelector('.next-card');if(aside)aside.hidden=true;
   document.querySelectorAll('.community-teaser').forEach(e=>e.hidden=true);
   document.querySelector('.home-rendezvous')?.classList.add('home-secondary');
@@ -41,6 +42,7 @@ window.SalonDiscovery = (()=>{
   const banner=document.querySelector('.live-banner');if(banner)banner.hidden=running;
  }
  function homeUpdates(content){
+  const signature=JSON.stringify([content.progress,content.resources]);if(signature===updatesSignature)return;updatesSignature=signature;
   let section=document.querySelector('#home-updates');
   if(!section){section=node('section',undefined,'shell home-updates');section.id='home-updates';document.querySelector('.explore').before(section);}
   section.replaceChildren();
@@ -54,7 +56,7 @@ window.SalonDiscovery = (()=>{
    if(!isProgress&&window.SALON_CONFIG?.contentUrl){
     try{if(new URL(row.url).hostname==='open.spotify.com'){
      const cover=node('img',undefined,'home-resource-cover');const endpoint=new URL('/artwork',window.SALON_CONFIG.contentUrl);endpoint.searchParams.set('id',row.id);
-     cover.src=endpoint.href;cover.alt='Pochette de '+row.title;cover.width=240;cover.height=240;cover.loading='lazy';cover.referrerPolicy='no-referrer';const linked=coverLink(cover,spotify(row.url),row.title);cover.addEventListener('error',()=>linked.remove(),{once:true});article.append(linked);
+     cover.src=endpoint.href;cover.alt='Pochette de '+row.title;cover.width=240;cover.height=240;cover.loading='lazy';cover.referrerPolicy='no-referrer';const linked=coverLink(cover,spotify(row.url),row.title);let retried=false;cover.addEventListener('error',()=>{if(!retried){retried=true;setTimeout(()=>{const retry=new URL(cover.src);retry.searchParams.set('retry',Date.now());cover.src=retry.href;},1500);}else{cover.hidden=true;linked.classList.add('cover-unavailable');linked.textContent='Pochette indisponible · Écouter sur Spotify ↗';}});article.append(linked);
     }}catch{}
    }
 

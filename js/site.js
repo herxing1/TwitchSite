@@ -33,6 +33,9 @@
   window.SalonCommunity?.render(content, config);
   window.SalonNotebook?.render(content);
   window.SalonDiscovery?.render(content);
+  let checkingContent=false,lastCheck=Date.now();const originalContent=JSON.stringify(content);
+  async function checkContent(){if(document.hidden||checkingContent||Date.now()-lastCheck<60000||!config.contentUrl)return;checkingContent=true;lastCheck=Date.now();try{const response=await fetch(config.contentUrl,{cache:'no-store',signal:AbortSignal.timeout(5000)});if(!response.ok)return;const data=await response.json();SalonData.validateContent(data.content);if(JSON.stringify(data.content)!==originalContent&&!document.querySelector('#new-content')){const banner=el('p','Du nouveau sur la chaîne. ','shell data-notice');banner.id='new-content';banner.setAttribute('role','status');const refresh=el('button','Afficher la nouvelle version','button secondary');refresh.addEventListener('click',()=>{const message=document.querySelector('#message');if(message?.value&&!confirm('Ton message n’est pas envoyé. Recharger effacera ce texte. Continuer ?'))return;location.reload();});banner.append(refresh);document.querySelector('main').prepend(banner);}}catch{}finally{checkingContent=false;}}
+  setInterval(checkContent,60000);document.addEventListener('visibilitychange',checkContent);
   const zone = content.site.timezone;
   const date = (value, options = {}) => new Intl.DateTimeFormat('fr-FR', { timeZone: zone, day: 'numeric', month: 'long', year: 'numeric', ...options }).format(new Date(value));
   const time = value => date(value, { day: undefined, month: undefined, year: undefined, hour: '2-digit', minute: '2-digit' });
@@ -91,11 +94,12 @@
     if (content.site.twitch) link.href = 'https://www.twitch.tv/' + content.site.twitch;
   });
 
+  let scheduleSignature="";
   function renderSchedule() {
     const isEvents = page === 'evenements';
     const upcoming = $(isEvents ? '#events-upcoming' : '#upcoming');
     const past = $(isEvents ? '#events-past' : '#past');
-    const rows = sorted(content[isEvents ? 'events' : 'streams']);
+    const rows = sorted(content[isEvents ? 'events' : 'streams']);const signature=JSON.stringify(rows.map(r=>[r,Date.parse(r.end)>Date.now()]));if(signature===scheduleSignature)return;scheduleSignature=signature;
     upcoming.replaceChildren(); past.replaceChildren();
     for (const row of rows) (Date.parse(row.end) > Date.now() ? upcoming : past).append(appointment(row, isEvents ? 'Événement' : 'Stream'));
     $(isEvents ? '#events-empty' : '#schedule-empty').hidden = upcoming.children.length > 0;
@@ -104,7 +108,9 @@
   }
 
   let latestLive=null;
+  let homeContentSignature="";
   function renderHome() {
+    const signature=JSON.stringify([content,content.streams.map(r=>Date.parse(r.end)>Date.now()),content.events.map(r=>Date.parse(r.end)>Date.now())]);if(signature===homeContentSignature)return;homeContentSignature=signature;
     $('.hero h1').textContent = content.site.tagline;
     $('.hero .lead').textContent = content.site.description;
     const next = sorted(content.streams).find(row => Date.parse(row.end) > Date.now() && (!row.status || row.status === 'confirmed'));
@@ -113,7 +119,7 @@
     $('#next-empty').hidden = !!next;
     window.SalonDiscovery?.home(content,latestLive);
     $('#home-events')?.remove();
-    const upcoming = sorted(content.events).filter(row => Date.parse(row.end) > Date.now()).slice(0, 3);
+    const upcoming = sorted(content.events).filter(row => Date.parse(row.end) > Date.now() && row.status !== 'cancelled').slice(0, 3);
     if (upcoming.length) {
       const section = el('section', undefined, 'shell section-block'); section.id = 'home-events';
       const heading = el('div', undefined, 'section-heading');
@@ -196,7 +202,7 @@
     $('#setup-panel').hidden = !(content.site.setup || []).length;
   }
 
-  let games = [], selectedPlatform = 'all';
+  let games = [], selectedPlatform = 'all',gameLimit=24,gameFilter='';
   if(page==='jeux')$('#game-search').value=new URLSearchParams(location.search).get('q')||'';
   function renderGames() {
     const search = $('#game-search');
@@ -204,8 +210,8 @@
     const matches = (values, selected) => !selected || (selected === 'unknown' ? !values?.length : values?.includes(selected));
     const visible = games.filter(g => (selectedPlatform === 'all' || g.platform === selectedPlatform) && normalize(g.title).includes(normalize(search.value.trim())) && matches(g.genres, $('#game-genre').value) && matches(g.modes, $('#game-mode').value));
     visible.sort((a, b) => a.title.localeCompare(b.title, 'fr') * ($('#game-sort').value === 'desc' ? -1 : 1));
-    const grid = $('.game-grid'); grid.replaceChildren();
-    for (const game of visible) {
+    const filterKey=JSON.stringify([search.value,selectedPlatform,$('#game-genre').value,$('#game-mode').value,$('#game-sort').value]);if(filterKey!==gameFilter){gameFilter=filterKey;gameLimit=24;}const grid = $('.game-grid'); grid.replaceChildren();
+    for (const game of visible.slice(0,gameLimit)) {
       const card = el('article', undefined, 'game-card'); card.dataset.game = ''; card.dataset.platform = game.platform;
       const artwork = el('div', undefined, 'game-artwork');
       artwork.setAttribute('aria-hidden', 'true');
@@ -227,6 +233,7 @@
       if(window.SalonDiscovery){const related=el('a','Progression, liens et lives ↗','related-game');related.href=SalonDiscovery.gameUrl(game.title);card.append(related);}
       grid.append(card);
     }
+    let more=$('#more-games');if(!more){more=el('button','Voir plus','button secondary');more.id='more-games';more.type='button';grid.after(more);more.addEventListener('click',()=>{const previous=gameLimit;gameLimit+=24;renderGames();const first=grid.children[previous];if(first){first.tabIndex=-1;first.focus({preventScroll:true});}});}more.hidden=gameLimit>=visible.length;more.textContent='Voir plus ('+Math.max(0,visible.length-gameLimit)+' restants)';
     $('#game-count').textContent = visible.length + ' jeu' + (visible.length !== 1 ? 'x' : '');
     $('#games-empty').hidden = visible.length > 0;
     $('#games-empty h2').textContent = games.length ? 'Aucun jeu ne correspond.' : 'La bibliothèque prend ses quartiers.';
@@ -252,6 +259,7 @@
       return;
     }
     try {
+      if(page==='accueil'&&config.contentUrl){const response=await fetch(new URL('/home-library',config.contentUrl),{signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error();const data=await response.json();window.SalonDiscovery?.gameCovers(data.games||[]);const count=$('.portal[href*=\"jeux/\"] .portal-footer');if(count&&Number.isInteger(data.count))count.textContent=data.count+' jeux à découvrir';return;}
       const response = await fetch(href('public/jeux.json'), { cache: 'no-cache', signal: AbortSignal.timeout(10000) });
       if (!response.ok) throw new Error();
       const libraries = await response.json(); SalonData.validateLibraries(libraries);
