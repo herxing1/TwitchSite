@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-09-28T04:33:01Z",
+    "updatedAt": "2026-09-29T04:32:00Z",
     "games": [
       {
         "id": "933110",
@@ -1283,805 +1283,413 @@
       {
         "id": "2269560",
         "title": "Perseus: Titan Slayer Playtest",
-        "kind": "game",
+        "kind": "unknown",
         "genres": [],
         "modes": []
       },
       {
         "id": "2688950",
         "title": "Planet Coaster 2",
-        "kind": "game",
-        "genres": [
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "703080",
         "title": "Planet Zoo",
-        "kind": "game",
-        "genres": [
-          "Casual",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "108600",
         "title": "Project Zomboid",
-        "kind": "game",
-        "genres": [
-          "Accès anticipé",
-          "Indépendant",
-          "RPG",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo",
-          "Écran partagé"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "578080",
         "title": "PUBG: BATTLEGROUNDS",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "Course",
-          "Free-to-play"
-        ],
-        "modes": [
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "3241660",
         "title": "R.E.P.O.",
-        "kind": "game",
-        "genres": [
-          "Accès anticipé",
-          "Action"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "813820",
         "title": "Realm Royale Reforged",
-        "kind": "game",
-        "genres": [
-          "Accès anticipé",
-          "Action",
-          "Free-to-play"
-        ],
-        "modes": [
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1174180",
         "title": "Red Dead Redemption 2",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1236300",
         "title": "Resident Evil Re:Verse",
-        "kind": "game",
-        "genres": [
-          "Action"
-        ],
-        "modes": [
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1196590",
         "title": "Resident Evil Village",
-        "kind": "game",
-        "genres": [
-          "Action"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "294100",
         "title": "RimWorld",
-        "kind": "game",
-        "genres": [
-          "Indépendant",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1206610",
         "title": "Rubber Bandits",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Casual",
-          "Indépendant"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Écran partagé"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1172620",
         "title": "Sea of Thieves",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "8930",
         "title": "Sid Meier's Civilization V",
-        "kind": "game",
-        "genres": [
-          "Stratégie"
-        ],
-        "modes": [
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "289070",
         "title": "Sid Meier's Civilization VI",
-        "kind": "game",
-        "genres": [
-          "Stratégie"
-        ],
-        "modes": [
-          "Multijoueur",
-          "Solo",
-          "Écran partagé"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1295660",
         "title": "Sid Meier's Civilization VII",
-        "kind": "game",
-        "genres": [
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1575940",
         "title": "Sins of a Solar Empire II",
-        "kind": "game",
-        "genres": [
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1482620",
         "title": "Slappyball",
-        "kind": "game",
-        "genres": [
-          "Casual",
-          "Free-to-play"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "583760",
         "title": "Slash It 2",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Casual",
-          "Indépendant"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1326470",
         "title": "Sons Of The Forest",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "Indépendant",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "17390",
         "title": "Spore",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "Casual",
-          "RPG",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "495420",
         "title": "State of Decay 2",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "RPG",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "281990",
         "title": "Stellaris",
-        "kind": "game",
-        "genres": [
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "253250",
         "title": "Stonehearth",
-        "kind": "game",
-        "genres": [
-          "Indépendant",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2386720",
         "title": "STRAFTAT",
-        "kind": "game",
-        "genres": [
-          "Action"
-        ],
-        "modes": [
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2140020",
         "title": "Stronghold: Definitive Edition",
-        "kind": "game",
-        "genres": [
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "264710",
         "title": "Subnautica",
-        "kind": "game",
-        "genres": [
-          "Aventure",
-          "Indépendant"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1962700",
         "title": "Subnautica 2",
-        "kind": "game",
-        "genres": [
-          "Accès anticipé",
-          "Action",
-          "Aventure"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2670630",
         "title": "Supermarket Simulator",
-        "kind": "game",
-        "genres": [
-          "Casual",
-          "Indépendant",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2709570",
         "title": "Supermarket Together",
-        "kind": "game",
-        "genres": [
-          "Casual",
-          "Free-to-play",
-          "Indépendant",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1693040",
         "title": "Synthwave Burnout",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Indépendant",
-          "Sport"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1903510",
         "title": "Technicity: Prologue",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Indépendant",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "868270",
         "title": "The Cycle: Frontier",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Course",
-          "Free-to-play"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "489830",
         "title": "The Elder Scrolls V: Skyrim Special Edition",
-        "kind": "game",
-        "genres": [
-          "RPG"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "242760",
         "title": "The Forest",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "Indépendant",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1888930",
         "title": "The Last of Us™ Part I",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "780310",
         "title": "The Riftbreaker",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "Indépendant",
-          "RPG",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1222670",
         "title": "The Sims™ 4",
-        "kind": "game",
-        "genres": [
-          "Aventure",
-          "Casual",
-          "Free-to-play",
-          "Simulation"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "352720",
         "title": "The Universim",
-        "kind": "game",
-        "genres": [
-          "Indépendant",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "292030",
         "title": "The Witcher 3: Wild Hunt - Complete Edition",
-        "kind": "game",
-        "genres": [
-          "RPG"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "2221490",
         "title": "Tom Clancy's The Division 2",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "RPG"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1142710",
         "title": "Total War: WARHAMMER III",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Stratégie"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1881700",
         "title": "Undawn",
-        "kind": "game",
-        "genres": [
-          "Aventure",
-          "Course",
-          "Free-to-play",
-          "RPG"
-        ],
-        "modes": [
-          "Coopération",
-          "MMO",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "304930",
         "title": "Unturned",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "Casual",
-          "Free-to-play",
-          "Indépendant"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "438100",
         "title": "VRChat",
-        "kind": "game",
-        "genres": [
-          "Accès anticipé",
-          "Aventure",
-          "Casual",
-          "Course",
-          "Free-to-play",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "MMO",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "431960",
         "title": "Wallpaper Engine",
-        "kind": "game",
-        "genres": [
-          "Casual",
-          "Indépendant"
-        ],
+        "kind": "unknown",
+        "genres": [],
         "modes": []
       },
       {
         "id": "236390",
         "title": "War Thunder",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Course",
-          "Free-to-play",
-          "Simulation"
-        ],
-        "modes": [
-          "Coopération",
-          "MMO",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "230410",
         "title": "Warframe",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Free-to-play",
-          "RPG"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "489630",
         "title": "Warhammer 40,000: Gladius - Relics of War",
-        "kind": "game",
-        "genres": [
-          "Stratégie"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo",
-          "Écran partagé"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "552500",
         "title": "Warhammer: Vermintide 2",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Indépendant",
-          "RPG"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "447040",
         "title": "Watch_Dogs 2",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur",
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "582500",
         "title": "We Were Here",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Aventure",
-          "Free-to-play",
-          "Indépendant"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1341290",
         "title": "We Were Here Forever",
-        "kind": "game",
-        "genres": [
-          "Aventure",
-          "Casual",
-          "Indépendant"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "865360",
         "title": "We Were Here Together",
-        "kind": "game",
-        "genres": [
-          "Aventure",
-          "Casual",
-          "Indépendant"
-        ],
-        "modes": [
-          "Coopération",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "552990",
         "title": "World of Warships",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Course",
-          "Free-to-play",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Coopération",
-          "MMO",
-          "Multijoueur"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1206560",
         "title": "WorldBox - God Simulator",
-        "kind": "game",
-        "genres": [
-          "Accès anticipé",
-          "Indépendant",
-          "Simulation"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "1705660",
         "title": "WW2 Rebuilder Playtest",
-        "kind": "game",
+        "kind": "unknown",
         "genres": [],
         "modes": []
       },
       {
         "id": "392160",
         "title": "X4: Foundations",
-        "kind": "game",
-        "genres": [
-          "Action",
-          "Simulation",
-          "Stratégie"
-        ],
-        "modes": [
-          "Solo"
-        ]
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       }
     ]
   },
   "epic": {
-    "updatedAt": "2026-09-28T04:33:01Z",
+    "updatedAt": "2026-09-29T04:32:00Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
