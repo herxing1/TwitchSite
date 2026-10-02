@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-01T04:34:01Z",
+    "updatedAt": "2026-10-02T04:33:18Z",
     "games": [
       {
         "id": "933110",
@@ -2081,7 +2081,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-01T04:34:01Z",
+    "updatedAt": "2026-10-02T04:33:18Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -2925,7 +2925,7 @@
         "kind": "game",
         "genres": [],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/item/fn/FNECO_42-10_Tailgate_EGS_Mobile_FeatArt_800x800_800x800-e1770d69b7e148879730b3d63a04b5ac"
+        "image": "https://cdn1.epicgames.com/item/fn/FNBR_42-30_Fortnitemares_KeyArt_Fortnitemares_EGS_Mobile_FeatArt_800x800_800x800-10e552d4d78e4617a213b8be0e1537d8"
       },
       {
         "id": "b2e00fc16632475782a7730d1bd7cb60",
