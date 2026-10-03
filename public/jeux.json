@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-02T04:33:18Z",
+    "updatedAt": "2026-10-03T04:33:18Z",
     "games": [
       {
         "id": "933110",
@@ -2081,7 +2081,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-02T04:33:18Z",
+    "updatedAt": "2026-10-03T04:33:18Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -4620,7 +4620,10 @@
         "id": "4123bcce398b4b1d8b9ef878f81055d1",
         "title": "Thief",
         "kind": "game",
-        "genres": [],
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
         "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/44b12bc6a7f045a3bf313574c344dfd7/thief-nny72.png"
       },
