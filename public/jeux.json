@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-04T06:18:24Z",
+    "updatedAt": "2026-10-05T04:39:05Z",
     "games": [
       {
         "id": "933110",
@@ -2081,7 +2081,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-04T06:18:24Z",
+    "updatedAt": "2026-10-05T04:39:05Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -4388,6 +4388,18 @@
         ],
         "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Supraland_SupraGames_S5_1920x1080-3d9ef81461113b21916c011f1d131469"
+      },
+      {
+        "id": "2feb2f328922458e9f698f620fbddc13",
+        "title": "System Shock 2: 25th Anniversary Remaster",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "RPG"
+        ],
+        "modes": [],
+        "image": "https://cdn1.epicgames.com/spt-assets/690ff600d5134d9ab12c96862ed5257a/system-shock-2-25th-anniversary-remaster-j2m0n.jpg"
       },
       {
         "id": "0dac2fd1f95240bda133d1f2fb27c705",
