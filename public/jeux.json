@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-06T04:34:06Z",
+    "updatedAt": "2026-10-07T04:35:07Z",
     "games": [
       {
         "id": "933110",
@@ -2081,7 +2081,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-06T04:34:06Z",
+    "updatedAt": "2026-10-07T04:35:07Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -2592,7 +2592,7 @@
           "Action"
         ],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-18nkz.jpg"
+        "image": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-v5079.jpg"
       },
       {
         "id": "Crow",
@@ -2681,7 +2681,7 @@
         "kind": "software",
         "genres": [],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/egs-discord-discord-s1-2560x1440-834f227d1383_2560x1440-53f5d8dfeecbcb54b5ef5cc2acd8f21f"
+        "image": "https://cdn1.epicgames.com/item/5f3c898b2a3244af99e9900e015717f8/EGS_Discord_Discord_S1_2560x1440-a1a8b52a4b2541dbaeec0b635668361c"
       },
       {
         "id": "d2da64bd4c4e422da4b1a88041492a3a",
