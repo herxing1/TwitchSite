@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-14T04:50:28Z",
+    "updatedAt": "2026-10-15T04:49:00Z",
     "games": [
       {
         "id": "933110",
@@ -769,6 +769,21 @@
         "modes": [
           "Coopération",
           "Multijoueur"
+        ]
+      },
+      {
+        "id": "3892270",
+        "title": "Gamble With Your Friends",
+        "kind": "game",
+        "genres": [
+          "Aventure",
+          "Indépendant",
+          "Simulation"
+        ],
+        "modes": [
+          "Coopération",
+          "Multijoueur",
+          "Solo"
         ]
       },
       {
@@ -2081,7 +2096,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-14T04:50:28Z",
+    "updatedAt": "2026-10-15T04:49:00Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
