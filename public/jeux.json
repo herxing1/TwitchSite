@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-18T04:47:20Z",
+    "updatedAt": "2026-10-19T04:51:18Z",
     "games": [
       {
         "id": "933110",
@@ -2096,7 +2096,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-18T04:47:20Z",
+    "updatedAt": "2026-10-19T04:51:18Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -2145,6 +2145,17 @@
         "genres": [],
         "modes": [],
         "image": "https://cdn1.epicgames.com/spt-assets/a2f2a8a46ff648928b50bcc776bf9857/slaughter-league-offer-9w1er.jpg"
+      },
+      {
+        "id": "cca13b369c5748e2b52af7de8c06281e",
+        "title": "Agent A: A puzzle in disguise",
+        "kind": "game",
+        "genres": [
+          "Aventure",
+          "Indépendant"
+        ],
+        "modes": [],
+        "image": "https://cdn1.epicgames.com/spt-assets/45db4fbe68fe43f4b025dec2014d42e7/agent-a-a-puzzle-in-disguise-19p1b.png"
       },
       {
         "id": "8a0173bbe3ac48ac903f5bc7277e7b4e",
@@ -2275,6 +2286,17 @@
         ],
         "modes": [],
         "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_AvenColony_MothershipEntertainmentLLC_S3_2560x1440-3276f29fde89052103f0b650420d256b"
+      },
+      {
+        "id": "a5c160fefaa34497b8f6a277cc105f37",
+        "title": "Bad Cheese",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure"
+        ],
+        "modes": [],
+        "image": "https://cdn1.epicgames.com/spt-assets/6cbb0e3805c4436bafd028cafff48307/bad-cheese-7z7im.png"
       },
       {
         "id": "39700e23ec114d7581aedea23779ce2d",
