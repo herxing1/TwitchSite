@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-26T10:12:18Z",
+    "updatedAt": "2026-10-27T09:51:34Z",
     "games": [
       {
         "id": "933110",
@@ -420,7 +420,7 @@
       },
       {
         "id": "386180",
-        "title": "Crossout",
+        "title": "Crossout Remastered",
         "kind": "game",
         "genres": [
           "Action",
@@ -2096,7 +2096,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-26T10:12:18Z",
+    "updatedAt": "2026-10-27T09:51:34Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -3229,7 +3229,7 @@
           "Stratégie"
         ],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/spt-assets/a53f91e55c6840018cb5de0b204f1ad9/idle-champions-of-the-forgotten-realms-1nhxm.png"
+        "image": "https://cdn1.epicgames.com/spt-assets/a53f91e55c6840018cb5de0b204f1ad9/idle-champions-of-the-forgotten-realms-1p1wo.jpg"
       },
       {
         "id": "29ee5d32f328471590b3bd3ac03ed7d0",
