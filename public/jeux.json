@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-27T09:51:34Z",
+    "updatedAt": "2026-10-28T10:38:03Z",
     "games": [
       {
         "id": "933110",
@@ -2096,7 +2096,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-27T09:51:34Z",
+    "updatedAt": "2026-10-28T10:38:03Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -3087,6 +3087,13 @@
         ],
         "modes": [],
         "image": "https://cdn1.epicgames.com/28d06644e2f84b398c1b7fb96a2b6bd5/item/GWF_Wide-2560x1440-4d531d74db8b3f1aff7bd70386f55402.jpg"
+      },
+      {
+        "id": "GoodSKYdae4679fb013V4",
+        "title": "Good SKY",
+        "kind": "unknown",
+        "genres": [],
+        "modes": []
       },
       {
         "id": "fab83c3bf3d449718e042d44369e7fb6",
@@ -4827,7 +4834,7 @@
         "kind": "game",
         "genres": [],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/item/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-b9cb8b7e2f5b42f99f5df1b7640e578d"
+        "image": "https://cdn1.epicgames.com/item/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-ab27e084728b416d89c4d8243f5750aa"
       },
       {
         "id": "1136763135c0482cbbb4b2d45e978156",
