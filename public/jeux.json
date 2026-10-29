@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-28T10:38:03Z",
+    "updatedAt": "2026-10-29T10:55:49Z",
     "games": [
       {
         "id": "933110",
@@ -495,14 +495,10 @@
         "kind": "game",
         "genres": [
           "Action",
-          "Aventure",
-          "Course",
           "Indépendant",
-          "Sport",
           "Stratégie"
         ],
         "modes": [
-          "MMO",
           "Multijoueur",
           "Solo"
         ]
@@ -2096,7 +2092,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-28T10:38:03Z",
+    "updatedAt": "2026-10-29T10:55:49Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
