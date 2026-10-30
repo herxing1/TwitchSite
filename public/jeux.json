@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-29T10:55:49Z",
+    "updatedAt": "2026-10-30T10:54:03Z",
     "games": [
       {
         "id": "933110",
@@ -2092,7 +2092,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-29T10:55:49Z",
+    "updatedAt": "2026-10-30T10:54:03Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -2625,7 +2625,7 @@
           "Action"
         ],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-v5079.jpg"
+        "image": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-1v7x9.jpg"
       },
       {
         "id": "Crow",
