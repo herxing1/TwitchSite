@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-10-31T10:25:43Z",
+    "updatedAt": "2026-11-01T11:19:28Z",
     "games": [
       {
         "id": "933110",
@@ -2092,7 +2092,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-10-31T10:25:43Z",
+    "updatedAt": "2026-11-01T11:19:28Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -2958,7 +2958,7 @@
         "kind": "game",
         "genres": [],
         "modes": [],
-        "image": "https://cdn1.epicgames.com/item/fn/FNBR_42-30_Fortnitemares_KeyArt_Fortnitemares_EGS_Mobile_FeatArt_800x800_800x800-10e552d4d78e4617a213b8be0e1537d8"
+        "image": "https://cdn1.epicgames.com/item/fn/FNBR_43-00_MSEE_KeyArt_FN_EGS_Mobile_FeatArt_800x800_800x800-23c7b0e73e9f440289b4d8e67cfc0780"
       },
       {
         "id": "b2e00fc16632475782a7730d1bd7cb60",
