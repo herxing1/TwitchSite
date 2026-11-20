@@ -1,7 +1,7 @@
 {
   "version": 1,
   "steam": {
-    "updatedAt": "2026-11-19T13:19:56Z",
+    "updatedAt": "2026-11-20T13:00:00Z",
     "games": [
       {
         "id": "933110",
@@ -2092,7 +2092,7 @@
     ]
   },
   "epic": {
-    "updatedAt": "2026-11-19T13:19:56Z",
+    "updatedAt": "2026-11-20T13:00:00Z",
     "games": [
       {
         "id": "4656facc740742a39e265b026e13d075",
@@ -3490,6 +3490,18 @@
         ],
         "modes": [],
         "image": "https://cdn1.epicgames.com/turtle/item/Maneater_EGS_Landscape-2560x1440-cf27e86a8daeeb2915a49a8b4c954dbd.png"
+      },
+      {
+        "id": "8117701582b549ea90c864b157adc969",
+        "title": "Mark of the Deep",
+        "kind": "game",
+        "genres": [
+          "Action",
+          "Aventure",
+          "Indépendant"
+        ],
+        "modes": [],
+        "image": "https://cdn1.epicgames.com/spt-assets/83a240506a884c10ad8fb99694e57a0d/mark-of-the-deep-1i22x.png"
       },
       {
         "id": "49550aa9fcd74552ae07c4e9f2c262fe",
